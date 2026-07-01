@@ -2,4 +2,25 @@
 title: "SFB Language between Redundancy and Deficiency"
 ---
 
-{{< lipsum 3 >}}
+{{< lipsum 1 >}}
+
+```{r}
+
+library(tidyverse)
+
+publications <- read_csv('publications/publication_list.csv')
+
+
+publications %>% 
+  arrange(date) %>% 
+  pull(publication) %>% 
+  str_replace('(https://.*)','[\\1](\\1)') %>% 
+  str_c('- ',.,'\n\n') %>% 
+  cat(file='publications/publication_list.qmd') 
+
+
+```
+
+
+
+{{< include publications/publication_list.qmd >}}

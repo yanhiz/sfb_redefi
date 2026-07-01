@@ -17,3 +17,6 @@ format:
     toc: true
 
 brand: _brand.yml
+
+echo: false
+warning: false
