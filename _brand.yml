@@ -1,0 +1,14 @@
+
+logo: 
+    small: img/logos/logo black white schrift.png
+
+color: 
+  primary: "#8C1E1F"
+  secondary: "#111111"
+  tertiary: "#ffffff"
+typography:
+  fonts:
+    - family: Corbel
+      source: google
+  base: Corbel
+  headings: Corbel
