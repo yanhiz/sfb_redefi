@@ -6,7 +6,7 @@
 /* CSS Rules */
 
 .navbar-container {
-  height: 90px;
+  height: auto;
 }
 
 .navbar-brand-container {
@@ -14,10 +14,28 @@
 }
 
 .navbar-logo {
- width: 190px;
- max-height: 120px;
+ width: 200px;
+ max-height: 140px;
 }
 
 .menu-text {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
+
+.dropdown-item {
+  font-size: 1.25em;
+  color: #ffffff;
+}
+
+.dropdown-item:hover {
+  font-size: 1.25em;
+  color: #111111;
+}
+
+.dropdown-menu.show {
+  background-color: #8C1E1F;
+}
+
+
+
+

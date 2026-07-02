@@ -6,6 +6,10 @@ website:
   navbar:
     left:
       - about.qmd
+      - text: "Our team"
+        menu:
+          - text: "Subprojects"
+            href: team/subprojects.qmd
 
 format:
   html:
