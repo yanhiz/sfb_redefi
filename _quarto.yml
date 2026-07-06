@@ -9,7 +9,11 @@ website:
       - text: "Our team"
         menu:
           - text: "Subprojects"
-            href: team/subprojects.qmd
+            href: subprojects.qmd
+          - text: "Clusters"
+            href: clusters.qmd
+      - text: "Activities"
+        href: news.qmd
 
 format:
   html:
