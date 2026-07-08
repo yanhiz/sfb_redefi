@@ -1,8 +1,0 @@
----
-title: "Subprojects"
-format: html
-listing:
-  contents: subprojects
-  type: grid
----
-
