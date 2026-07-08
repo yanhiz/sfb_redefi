@@ -17,10 +17,10 @@ website:
 
   page-footer: |
     © 2026 SFB Language between Redundancy and Deficiency
-
-    ![](img/logos/Logo_Graz.jpg){height=45px}
-    ![](img/logos/Salzburg_Logo.png){height=40px}
-    ![](img/logos/Uni_Wien_Logo.jpg){height=70px}
+    
+    ![](/img/logos/Logo_Graz.jpg){height=45px}
+    ![](/img/logos/Salzburg_Logo.png){height=40px}
+    ![](/img/logos/Uni_Wien_Logo.jpg){height=70px}
 
 format:
   html:
@@ -28,7 +28,7 @@ format:
     theme:
       - cosmo
       - brand
-    css: styles.scss
+    css: styles.css
     toc: true
 
 brand: _brand.yml

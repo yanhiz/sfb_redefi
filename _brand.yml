@@ -1,7 +1,7 @@
 logo: 
   small: img/logos/logo black white schrift.png
 
-color: 
+color:
   palette:
     red: "#8C1E1F"
     grey: "#666666"
@@ -9,7 +9,7 @@ color:
   primary: red
   secondary: grey
   tertiary: grey
-  
+
 typography:
   fonts:
     - family: Source Sans 3
