@@ -2,9 +2,6 @@
 title: "Clusters"
 ---
 
-Those are the clusters.
-
-
 ```{r}
 
 library(DiagrammeR)
