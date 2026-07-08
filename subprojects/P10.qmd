@@ -1,5 +1,5 @@
 ---
-title: "P10"
+title: "P10 -- Deficiency and Redundancy in Expressing Temporal Relations"
+image: project_logos/P10.svg
 format: html
 ---
-

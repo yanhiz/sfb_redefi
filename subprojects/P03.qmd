@@ -1,5 +1,5 @@
 ---
-title: "P03"
+title: "P03 -- Mismatches in Binding and Coreference"
+image: project_logos/P3.svg
 format: html
 ---
-

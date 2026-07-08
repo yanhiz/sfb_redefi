@@ -1,5 +1,6 @@
 ---
-title: "P02"
+title: "P02 -- Grammatical Gender in Discourse and Grammar"
+image: project_logos/P22.png
 format: html
 ---
 

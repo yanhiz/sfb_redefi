@@ -1,5 +1,5 @@
 ---
-title: "P06"
+title: "P06 - The (Non-)Deficiency and (Non-)Redundancy of Clitic Pronouns"
+image: project_logos/P6.svg
 format: html
 ---
-

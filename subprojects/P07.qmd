@@ -1,5 +1,5 @@
 ---
-title: "P07"
+title: "P07 -- Deficency and Redundancy in Iberoromance Pronominal Systems"
+image: project_logos/P7.svg
 format: html
 ---
-

@@ -1,5 +1,7 @@
 ---
-title: "P01"
+title: "P01 -- Theoretical Task Force"
+image: project_logos/P1.svg
 format: html
 ---
+
 

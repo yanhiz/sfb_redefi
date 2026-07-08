@@ -1,5 +1,6 @@
 ---
-title: "P08"
+title: "P08 -- Fading Reference -- The Pragmaticalization of Pronoun + Verb"
+image: project_logos/P8.svg
 format: html
 ---
 

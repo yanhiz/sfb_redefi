@@ -1,17 +1,18 @@
-
 logo: 
-    small: img/logos/logo black white schrift.png
+  small: img/logos/logo black white schrift.png
 
 color: 
   palette:
     red: "#8C1E1F"
+    grey: "#666666"
+    darkgrey: "#333333"
   primary: red
-  secondary: "gray"
-  tertiary: "gray"
+  secondary: grey
+  tertiary: grey
   
 typography:
   fonts:
-    - family: Corbel
+    - family: Source Sans 3
       source: google
-  base: Corbel
-  headings: Corbel
+  base: Source Sans 3
+  headings: Source Sans 3

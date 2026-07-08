@@ -1,8 +1,10 @@
 ---
 title: "Subprojects"
-format: html
+format:
+  html:
+    page-layout: full
 listing:
   contents: subprojects
   type: grid
+  grid-columns: 2
 ---
-

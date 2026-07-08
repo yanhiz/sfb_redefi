@@ -1,5 +1,6 @@
 ---
-title: "P05"
+title: "P05 -- The Role of Self in Pronominal Coreference"
+image: project_logos/P5.svg
 format: html
 ---
 

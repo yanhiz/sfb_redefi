@@ -1,5 +1,5 @@
 ---
-title: "P09"
+title: "P09 -- Animacy Features and the Flexibility of Pronouns"
+image: project_logos/P9.svg
 format: html
 ---
-

@@ -1,15 +1,27 @@
 ---
 title: "SFB Language between Redundancy and Deficiency"
+format:
+  html:
+    page-layout: full
 ---
+
+::: {.homepage-scroll-layout}
+
+::: {.homepage-left}
+
+![](img/R&D.svg){.homepage-rotated-image}
+
+:::
+
+::: {.homepage-right}
 
 {{< lipsum 1 >}}
 
-```{r}
 
+```{r}
 library(tidyverse)
 
 publications <- read_csv('publications/publication_list.csv')
-
 
 publications %>% 
   arrange(date) %>% 
@@ -17,10 +29,12 @@ publications %>%
   str_replace('(https://.*)','[\\1](\\1)') %>% 
   str_c('- ',.,'\n\n') %>% 
   cat(file='publications/publication_list.qmd') 
-
-
 ```
 
 
 
 {{< include publications/publication_list.qmd >}}
+
+:::
+
+:::
