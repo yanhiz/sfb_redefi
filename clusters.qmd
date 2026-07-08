@@ -2,6 +2,9 @@
 title: "Clusters"
 ---
 
+
+The clusters of the project are: 
+
 ```{r}
 
 library(DiagrammeR)
