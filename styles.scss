@@ -1,41 +1,197 @@
-/* SCSS Variables*/
+/* Typography */
 
-
-
-
-/* CSS Rules */
-
-.navbar-container {
-  height: auto;
+body {
+  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
 }
 
-.navbar-brand-container {
-  height:auto;
+/* Main page title and large headings */
+
+h1,
+h2,
+.title {
+  color: #8C1E1F;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-.navbar-logo {
- width: 200px;
- max-height: 140px;
+/* Smaller section headings */
+
+h3,
+h4,
+h5,
+h6 {
+  color: #455555;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
-.menu-text {
-  font-size: 1.25em;
-}
-
-.dropdown-item {
-  font-size: 1.25em;
-  color: #ffffff;
-}
-
-.dropdown-item:hover {
-  font-size: 1.25em;
-  color: #111111;
-}
-
-.dropdown-menu.show {
-  background-color: #8C1E1F;
+.navbar-brand img {
+  max-height: 55px;
+  width: auto;
 }
 
 
+/* Listing titles, for example news/project cards */
 
+.quarto-listing .listing-title {
+  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
+  color: #8C1E1F;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
+/* Subproject listing layout */
+
+.quarto-listing {
+  width: min(900px, calc(100vw - 4rem)) !important;
+  max-width: none !important;
+  margin-left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Force the listing grid itself to use two wide columns */
+
+.quarto-listing .grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 2rem !important;
+  row-gap: 2rem !important;
+}
+
+/* Make each card fill its grid cell */
+
+.quarto-listing .card,
+.quarto-listing .quarto-grid-item {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Subproject cards */
+
+.quarto-listing .card {
+  width: 100% !important;
+  max-width: none !important;
+  min-height: unset !important;
+  border: 3px solid #8C1E1F !important;
+  border-radius: 0.25rem !important;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.18) !important;
+  overflow: hidden;
+}
+
+.quarto-listing .listing-image,
+.quarto-listing .card-img {
+  width: 100% !important;
+  height: 150px !important;
+  background-size: contain !important;
+  background-position: center bottom !important;
+  background-repeat: no-repeat !important;
+}
+
+.quarto-listing .card-img-top {
+  max-width: 220px !important;
+  max-height: 140px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 1rem auto 0.25rem auto !important;
+  display: block !important;
+}
+
+.quarto-listing .card-body {
+  flex: 0 0 auto !important;
+  padding: 0.75rem 1.25rem 1rem 1.25rem !important;
+}
+
+.quarto-listing .listing-title {
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+  line-height: 1.15 !important;
+}
+
+/* Homepage two-column scroll layout */
+
+.homepage-scroll-layout {
+  display: grid !important;
+  grid-template-columns: minmax(320px, 30%) minmax(0, 1fr) !important;
+  gap: 3rem !important;
+  height: calc(100vh - 130px) !important;
+  overflow: hidden !important;
+  align-items: stretch !important;
+}
+
+/* Left column */
+
+.homepage-left {
+  height: 100% !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+.homepage-left img {
+  width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+/* Right column: only this scrolls */
+
+.homepage-right {
+  height: 100% !important;
+  overflow-y: auto !important;
+  padding-right: 1.25rem !important;
+  min-width: 0 !important;
+}
+
+/* Mobile fallback */
+
+@media (max-width: 800px) {
+  .homepage-scroll-layout {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .homepage-left img {
+  width: auto !important;
+  height: 90vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block !important;
+
+  transform: rotate(90deg) scale(1.15);
+  transform-origin: center center;
+}
+
+  .homepage-right {
+    height: auto !important;
+    overflow: visible !important;
+    padding-right: 0 !important;
+  }
+}
+
+.homepage-rotated-image {
+  transform: rotate(90deg) scale(1.5) !important;
+  transform-origin: center center !important;
+
+  width: auto !important;
+  height: 85vh !important;
+  max-width: none !important;
+  max-height: none !important;
+
+  display: block !important;
+}
+
+
+footer.footer,
+.nav-footer {
+  border-top: 4px solid #8C1E1F;
+  background-color: transparent;
+  color: #8C1E1F;
+}
 
