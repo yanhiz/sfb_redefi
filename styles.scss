@@ -1,14 +1,15 @@
-
 /*-- scss:defaults --*/
-$h2-font-size:          1.6rem !default;
-$headings-font-weight:  500 !default;
+
+$sfb-color: #8C1E1F;
+$main-font: "Source Sans 3", Corbel, Arial, sans-serif;
+
 
 /*-- scss:rules --*/
 
 /* Typography */
 
 body {
-  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
+  font-family: $main-font;
 }
 
 /* Main page title and large headings */
@@ -16,7 +17,7 @@ body {
 h1,
 h2,
 .title {
-  color: #8C1E1F;
+  color: $sfb-color;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -43,8 +44,8 @@ h6 {
 /* Listing titles, for example news/project cards */
 
 .quarto-listing .listing-title {
-  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
-  color: #8C1E1F;
+  font-family: $main-font;
+  color: $sfb-color;
   font-weight: 700;
   text-transform: none;
   letter-spacing: 0.04em;
@@ -81,7 +82,7 @@ h6 {
   width: 100% !important;
   max-width: none !important;
   min-height: unset !important;
-  border: 3px solid #8C1E1F !important;
+  border: 3px solid $sfb-color !important;
   border-radius: 0.25rem !important;
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.18) !important;
   overflow: hidden;
@@ -197,8 +198,8 @@ h6 {
 
 footer.footer,
 .nav-footer {
-  border-top: 4px solid #8C1E1F;
+  border-top: 4px solid $sfb-color;
   background-color: transparent;
-  color: #8C1E1F;
+  color: $sfb-color;
 }
 
