@@ -1,56 +1,157 @@
 ---
 title: "Clusters"
+format:
+  html:
+    page-layout: full
+toc: false
 ---
 
+```{dot}
+//| fig-align: center
+//| fig-width: 11
+//| fig-height: 8
 
+graph clusters {
+  layout = neato
+  normalize = true
+  outputorder = edgesfirst
+  bgcolor = transparent
+  pad = 0.5
 
-```{r}
+  node [
+    shape = circle,
+    fixedsize = true,
+    width = 0.75,
+    height = 0.75,
+    style = filled,
+    fillcolor = "white",
+    color = "#8C1E1F",
+    fontcolor = "#8C1E1F",
+    penwidth = 2,
+    fontsize = 11,
+    target = "_top",
+    class = "cluster-project"
+  ]
 
-library(DiagrammeR)
+  edge [
+    color = "#8A9696",
+    penwidth = 1.4
+  ]
 
+  p02 [
+  label = "P02",
+  URL = "subprojects/P02.html",
+  tooltip = "Open project P02",
+  pos = "0,3!"
+]
 
-grViz('
-digraph {
+p03 [
+  label = "P03",
+  URL = "subprojects/P03.html",
+  tooltip = "Open project P03",
+  pos = "1.9,2.3!"
+]
 
-  # a graph statement
-  overlap = true
-  fontsize = 10
-  layout=circo
+p04 [
+  label = "P04",
+  URL = "subprojects/P04.html",
+  tooltip = "Open project P04",
+  pos = "3,0.5!"
+]
 
+p05 [
+  label = "P05",
+  URL = "subprojects/P05.html",
+  tooltip = "Open project P05",
+  pos = "2.6,-1.7!"
+]
 
-  node [shape = circle,
-        fixedsize = true,
-        width = 0.6] // sets as circles
-  2[label=P02];3[label=P03];
-  4[label=P04];5[label=P05];
-  6[label=P06];7[label=P07];
-  8[label=P08];9[label=P09];
-  10[label=P10];
+p06 [
+  label = "P06",
+  URL = "subprojects/P06.html",
+  tooltip = "Open project P06",
+  pos = "1.1,-3!"
+]
 
-  # several edge statements
-  edge [arrowhead=none]
-  2->3
-  3->4
-  4->5
-  5->6
-  6->7
-  2->10
-  10->9
-  2->6
-  9->8
-  8->7
-  2->8
-  7->8
-  7->9
-  9->6
-  6->3
-  3->4
-  4->9
-  4->10
-  4->7
-  5->3
+p07 [
+  label = "P07",
+  URL = "subprojects/P07.html",
+  tooltip = "Open project P07",
+  pos = "-1.1,-3!"
+]
+
+p08 [
+  label = "P08",
+  URL = "subprojects/P08.html",
+  tooltip = "Open project P08",
+  pos = "-2.6,-1.7!"
+]
+
+p09 [
+  label = "P09",
+  URL = "subprojects/P09.html",
+  tooltip = "Open project P09",
+  pos = "-3,0.5!"
+]
+
+p10 [
+  label = "P10",
+  URL = "subprojects/P10.html",
+  tooltip = "Open project P10",
+  pos = "-1.9,2.3!"
+]
+
+  p02 -- p03
+  p03 -- p04
+  p04 -- p05
+  p05 -- p06
+  p06 -- p07
+  p02 -- p10
+  p10 -- p09
+  p02 -- p06
+  p09 -- p08
+
+  // Romance collaboration edge
+p07 -- p08 [
+  class = "cluster-link",
+  tooltip = "Open the Romance cluster"
+]
+
+// External Romance label
+romance_label [
+  shape = plain,
+  fixedsize = false,
+  pos = "-2.8,-3.1!",
+  URL = "clusters/romance.html",
+  tooltip = "Open the Romance cluster",
+  target = "_top",
+  class = "cluster-link",
+  label = <
+    <TABLE
+      BORDER="0"
+      CELLBORDER="1"
+      CELLSPACING="0"
+      CELLPADDING="6"
+      WIDTH="75"
+      COLOR="#8C1E1F"
+      BGCOLOR="white"
+    >
+      <TR>
+        <TD>
+          <FONT COLOR="#8C1E1F"><B>ROMANCE</B></FONT>
+        </TD>
+      </TR>
+    </TABLE>
+  >
+]
+
+  p02 -- p08
+  p07 -- p09
+  p09 -- p06
+  p06 -- p03
+  p04 -- p09
+  p04 -- p10
+  p04 -- p07
+  p05 -- p03
 }
-')
-
 ```
-

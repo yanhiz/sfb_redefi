@@ -203,3 +203,359 @@ footer.footer,
   color: $sfb-color;
 }
 
+/* Cluster collaboration diagram */
+
+.cluster-project {
+  cursor: pointer;
+}
+
+/* Remove underlines from Graphviz links */
+.cluster-project a,
+.cluster-project a:hover,
+.cluster-project a:focus,
+.cluster-project text {
+  text-decoration: none !important;
+}
+
+/* Also override Quarto/Bootstrap link styling inside the SVG */
+.cell-output-display svg a,
+.cell-output-display svg a:hover,
+.cell-output-display svg a:focus {
+  text-decoration: none !important;
+}
+
+/* Default circle appearance */
+.cluster-project ellipse {
+  fill: #ffffff;
+  stroke: #8C1E1F;
+  stroke-width: 2px;
+
+  transition:
+    fill 0.15s ease,
+    stroke-width 0.15s ease,
+    transform 0.15s ease;
+
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Default label appearance */
+.cluster-project text {
+  fill: #8C1E1F;
+  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+/* Hover and keyboard-focus appearance */
+.cluster-project:hover ellipse,
+.cluster-project:focus-within ellipse {
+  fill: #8C1E1F !important;
+  stroke: #8C1E1F !important;
+  stroke-width: 2.5px;
+  transform: scale(1.07);
+}
+
+.cluster-project:hover text,
+.cluster-project:focus-within text {
+  fill: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Clickable cluster labels on collaboration edges */
+
+.cluster-link {
+  cursor: pointer;
+}
+
+/* Remove Bootstrap link underlining */
+.cluster-link a,
+.cluster-link a:hover,
+.cluster-link a:focus,
+.cluster-link text {
+  text-decoration: none !important;
+}
+
+/* Edge line */
+.cluster-link path {
+  stroke: #8A9696;
+  stroke-width: 1.8px;
+  transition:
+    stroke 0.15s ease,
+    stroke-width 0.15s ease;
+}
+
+/* Cluster name */
+.cluster-link text {
+  fill: #8C1E1F;
+  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none !important;
+}
+
+/* Romance edge and external label hover together */
+
+.cluster-link {
+  cursor: pointer;
+}
+
+.cluster-link a,
+.cluster-link a:hover,
+.cluster-link a:focus,
+.cluster-link text {
+  text-decoration: none !important;
+}
+
+/* Normal collaboration line */
+.cluster-link path {
+  stroke: #8A9696;
+  stroke-width: 1.8px;
+  transition:
+    stroke 0.15s ease,
+    stroke-width 0.15s ease;
+}
+
+/* External label */
+.cluster-link polygon {
+  transition:
+    fill 0.15s ease,
+    stroke-width 0.15s ease;
+}
+
+/* Hovering either the label or the edge highlights both */
+.cell-output-display svg:has(.cluster-link:hover) .cluster-link path,
+.cell-output-display svg:has(.cluster-link:focus-within) .cluster-link path {
+  stroke: #8C1E1F !important;
+  stroke-width: 2.5px;
+}
+
+.cell-output-display svg:has(.cluster-link:hover) .cluster-link polygon,
+.cell-output-display svg:has(.cluster-link:focus-within) .cluster-link polygon {
+  fill: #8C1E1F !important;
+  stroke: #8C1E1F !important;
+}
+
+.cell-output-display svg:has(.cluster-link:hover) .cluster-link text,
+.cell-output-display svg:has(.cluster-link:focus-within) .cluster-link text {
+  fill: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* External cluster labels */
+
+.cluster-label {
+  cursor: pointer;
+}
+
+.cluster-label a,
+.cluster-label a:hover,
+.cluster-label a:focus,
+.cluster-label text {
+  text-decoration: none !important;
+}
+
+.cluster-label polygon,
+.cluster-label path {
+  fill: #ffffff;
+  stroke: #8C1E1F;
+  stroke-width: 1.8px;
+
+  transition:
+    fill 0.15s ease,
+    stroke-width 0.15s ease;
+}
+
+.cluster-label text {
+  fill: #8C1E1F;
+  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.cluster-label:hover polygon,
+.cluster-label:hover path,
+.cluster-label:focus-within polygon,
+.cluster-label:focus-within path {
+  fill: #8C1E1F !important;
+  stroke-width: 2.3px;
+}
+
+.cluster-label:hover text,
+.cluster-label:focus-within text {
+  fill: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Lines connecting a cluster label to its projects */
+
+.cluster-membership path {
+  stroke: #8A9696;
+  stroke-width: 1px;
+  stroke-dasharray: 5 4;
+}
+
+/* Subproject detail pages */
+
+/* Introductory project section */
+
+.project-hero {
+  display: grid;
+  grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+  margin: 1rem 0 4rem 0;
+  padding: 2rem;
+  border-top: 3px solid #8C1E1F;
+  border-bottom: 1px solid #8A9696;
+}
+
+.project-hero-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-hero-logo img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+.project-hero-text h2 {
+  margin-top: 0;
+}
+
+.project-hero-text p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Team-member grid */
+
+.project-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 1.5rem 0 4rem 0;
+}
+
+.project-member-card {
+  overflow: hidden;
+  padding-bottom: 1.25rem;
+  border: 2px solid #8C1E1F;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+.project-member-photo {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+  margin: 0;
+}
+
+.project-member-card h3,
+.project-member-card p,
+.project-member-card > a {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.project-member-card h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  color: #8C1E1F;
+}
+
+.project-member-card p {
+  line-height: 1.55;
+}
+
+.project-member-card a {
+  color: #8C1E1F;
+  font-weight: 700;
+}
+
+
+/* Cluster membership */
+
+.project-clusters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.project-cluster-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid #8C1E1F;
+  border-radius: 999px;
+  color: #8C1E1F;
+  background-color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none !important;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.project-cluster-badge:hover,
+.project-cluster-badge:focus {
+  color: #ffffff;
+  background-color: #8C1E1F;
+}
+
+
+/* Publications */
+
+.project-publications {
+  max-width: 900px;
+  margin-bottom: 3rem;
+}
+
+.project-publications h3 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #8A9696;
+}
+
+.project-publications p {
+  padding-left: 1.25rem;
+  text-indent: -1.25rem;
+  line-height: 1.6;
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 950px) {
+  .project-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .project-hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .project-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-member-photo {
+    height: auto;
+    max-height: 420px;
+  }
+}

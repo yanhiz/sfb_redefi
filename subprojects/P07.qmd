@@ -1,5 +1,90 @@
 ---
-title: "P07 -- Deficency and Redundancy in Iberoromance Pronominal Systems"
+title: "P07 — Deficiency and Redundancy in Iberoromance Pronominal Systems"
 image: project_logos/P7.svg
-format: html
+format:
+  html:
+    page-layout: full
+toc: true
 ---
+
+::: {.project-hero}
+
+::: {.project-hero-logo}
+![](project_logos/P7.svg){alt="P07 project logo"}
+:::
+
+::: {.project-hero-text}
+### Project description
+
+P07 investigates deficiency and redundancy in Iberoromance pronominal systems.
+
+Replace this paragraph with the full project description. This section can explain the central research questions, the languages or varieties examined, the theoretical framework, and the expected contribution of the project.
+:::
+
+:::
+
+### Team
+
+::: {.project-team-grid}
+
+::: {.project-member-card}
+![](../img/team/member-name-1.jpg){.project-member-photo alt="Name of team member"}
+
+#### Name of team member
+
+**Role or position**
+
+Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+:::
+
+::: {.project-member-card}
+![](../img/team/member-name-2.jpg){.project-member-photo alt="Name of team member"}
+
+#### Name of team member
+
+**Role or position**
+
+Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+:::
+
+::: {.project-member-card}
+![](../img/team/member-name-3.jpg){.project-member-photo alt="Name of team member"}
+
+#### Name of team member
+
+**Role or position**
+
+Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+:::
+
+:::
+
+### Cluster membership
+
+::: {.project-clusters}
+
+[ROMANCE](../clusters/romance.qmd){.project-cluster-badge}
+
+:::
+
+P07 participates in the Romance cluster together with P08.
+
+### Publications
+
+::: {.project-publications}
+
+#### 2026
+
+Author, A., and Author, B. 2026. “Title of the publication.” *Journal or edited volume* 00(0): 00–00.
+
+#### 2025
+
+Author, A. 2025. “Title of another publication.” *Journal or edited volume* 00(0): 00–00.
+
+:::

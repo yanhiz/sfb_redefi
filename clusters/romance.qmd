@@ -1,0 +1,17 @@
+---
+title: "Romance Cluster"
+format:
+  html:
+    page-layout: full
+---
+
+This cluster brings together projects P07 and P08.
+
+### Participating projects
+
+- [P07](../subprojects/P07.qmd)
+- [P08](../subprojects/P08.qmd)
+
+### Description
+
+Add the description of the Romance cluster here.
