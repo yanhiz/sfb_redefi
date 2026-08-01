@@ -5,12 +5,13 @@ format:
     page-layout: full
 ---
 
-This cluster brings together projects P07 and P08.
+This cluster brings together projects P06, P07, P08, and P09.
 
 ### Participating projects
-
+- [P06](../subprojects/P06.qmd)
 - [P07](../subprojects/P07.qmd)
 - [P08](../subprojects/P08.qmd)
+- [P09](../subprojects/P09.qmd)
 
 ### Description
 

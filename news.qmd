@@ -1,8 +1,50 @@
 ---
-title: "news"
-format: html
+title: "Activities and Events"
+format:
+  html:
+    page-layout: full
+    body-classes: activities-page
+toc: false
 ---
 
+## Upcoming events
 
+::: {.event-list}
 
-<iframe src="https://calendar.google.com/calendar/embed?src=sfbredefi%40gmail.com&ctz=Europe%2FBrussels" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<details class="event-card">
+<summary>
+<div class="event-date">
+  <span class="event-day">18</span>
+  <span class="event-month">SEP</span>
+  <span class="event-year">2026</span>
+</div>
+
+<div class="event-summary">
+  <span class="event-type">Workshop</span>
+  <h3>What even is redundancy and deficiency?</h3>
+  <p class="event-people"> Name, Name</p>
+  <p class="event-affiliation">University of Vienna · University of Graz</p>
+</div>
+</summary>
+
+<div class="event-details">
+
+**Time:** 09:00–17:00  
+**Location:** Seminar Room 14, University of Vienna
+
+This workshop examines the interaction between redundancy and deficiency across different linguistic domains.
+
+[View programme](events/programmes/workshop-name.pdf){.event-link}
+
+</div>
+</details>
+
+:::
+
+## Past events
+
+::: {.event-list .past-events}
+
+<!-- Past event entries go here -->
+
+:::

@@ -16,9 +16,9 @@ toc: true
 ::: {.project-hero-text}
 ### Project description
 
-P07 investigates deficiency and redundancy in Iberoromance pronominal systems.
+This subproject investigates clitic doubling and null objects across Spanish and Portuguese varieties, with a focus on River Plate Spanish and Mineiro Brazilian Portuguese. It examines whether the observed microvariation and gradient acceptability can be explained through the SFB concepts of redundancy and deficiency, including the influence of discourse factors such as familiarity and D-linking.
 
-Replace this paragraph with the full project description. This section can explain the central research questions, the languages or varieties examined, the theoretical framework, and the expected contribution of the project.
+The project also develops a unified account of these constructions across Iberoromance and evaluates existing proposals, including Maddox’s (2021) Object Agreement Cycle and the Clitic Doubling Parameter proposed by Fischer et al. (2019).
 :::
 
 :::
@@ -28,23 +28,13 @@ Replace this paragraph with the full project description. This section can expla
 ::: {.project-team-grid}
 
 ::: {.project-member-card}
-![](../img/team/member-name-1.jpg){.project-member-photo alt="Name of team member"}
+![](../img/team/member-name-1.jpg){.project-member-photo}
 
-#### Name of team member
+#### Albert Wall
 
-**Role or position**
+**Principal Investigator**
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/team/member-name-2.jpg){.project-member-photo alt="Name of team member"}
-
-#### Name of team member
-
-**Role or position**
+University of Vienna
 
 Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
 
@@ -52,11 +42,23 @@ Short description of the team member’s research interests, responsibilities wi
 :::
 
 ::: {.project-member-card}
-![](../img/team/member-name-3.jpg){.project-member-photo alt="Name of team member"}
+![](../img/team/member-name-2.jpg){.project-member-photo}
 
-#### Name of team member
+#### Philippa Adolf
 
-**Role or position**
+**Pre-doc research assistant**
+
+Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+:::
+
+::: {.project-member-card}
+![](../img/team/member-name-3.jpg){.project-member-photo}
+
+#### Marco Losavio
+
+**Pre-doc research assistant**
 
 Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
 

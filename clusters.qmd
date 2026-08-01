@@ -3,20 +3,21 @@ title: "Clusters"
 format:
   html:
     page-layout: full
+    body-classes: clusters-page
 toc: false
 ---
 
 ```{dot}
 //| fig-align: center
 //| fig-width: 11
-//| fig-height: 8
+//| fig-height: 6.5
 
 graph clusters {
   layout = neato
   normalize = true
   outputorder = edgesfirst
   bgcolor = transparent
-  pad = 0.5
+  pad = 0.25
 
   node [
     shape = circle,
@@ -27,7 +28,7 @@ graph clusters {
     fillcolor = "white",
     color = "#8C1E1F",
     fontcolor = "#8C1E1F",
-    penwidth = 2,
+    penwidth = 2.5,
     fontsize = 11,
     target = "_top",
     class = "cluster-project"
@@ -35,93 +36,138 @@ graph clusters {
 
   edge [
     color = "#8A9696",
-    penwidth = 1.4
+    penwidth = 2.5
   ]
 
+  p01 [
+  label = "P01",
+  URL = "subprojects/P01.html",
+  tooltip = "Open project P01",
+  pos = "0,0!"
+  ]
   p02 [
-  label = "P02",
-  URL = "subprojects/P02.html",
-  tooltip = "Open project P02",
-  pos = "0,3!"
+    label = "P02",
+    URL = "subprojects/P02.html",
+    tooltip = "Open project P02",
+    pos = "0,2.4!"
+  ]
+
+  p03 [
+    label = "P03",
+    URL = "subprojects/P03.html",
+    tooltip = "Open project P03",
+    pos = "1.52,1.84!"
+  ]
+
+  p04 [
+    label = "P04",
+    URL = "subprojects/P04.html",
+    tooltip = "Open project P04",
+    pos = "2.4,0.4!"
+  ]
+
+  p05 [
+    label = "P05",
+    URL = "subprojects/P05.html",
+    tooltip = "Open project P05",
+    pos = "2.08,-1.36!"
+  ]
+
+  p06 [
+    label = "P06",
+    URL = "subprojects/P06.html",
+    tooltip = "Open project P06",
+    pos = "0.88,-2.4!"
+  ]
+
+  p07 [
+    label = "P07",
+    URL = "subprojects/P07.html",
+    tooltip = "Open project P07",
+    pos = "-0.88,-2.4!"
+  ]
+
+  p08 [
+    label = "P08",
+    URL = "subprojects/P08.html",
+    tooltip = "Open project P08",
+    pos = "-2.08,-1.36!"
+  ]
+
+  p09 [
+    label = "P09",
+    URL = "subprojects/P09.html",
+    tooltip = "Open project P09",
+    pos = "-2.4,0.4!"
+  ]
+
+  p10 [
+    label = "P10",
+    URL = "subprojects/P10.html",
+    tooltip = "Open project P10",
+    pos = "-1.52,1.84!"
+  ]
+
+
+  p01 -- p02
+  p01 -- p03
+  p01 -- p04
+  p01 -- p05
+  p01 -- p06
+  p01 -- p07
+  p01 -- p08
+  p01 -- p09
+  p01 -- p10
+
+// Romance cluster connections
+
+p06 -- p07 [
+  class = "cluster-link",
+  URL = "clusters/romance.html",
+  tooltip = "Open the Romance cluster",
+  target = "_top"
 ]
 
-p03 [
-  label = "P03",
-  URL = "subprojects/P03.html",
-  tooltip = "Open project P03",
-  pos = "1.9,2.3!"
+p06 -- p08 [
+  class = "cluster-link",
+  URL = "clusters/romance.html",
+  tooltip = "Open the Romance cluster",
+  target = "_top"
 ]
 
-p04 [
-  label = "P04",
-  URL = "subprojects/P04.html",
-  tooltip = "Open project P04",
-  pos = "3,0.5!"
+p06 -- p09 [
+  class = "cluster-link",
+  URL = "clusters/romance.html",
+  tooltip = "Open the Romance cluster",
+  target = "_top"
 ]
 
-p05 [
-  label = "P05",
-  URL = "subprojects/P05.html",
-  tooltip = "Open project P05",
-  pos = "2.6,-1.7!"
-]
-
-p06 [
-  label = "P06",
-  URL = "subprojects/P06.html",
-  tooltip = "Open project P06",
-  pos = "1.1,-3!"
-]
-
-p07 [
-  label = "P07",
-  URL = "subprojects/P07.html",
-  tooltip = "Open project P07",
-  pos = "-1.1,-3!"
-]
-
-p08 [
-  label = "P08",
-  URL = "subprojects/P08.html",
-  tooltip = "Open project P08",
-  pos = "-2.6,-1.7!"
-]
-
-p09 [
-  label = "P09",
-  URL = "subprojects/P09.html",
-  tooltip = "Open project P09",
-  pos = "-3,0.5!"
-]
-
-p10 [
-  label = "P10",
-  URL = "subprojects/P10.html",
-  tooltip = "Open project P10",
-  pos = "-1.9,2.3!"
-]
-
-  p02 -- p03
-  p03 -- p04
-  p04 -- p05
-  p05 -- p06
-  p06 -- p07
-  p02 -- p10
-  p10 -- p09
-  p02 -- p06
-  p09 -- p08
-
-  // Romance collaboration edge
 p07 -- p08 [
   class = "cluster-link",
-  tooltip = "Open the Romance cluster"
+  URL = "clusters/romance.html",
+  tooltip = "Open the Romance cluster",
+  target = "_top"
+]
+
+p07 -- p09 [
+  class = "cluster-link",
+  URL = "clusters/romance.html",
+  tooltip = "Open the Romance cluster",
+  target = "_top"
+]
+
+p08 -- p09 [
+  class = "cluster-link",
+  URL = "clusters/romance.html",
+  tooltip = "Open the Romance cluster",
+  target = "_top"
 ]
 
 // External Romance label
 romance_label [
   shape = plain,
   fixedsize = false,
-  pos = "-2.8,-3.1!",
+  pos = "-1.94,-2.88!",
   URL = "clusters/romance.html",
   tooltip = "Open the Romance cluster",
   target = "_top",
@@ -129,7 +175,7 @@ romance_label [
   label = <
     <TABLE
       BORDER="0"
-      CELLBORDER="1"
+      CELLBORDER="1.5"
       CELLSPACING="0"
       CELLPADDING="6"
       WIDTH="75"
@@ -145,13 +191,5 @@ romance_label [
   >
 ]
 
-  p02 -- p08
-  p07 -- p09
-  p09 -- p06
-  p06 -- p03
-  p04 -- p09
-  p04 -- p10
-  p04 -- p07
-  p05 -- p03
 }
 ```

@@ -19,8 +19,8 @@ h2,
 .title {
   color: $sfb-color;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  text-transform: none;
+  letter-spacing: 0.05em;
 }
 
 /* Smaller section headings */
@@ -196,14 +196,111 @@ h6 {
 }
 
 
-footer.footer,
-.nav-footer {
-  border-top: 4px solid $sfb-color;
+/* Footer */
+
+footer.footer {
+  position: relative;
+  border-top: 4px solid $sfb-color !important;
   background-color: transparent;
   color: $sfb-color;
 }
 
+.nav-footer {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 110px;
+  width: 100%;
+  max-width: none !important;
+  padding: 1.25rem 4rem;
+}
+
+/* Copyright: left edge */
+
+.nav-footer-left {
+  margin-right: 4rem;
+  text-align: left;
+}
+
+/* University logos: exact centre of footer */
+
+.nav-footer-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.nav-footer-center p {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin: 0;
+}
+
+/* FWF logo: right edge */
+
+.nav-footer-right {
+  margin-left: 1rem;
+  text-align: right;
+}
+
+.nav-footer-right p {
+  margin: 0;
+}
+
+.nav-footer img {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Mobile layout */
+
+@media (max-width: 900px) {
+  .nav-footer {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .nav-footer-left,
+  .nav-footer-center,
+  .nav-footer-right {
+    position: static;
+    margin: 0;
+    transform: none;
+    text-align: center;
+  }
+
+  .nav-footer-center p {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+}
+
 /* Cluster collaboration diagram */
+
+/* Reduce space below the title on the clusters page */
+
+.clusters-page .quarto-title-block {
+  margin-bottom: 0 !important;
+}
+
+.clusters-page .quarto-title {
+  margin-bottom: 0 !important;
+}
+
+.clusters-page main.content {
+  padding-top: 0 !important;
+}
+
+.clusters-page .cell {
+  margin-top: -2.5rem !important;
+}
+
 
 .cluster-project {
   cursor: pointer;
@@ -279,7 +376,7 @@ footer.footer,
 /* Edge line */
 .cluster-link path {
   stroke: #8A9696;
-  stroke-width: 1.8px;
+  stroke-width: 2.5px;
   transition:
     stroke 0.15s ease,
     stroke-width 0.15s ease;
@@ -311,7 +408,7 @@ footer.footer,
 /* Normal collaboration line */
 .cluster-link path {
   stroke: #8A9696;
-  stroke-width: 1.8px;
+  stroke-width: 2.5px;
   transition:
     stroke 0.15s ease,
     stroke-width 0.15s ease;
@@ -445,7 +542,7 @@ footer.footer,
 
 .project-member-card {
   overflow: hidden;
-  padding-bottom: 1.25rem;
+  padding: 1rem 1rem 1.5rem 1rem;
   border: 2px solid #8C1E1F;
   border-radius: 0.25rem;
   background-color: #ffffff;
@@ -458,18 +555,19 @@ footer.footer,
   height: 280px;
   object-fit: cover;
   object-position: center top;
-  margin: 0;
+  margin: 0 0 1.25rem 0;
+  border-radius: 0.15rem;
 }
 
 .project-member-card h3,
 .project-member-card p,
 .project-member-card > a {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .project-member-card h3 {
-  margin-top: 1.25rem;
+  margin-top: 0;
   margin-bottom: 0.4rem;
   color: #8C1E1F;
 }
@@ -483,7 +581,6 @@ footer.footer,
   font-weight: 700;
 }
 
-
 /* Cluster membership */
 
 .project-clusters {
@@ -495,9 +592,9 @@ footer.footer,
 
 .project-cluster-badge {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 0.85rem;
   border: 2px solid #8C1E1F;
-  border-radius: 999px;
+  border-radius: 0;
   color: #8C1E1F;
   background-color: #ffffff;
   font-weight: 700;
@@ -557,5 +654,193 @@ footer.footer,
   .project-member-photo {
     height: auto;
     max-height: 420px;
+  }
+}
+
+/* Activities and Events page */
+
+.activities-page .event-list {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 1000px;
+  margin: 2rem auto 4rem auto;
+}
+
+/* Event card */
+
+.activities-page .event-card {
+  overflow: hidden;
+  border: 2px solid $sfb-color;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+  transition:
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.activities-page .event-card:hover {
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Clickable summary */
+
+.activities-page .event-card summary {
+  position: relative;
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.25rem 3.5rem 1.25rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.activities-page .event-card summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Expand/collapse symbol */
+
+.activities-page .event-card summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  transform: translateY(-50%);
+  color: $sfb-color;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.activities-page .event-card[open] summary::after {
+  content: "−";
+}
+
+/* Date block */
+
+.activities-page .event-date {
+  display: flex;
+  min-height: 90px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1.25rem;
+  border-right: 1px solid #8A9696;
+  color: $sfb-color;
+  text-align: center;
+}
+
+.activities-page .event-day {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.activities-page .event-month {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.activities-page .event-year {
+  margin-top: 0.1rem;
+  color: #455555;
+  font-size: 0.85rem;
+}
+
+/* Event summary text */
+
+.activities-page .event-summary {
+  min-width: 0;
+}
+
+.activities-page .event-type {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  color: $sfb-color;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.activities-page .event-summary h3 {
+  margin: 0 0 0.45rem 0;
+  color: $sfb-color;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.activities-page .event-people,
+.activities-page .event-affiliation {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.activities-page .event-people {
+  font-weight: 600;
+}
+
+.activities-page .event-affiliation {
+  color: #5f6b69;
+  font-size: 0.95rem;
+}
+
+/* Expanded details */
+
+.activities-page .event-details {
+  padding: 1.25rem 2rem 1.5rem 9rem;
+  border-top: 1px solid #d5dada;
+  background-color: #fafafa;
+}
+
+.activities-page .event-details p:last-child {
+  margin-bottom: 0;
+}
+
+.activities-page .event-link {
+  color: $sfb-color;
+  font-weight: 700;
+}
+
+/* Past events */
+
+.activities-page .past-events .event-card {
+  border-color: #8A9696;
+}
+
+.activities-page .past-events .event-date,
+.activities-page .past-events .event-type,
+.activities-page .past-events .event-summary h3 {
+  color: #455555;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .activities-page .event-card summary {
+    grid-template-columns: 75px minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem 3rem 1rem 1rem;
+  }
+
+  .activities-page .event-date {
+    min-height: 75px;
+    padding-right: 0.75rem;
+  }
+
+  .activities-page .event-day {
+    font-size: 1.6rem;
+  }
+
+  .activities-page .event-summary h3 {
+    font-size: 1.1rem;
+  }
+
+  .activities-page .event-details {
+    padding: 1.25rem;
   }
 }

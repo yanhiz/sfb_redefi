@@ -5,22 +5,22 @@ project:
 website:
   navbar:
     left:
-      - about.qmd
-      - text: "TEAM"
+      - text: "Team"
         menu:
-          - text: "SUBPROJECTS"
+          - text: "Subprojects"
             href: subprojects.qmd
-          - text: "CLUSTERS"
+          - text: "Clusters"
             href: clusters.qmd
-      - text: "ACTIVITIES"
+      - text: "Activities and Events"
         href: news.qmd
 
   page-footer: |
     © 2026 SFB Language between Redundancy and Deficiency
-
     ![](/img/logos/Logo_Graz.jpg){height=45px}
     ![](/img/logos/Salzburg_Logo.png){height=40px}
     ![](/img/logos/Uni_Wien_Logo.jpg){height=70px}
+    ![](/img/logos/FWF_Logo.png){height=23px}
+   
 
 format:
   html:
