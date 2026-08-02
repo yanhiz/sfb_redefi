@@ -10,7 +10,7 @@ toc: false
 ```{dot}
 //| fig-align: center
 //| fig-width: 11
-//| fig-height: 6.5
+//| fig-height: 7.5
 
 graph clusters {
   layout = neato
