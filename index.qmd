@@ -9,7 +9,7 @@ format:
 
 ::: {.homepage-left}
 
-![](img/R&D.svg){.homepage-rotated-image}
+![](img/R&D.png){.homepage-rotated-image}
 
 :::
 
