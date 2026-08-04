@@ -5,12 +5,10 @@ project:
 website:
   navbar:
     left:
-      - text: "Team"
-        menu:
-          - text: "Subprojects"
-            href: subprojects.qmd
-          - text: "Clusters"
-            href: clusters.qmd
+      - text: "Subprojects"
+        href: subprojects.qmd
+      - text: "Clusters"
+        href: clusters.qmd
       - text: "Activities and Events"
         href: news.qmd
 
