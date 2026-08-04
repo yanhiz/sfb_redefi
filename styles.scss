@@ -2,7 +2,8 @@
 
 $sfb-color: #8C1E1F;
 $main-font: "Source Sans 3", Corbel, Arial, sans-serif;
-
+$main-gray : #455555;
+$secondary-gray: #8A9696;
 
 /*-- scss:rules --*/
 
@@ -29,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #455555;
+  color: $main-gray;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -324,7 +325,7 @@ footer.footer {
 /* Default circle appearance */
 .cluster-project ellipse {
   fill: #ffffff;
-  stroke: #8C1E1F;
+  stroke: $sfb-color;
   stroke-width: 2px;
 
   transition:
@@ -338,8 +339,8 @@ footer.footer {
 
 /* Default label appearance */
 .cluster-project text {
-  fill: #8C1E1F;
-  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
+  fill: $sfb-color;
+  font-family: $main-font
   font-weight: 700;
   text-decoration: none !important;
 }
@@ -347,8 +348,8 @@ footer.footer {
 /* Hover and keyboard-focus appearance */
 .cluster-project:hover ellipse,
 .cluster-project:focus-within ellipse {
-  fill: #8C1E1F !important;
-  stroke: #8C1E1F !important;
+  fill: $sfb-color !important;
+  stroke: $sfb-color !important;
   stroke-width: 2.5px;
   transform: scale(1.07);
 }
@@ -375,7 +376,7 @@ footer.footer {
 
 /* Edge line */
 .cluster-link path {
-  stroke: #8A9696;
+  stroke: $secondary-gray;
   stroke-width: 2.5px;
   transition:
     stroke 0.15s ease,
@@ -384,8 +385,8 @@ footer.footer {
 
 /* Cluster name */
 .cluster-link text {
-  fill: #8C1E1F;
-  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
+  fill: $sfb-color;
+  font-family: $main-font
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -407,7 +408,7 @@ footer.footer {
 
 /* Normal collaboration line */
 .cluster-link path {
-  stroke: #8A9696;
+  stroke: $secondary-gray;
   stroke-width: 2.5px;
   transition:
     stroke 0.15s ease,
@@ -424,14 +425,14 @@ footer.footer {
 /* Hovering either the label or the edge highlights both */
 .cell-output-display svg:has(.cluster-link:hover) .cluster-link path,
 .cell-output-display svg:has(.cluster-link:focus-within) .cluster-link path {
-  stroke: #8C1E1F !important;
+  stroke: $sfb-color !important;
   stroke-width: 2.5px;
 }
 
 .cell-output-display svg:has(.cluster-link:hover) .cluster-link polygon,
 .cell-output-display svg:has(.cluster-link:focus-within) .cluster-link polygon {
-  fill: #8C1E1F !important;
-  stroke: #8C1E1F !important;
+  fill: $sfb-color !important;
+  stroke: $sfb-color !important;
 }
 
 .cell-output-display svg:has(.cluster-link:hover) .cluster-link text,
@@ -456,7 +457,7 @@ footer.footer {
 .cluster-label polygon,
 .cluster-label path {
   fill: #ffffff;
-  stroke: #8C1E1F;
+  stroke: $sfb-color;
   stroke-width: 1.8px;
 
   transition:
@@ -465,8 +466,8 @@ footer.footer {
 }
 
 .cluster-label text {
-  fill: #8C1E1F;
-  font-family: "Source Sans 3", Corbel, Arial, sans-serif;
+  fill: $sfb-color;
+  font-family: $main-font
   font-weight: 700;
   letter-spacing: 0.06em;
 }
@@ -475,7 +476,7 @@ footer.footer {
 .cluster-label:hover path,
 .cluster-label:focus-within polygon,
 .cluster-label:focus-within path {
-  fill: #8C1E1F !important;
+  fill: $sfb-color !important;
   stroke-width: 2.3px;
 }
 
@@ -488,7 +489,7 @@ footer.footer {
 /* Lines connecting a cluster label to its projects */
 
 .cluster-membership path {
-  stroke: #8A9696;
+  stroke: $secondary-gray;
   stroke-width: 1px;
   stroke-dasharray: 5 4;
 }
@@ -504,8 +505,8 @@ footer.footer {
   align-items: center;
   margin: 1rem 0 4rem 0;
   padding: 2rem;
-  border-top: 3px solid #8C1E1F;
-  border-bottom: 1px solid #8A9696;
+  border-top: 3px solid $sfb-color;
+  border-bottom: 1px solid $secondary-gray;
 }
 
 .project-hero-logo {
@@ -543,7 +544,7 @@ footer.footer {
 .project-member-card {
   overflow: hidden;
   padding: 1rem 1rem 1.5rem 1rem;
-  border: 2px solid #8C1E1F;
+  border: 2px solid $sfb-color;
   border-radius: 0.25rem;
   background-color: #ffffff;
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.12);
@@ -569,7 +570,7 @@ footer.footer {
 .project-member-card h3 {
   margin-top: 0;
   margin-bottom: 0.4rem;
-  color: #8C1E1F;
+  color: $sfb-color;
 }
 
 .project-member-card p {
@@ -577,7 +578,7 @@ footer.footer {
 }
 
 .project-member-card a {
-  color: #8C1E1F;
+  color: $sfb-color;
   font-weight: 700;
 }
 
@@ -593,9 +594,9 @@ footer.footer {
 .project-cluster-badge {
   display: inline-block;
   padding: 0.45rem 0.85rem;
-  border: 2px solid #8C1E1F;
+  border: 2px solid $sfb-color;
   border-radius: 0;
-  color: #8C1E1F;
+  color: $sfb-color;
   background-color: #ffffff;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -608,7 +609,7 @@ footer.footer {
 .project-cluster-badge:hover,
 .project-cluster-badge:focus {
   color: #ffffff;
-  background-color: #8C1E1F;
+  background-color: $sfb-color;
 }
 
 
@@ -622,7 +623,7 @@ footer.footer {
 .project-publications h3 {
   margin-top: 2rem;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid #8A9696;
+  border-bottom: 1px solid $secondary-gray;
 }
 
 .project-publications p {
@@ -725,7 +726,7 @@ footer.footer {
   align-items: center;
   justify-content: center;
   padding-right: 1.25rem;
-  border-right: 1px solid #8A9696;
+  border-right: 1px solid $secondary-gray;
   color: $sfb-color;
   text-align: center;
 }
@@ -745,7 +746,7 @@ footer.footer {
 
 .activities-page .event-year {
   margin-top: 0.1rem;
-  color: #455555;
+  color: $main-gray;
   font-size: 0.85rem;
 }
 
@@ -809,13 +810,13 @@ footer.footer {
 /* Past events */
 
 .activities-page .past-events .event-card {
-  border-color: #8A9696;
+  border-color: $secondary-gray;
 }
 
 .activities-page .past-events .event-date,
 .activities-page .past-events .event-type,
 .activities-page .past-events .event-summary h3 {
-  color: #455555;
+  color: $main-gray;
 }
 
 /* Mobile */
