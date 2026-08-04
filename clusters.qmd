@@ -7,6 +7,10 @@ format:
 toc: false
 ---
 
+<div style="height:80px">
+</div>
+
+
 ```{dot}
 //| fig-align: center
 //| fig-width: 11
@@ -167,7 +171,7 @@ p08 -- p09 [
 romance_label [
   shape = plain,
   fixedsize = false,
-  pos = "-1.94,-2.88!",
+  pos = "-2.94,-2.88!",
   URL = "clusters/romance.html",
   tooltip = "Open the Romance cluster",
   target = "_top",
