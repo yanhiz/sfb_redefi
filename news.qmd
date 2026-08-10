@@ -11,33 +11,82 @@ toc: false
 
 ::: {.event-list}
 
-<details class="event-card">
-<summary>
-<div class="event-date">
-  <span class="event-day">18</span>
-  <span class="event-month">SEP</span>
-  <span class="event-year">2026</span>
-</div>
+```{r}
+#| output: asis
+library(tidyverse)
+library(readxl)
 
-<div class="event-summary">
-  <span class="event-type">Workshop</span>
-  <h3>What even is redundancy and deficiency?</h3>
-  <p class="event-people"> Name, Name</p>
-  <p class="event-affiliation">University of Vienna · University of Graz</p>
-</div>
-</summary>
+events <- read_excel('event_list.xlsx') %>% 
+  filter(state=='upcoming')
 
-<div class="event-details">
+for (i in 1:nrow(events)) {
+  e <- events[i,]
+  cat('<details class="event-card">')
+  cat('<summary>')
+  cat('<div class="event-date">')
+  cat('<span class="event-day">')
+  cat(e$day)
+  cat('</span>')
+  cat('<span class="event-month">')
+  cat(e$month)
+  cat('</span>')
+  cat('<span class="event-year">')
+  cat(e$year)
+  cat('</span>')
+  cat('</div>')
+  cat('<div class="event-summary">')
+  cat('<span class="event-type">')
+  cat(e$type)
+  cat('</span>')
+  cat('<h3>')
+  cat(e$title)
+  cat('</h3>')
+  cat('<p class="event-people">')
+  cat(e$people)
+  cat('</p>')
+  cat('<p class="event-affiliation">')
+  cat(e$affiliation)
+  cat('</p>')
+  cat('</div>')
+  cat('</summary>')
+  cat('<div class="event-details">')
+  cat(e$details)
+  cat('</div>')
+  cat('</details>')
+}
 
-**Time:** 09:00–17:00  
-**Location:** Seminar Room 14, University of Vienna
+```
 
-This workshop examines the interaction between redundancy and deficiency across different linguistic domains.
 
-[View programme](events/programmes/workshop-name.pdf){.event-link}
 
-</div>
-</details>
+<!-- <details class="event-card"> -->
+<!-- <summary> -->
+<!-- <div class="event-date"> -->
+<!--   <span class="event-day">18</span> -->
+<!--   <span class="event-month">SEP</span> -->
+<!--   <span class="event-year">2026</span> -->
+<!-- </div> -->
+
+<!-- <div class="event-summary"> -->
+<!--   <span class="event-type">Workshop</span> -->
+<!--   <h3>What even is redundancy and deficiency?</h3> -->
+<!--   <p class="event-people"> Name, Name</p> -->
+<!--   <p class="event-affiliation">University of Vienna · University of Graz</p> -->
+<!-- </div> -->
+<!-- </summary> -->
+
+<!-- <div class="event-details"> -->
+
+<!-- **Time:** 09:00–17:00   -->
+<!-- **Location:** Seminar Room 14, University of Vienna -->
+
+<!-- This workshop examines the interaction between redundancy and deficiency across different linguistic domains. -->
+
+<!-- [View programme](events/programmes/workshop-name.pdf){.event-link} -->
+
+<!-- </div> -->
+<!-- </details> -->
+
 
 :::
 

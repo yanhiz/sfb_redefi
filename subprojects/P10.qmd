@@ -3,3 +3,21 @@ title: "P10 -- Deficiency and Redundancy in Expressing Temporal Relations"
 image: project_logos/P10.svg
 format: html
 ---
+
+
+
+::: {.project-publications}
+```{r}
+#| output: asis
+
+source("../functions.R", local = knitr::knit_global())
+
+load_publications() %>% 
+  filter(project=="P10") %>% 
+  print_publications()
+
+
+```
+
+
+:::

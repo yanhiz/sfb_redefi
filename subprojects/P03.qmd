@@ -3,3 +3,21 @@ title: "P03 -- Mismatches in Binding and Coreference"
 image: project_logos/P3.svg
 format: html
 ---
+
+
+
+::: {.project-publications}
+
+```{r}
+#| output: asis
+
+source("../functions.R", local = knitr::knit_global())
+
+load_publications() %>% 
+  filter(project=="P03") %>% 
+  print_publications()
+
+
+```
+
+:::

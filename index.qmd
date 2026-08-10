@@ -25,23 +25,6 @@ The Network brings together the particularly strong linguistic research at the U
 **This Research Network is financed by the Austrian Science Fund for Special Research Areas (SFB Grant F1003).**
 
 
-```{r}
-library(tidyverse)
-
-publications <- read_csv('publications/publication_list.csv')
-
-publications %>% 
-  arrange(date) %>% 
-  pull(publication) %>% 
-  str_replace('(https://.*)','[\\1](\\1)') %>% 
-  str_c('- ',.,'\n\n') %>% 
-  cat(file='publications/publication_list.qmd') 
-```
-
-
-
-{{< include publications/publication_list.qmd >}}
-
 :::
 
 :::

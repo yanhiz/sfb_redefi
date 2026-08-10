@@ -9,8 +9,10 @@ website:
         href: subprojects.qmd
       - text: "Clusters"
         href: clusters.qmd
-      - text: "Activities and Events"
+      - text: "Activities & Events"
         href: news.qmd
+      - text: "Publications & Talks"
+        href: sfb_output/publications.qmd
 
   page-footer: |
     © 2026 SFB Language between Redundancy and Deficiency

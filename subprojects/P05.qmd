@@ -4,3 +4,20 @@ image: project_logos/P5.svg
 format: html
 ---
 
+
+
+::: {.project-publications}
+
+```{r}
+#| output: asis
+
+source("../functions.R", local = knitr::knit_global())
+
+load_publications() %>% 
+  filter(project=="P05") %>% 
+  print_publications()
+
+
+```
+
+:::

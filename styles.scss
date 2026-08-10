@@ -627,8 +627,8 @@ footer.footer {
 }
 
 .project-publications p {
-  padding-left: 1.25rem;
-  text-indent: -1.25rem;
+  padding-left: 2.25rem;
+  text-indent: -2.25rem;
   line-height: 1.6;
 }
 
@@ -843,5 +843,44 @@ footer.footer {
 
   .activities-page .event-details {
     padding: 1.25rem;
+  }
+}
+
+
+/* Publications & Talks  */
+
+
+.panel-tabset * {
+    border: none;
+}
+
+
+.panel-tabset {
+  .nav-item {
+  font-size: 1.1em;
+  display: inline-block;
+  margin: 0.4rem 0.4rem;
+  border: 2px solid $sfb-color;
+  border-radius: 0;
+  color: $sfb-color;
+  background-color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none !important;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+  & :hover {
+    color: #ffffff !important;
+    background-color: $sfb-color !important;
+    }
+  & :focus-within {
+    color: #ffffff !important;
+    background-color: $sfb-color !important;
+    }
+  a.active {
+    color: #ffffff !important;
+    background-color: $sfb-color !important;
+    }
   }
 }

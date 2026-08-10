@@ -3,3 +3,21 @@ title: "P06 - The (Non-)Deficiency and (Non-)Redundancy of Clitic Pronouns"
 image: project_logos/P6.svg
 format: html
 ---
+
+
+::: {.project-publications}
+
+```{r}
+#| output: asis
+
+source("../functions.R", local = knitr::knit_global())
+
+load_publications() %>% 
+  filter(project=="P06") %>% 
+  print_publications()
+
+
+```
+
+
+:::

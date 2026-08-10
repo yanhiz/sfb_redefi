@@ -77,16 +77,19 @@ Short description of the team member’s research interests, responsibilities wi
 
 P07 participates in the Romance cluster together with P08.
 
-### Publications
 
 ::: {.project-publications}
 
-#### 2026
+```{r}
+#| output: asis
 
-Author, A., and Author, B. 2026. “Title of the publication.” *Journal or edited volume* 00(0): 00–00.
+source("../functions.R", local = knitr::knit_global())
 
-#### 2025
+load_publications() %>% 
+  filter(project=="P07") %>% 
+  print_publications()
 
-Author, A. 2025. “Title of another publication.” *Journal or edited volume* 00(0): 00–00.
+
+```
 
 :::

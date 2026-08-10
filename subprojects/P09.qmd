@@ -3,3 +3,20 @@ title: "P09 -- Animacy Features and the Flexibility of Pronouns"
 image: project_logos/P9.svg
 format: html
 ---
+
+
+::: {.project-publications}
+
+```{r}
+#| output: asis
+
+source("../functions.R", local = knitr::knit_global())
+
+load_publications() %>% 
+  filter(project=="P09") %>% 
+  print_publications()
+
+
+```
+
+:::

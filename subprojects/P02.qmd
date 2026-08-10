@@ -4,3 +4,21 @@ image: project_logos/P22.png
 format: html
 ---
 
+
+
+
+::: {.project-publications}
+
+```{r}
+#| output: asis
+
+source("../functions.R", local = knitr::knit_global())
+
+load_publications() %>% 
+  filter(project=="P02") %>% 
+  print_publications()
+
+
+```
+
+:::
