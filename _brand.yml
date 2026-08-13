@@ -1,5 +1,8 @@
 logo: 
-  small: img/logos/logo black white schrift.png
+  images:
+    header: img/logos/logo black white schrift.png
+  medium: header
+  large: header
 
 color:
   palette:

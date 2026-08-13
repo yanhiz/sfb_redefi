@@ -78,6 +78,8 @@ Short description of the team member’s research interests, responsibilities wi
 P07 participates in the Romance cluster together with P08.
 
 
+### Output
+
 ::: {.project-publications}
 
 ```{r}

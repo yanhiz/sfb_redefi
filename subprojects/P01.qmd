@@ -1,7 +1,79 @@
 ---
 title: "P01 -- Theoretical Task Force"
 image: project_logos/P1.svg
-format: html
+format:
+  html:
+    page-layout: full
+toc: true
 ---
+
+::: {.project-hero}
+
+::: {.project-hero-logo}
+![](project_logos/P1.svg){alt="P01 project logo"}
+:::
+
+::: {.project-hero-text}
+### Project description
+
+This subproject coordinates the activities of the Special Research Area “Language between Redundancy and Deficiency” and hosts two affiliated PhD projects funded by the University of Graz.
+:::
+
+:::
+
+### Team
+
+::: {.project-team-grid}
+
+::: {.project-member-card}
+![](../img/team/member-name-1.jpg){.project-member-photo}
+
+#### Edgar Onea
+
+**Principal Investigator**
+
+University of Graz
+
+
+[Institutional profile](https://example.com)
+:::
+
+::: {.project-member-card}
+![](../img/team/member-name-2.jpg){.project-member-photo}
+
+#### Sarah Melker
+
+**Coordinating postdoc**
+
+Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+:::
+
+::: {.project-member-card}
+![](../img/team/member-name-3.jpg){.project-member-photo}
+
+#### Martina Barili
+
+**Pre-doc research assistant**
+
+Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+:::
+
+::: {.project-member-card}
+![](../img/team/member-name-4.jpg){.project-member-photo}
+
+#### Nastaran Divani
+
+**Pre-doc research assistant**
+
+Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+:::
+
+:::
 
 
