@@ -1,9 +1,8 @@
 library(mailR)
-library(tidyverse)
 library(readxl)
+library(tidyverse)
 
 events <- read_excel('event_list.xlsx') %>% filter(state=='upcoming')
-sender <- read_file('sender.txt') %>% str_split('\n',simplify = T)
 mail <- ''
 
 list_event <- function(status,heading){ 
@@ -30,7 +29,7 @@ send.mail(from = "yanis.dc@gmail.com",
           subject = "SFB ReDefi - Newsletter",
           body = str_c('<html>',mail,'</html>'),
           html = TRUE,
-          smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = sender[1], passwd = sender[2], ssl = TRUE),
+          smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = "yanis.dc@gmail.com", passwd = "ccfg lqho tkzw eduu", ssl = TRUE),
           authenticate = TRUE,
           send = TRUE)
 
