@@ -16,8 +16,10 @@ toc: false
 library(tidyverse)
 library(readxl)
 
-events <- read_excel('event_list.xlsx') %>% 
-  filter(state=='upcoming')
+source("./mailing/mailing.R", local = knitr::knit_global())
+
+events <- read_excel('event_list.xlsx')  %>% filter(date>today())
+
 
 for (i in 1:nrow(events)) {
   e <- events[i,]
