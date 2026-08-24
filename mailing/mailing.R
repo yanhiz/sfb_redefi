@@ -21,7 +21,7 @@ if (nrow(upcoming) > 0) {
       str_replace_all('\\*\\* ','</b> ') %>%
       str_replace_all('\\*\\*','<b>') %>%
       str_replace_all('\\[(.+)\\]\\((.+)\\)\\{.event-link\\}','<a href="\\2">\\1</a>')
-    mail <- str_c(mail,e$day,' ',e$month,' ',e$year,': ',e$type,'<br><b>',e$title,'</b> by ',e$people,' (',e$affiliation,') <br>',e$details,'<br><br>')
+    mail <- str_c(mail,e$day,' ',e$month,' ',e$year,': ',e$type,'<br><b>',e$title,'</b> by ',e$people,' (',e$affiliation,') <br>',e$details,'<br><br><hr>')
     }
     return(mail)
   }
