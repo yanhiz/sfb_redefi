@@ -847,6 +847,122 @@ footer.footer {
 }
 
 
+
+/* People page */
+
+.people-page .person-list {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 1000px;
+  margin: 2rem auto 4rem auto;
+}
+
+/* Person card */
+
+.people-page .person-card {
+  overflow: hidden;
+  border: 2px solid $sfb-color;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+  transition:
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.people-page .person-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  gap: 3.5rem;
+  align-items: center;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  list-style: none;
+}
+
+
+
+/* Picture */
+
+.people-page .person-picture {
+  height: 200px;
+  width: 150px;
+  padding-right: 1rem;
+  border-right: 1px solid $secondary-gray;
+  * {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+}
+
+/* Person text */
+
+.people-page .person-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+
+.people-page h3 {
+  margin: 0;
+  color: $sfb-color;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.people-page .person-project {
+  display: inline-block;
+  padding: 0.45rem 0.85rem;
+  border: 2px solid $sfb-color;
+  border-radius: 0;
+  color: $sfb-color;
+  background-color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none !important;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+ & :hover, & :focus {
+  color: #ffffff;
+  background-color: $sfb-color;
+}
+}
+
+.people-page .person-affiliation, .people-page .person-role {
+  margin: 0 0 0.25rem 0;
+  font-style: italic;
+  line-height: 1;
+  font-weight: 100;
+  color: #5f6b69;
+  font-size: 0.95rem;
+}
+
+
+.people-page .person-description {
+  margin: 0.75rem 0 0 0;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .people-page h3 {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
 /* Publications & Talks  */
 
 

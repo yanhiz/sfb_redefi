@@ -6,6 +6,8 @@ website:
   favicon: img/logos/logo red white rund.png
   navbar:
     left:
+      - text: "People"
+        href: people.qmd
       - text: "Subprojects"
         href: subprojects.qmd
       - text: "Clusters"
