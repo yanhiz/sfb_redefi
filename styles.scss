@@ -632,6 +632,12 @@ footer.footer {
   line-height: 1.6;
 }
 
+.project-title {
+  color: $sfb-color;
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
 
 /* Responsive layout */
 
@@ -928,10 +934,10 @@ footer.footer {
   transition:
     color 0.15s ease,
     background-color 0.15s ease;
- & :hover, & :focus {
+  & :hover {
   color: #ffffff;
   background-color: $sfb-color;
-}
+  };
 }
 
 .people-page .person-affiliation, .people-page .person-role {

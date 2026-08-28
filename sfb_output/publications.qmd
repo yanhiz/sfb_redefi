@@ -23,10 +23,20 @@ load_publications() %>%
 #| output: asis
 source("../functions.R", local = knitr::knit_global())
 
-projects <- c('P02','P03','P05','P06','P07','P08','P09','P10')
+projects <- c('P02'='P02 – Grammatical Gender in Discourse and Grammar',
+              'P03'='P03 – Mismatches in Binding and Coreference',
+              'P05'='P05 – The Role of Self in Pronominal Coreference',
+              'P06'='P06 - The (Non-)Deficiency and (Non-)Redundancy of Clitic Pronouns',
+              'P07'='P07 — Deficiency and Redundancy in Iberoromance Pronominal Systems',
+              'P08'='P08 – Fading Reference – The Pragmaticalization of Pronoun + Verb',
+              'P09'='P09 – Animacy Features and the Flexibility of Pronouns',
+              'P10'='P10 – Deficiency and Redundancy in Expressing Temporal Relations')
 
-for (p in projects) {
-  cat(str_c('### ',p,' \n'))
+
+for (p in names(projects)) {
+  cat(str_c('### ',p,' \n\n'))
+  cat('[',projects[p],']{.project-title}','\n\n')
+  cat(str_c('<a href="/subprojects/',p,'.qmd">More about this project.</a>\n\n'))
   load_publications() %>% 
     filter(project==p) %>% 
     print_publications(level=4)
