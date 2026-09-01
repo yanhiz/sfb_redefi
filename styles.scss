@@ -852,123 +852,6 @@ footer.footer {
   }
 }
 
-
-
-/* People page */
-
-.people-page .person-list {
-  display: grid;
-  gap: 1.25rem;
-  max-width: 1000px;
-  margin: 2rem auto 4rem auto;
-}
-
-/* Person card */
-
-.people-page .person-card {
-  overflow: hidden;
-  border: 2px solid $sfb-color;
-  border-radius: 0.2rem;
-  background-color: #ffffff;
-  transition:
-    box-shadow 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.people-page .person-card {
-  position: relative;
-  display: grid;
-  grid-template-columns: 105px minmax(0, 1fr);
-  gap: 3.5rem;
-  align-items: center;
-  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-  list-style: none;
-}
-
-
-
-/* Picture */
-
-.people-page .person-picture {
-  height: 200px;
-  width: 150px;
-  padding-right: 1rem;
-  border-right: 1px solid $secondary-gray;
-  * {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-}
-
-/* Person text */
-
-.people-page .person-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: stretch;
-}
-
-.people-page h3 {
-  margin: 0;
-  color: $sfb-color;
-  font-size: 1.5rem;
-  line-height: 1.25;
-  text-transform: none;
-  letter-spacing: 0.01em;
-}
-
-.people-page .person-project {
-  display: inline-block;
-  padding: 0.45rem 0.85rem;
-  border: 2px solid $sfb-color;
-  border-radius: 0;
-  color: $sfb-color;
-  background-color: #ffffff;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-decoration: none !important;
-  transition:
-    color 0.15s ease,
-    background-color 0.15s ease;
-  & :hover {
-  color: #ffffff;
-  background-color: $sfb-color;
-  };
-}
-
-.people-page .person-affiliation, .people-page .person-role {
-  margin: 0 0 0.25rem 0;
-  font-style: italic;
-  line-height: 1;
-  font-weight: 100;
-  color: #5f6b69;
-  font-size: 0.95rem;
-}
-
-
-.people-page .person-description {
-  margin: 0.75rem 0 0 0;
-  line-height: 1;
-  font-size: 1rem;
-}
-
-
-/* Mobile */
-
-@media (max-width: 650px) {
-  .people-page h3 {
-    font-size: 1.1rem;
-  }
-}
-
-
-
-
-
 /* Publications & Talks  */
 
 
@@ -1005,4 +888,145 @@ footer.footer {
     background-color: $sfb-color !important;
     }
   }
+}
+
+/* People  */
+
+/* Base code */
+ .accordion {
+  box-sizing: border-box;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion-select {
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.accordion-title {
+  position: relative;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+  border: 1px solid transparent;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.accordion-title span {
+  bottom: 0px;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.accordion-content {
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+/* Style */ 
+
+ .accordion {
+    border-color: $sfb-color;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 0px;
+    flex-direction: column;
+    height: auto;
+} 
+
+ .accordion-title,
+.accordion-select  {
+    background-color: $sfb-color;
+    color: #ffffff;
+    width: 100%;
+    height: 57px;
+    font-size: 20px;
+}
+
+.accordion-select {
+    margin-bottom: -57px;
+    margin-right: -57px;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border-bottom-color: $sfb-color;
+    border-right-color: transparent;
+} 
+
+ .accordion-select:hover + .accordion-title,
+.accordion-select:checked + .accordion-title {
+    background-color: $sfb-color;
+} 
+
+ .accordion-title span  {	
+    transform: rotate(0deg);
+    -ms-writing-mode: lr-tb;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    padding-left: 29px;
+    padding-right: 29px;
+    line-height: 57px;
+}
+
+ .accordion-content {
+    height: 300px;
+    margin-bottom: -300px;
+    padding: 10px;
+    width: 100%;
+} 
+
+
+/* Content */ 
+
+.accordion-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.accordion-picture {
+  width: 25%;
+  margin: 1rem;
+}
+
+.accordion-picture img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.accordion-text {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 10px;
+} 
+
+.accordion-status, .accordion-university {
+  color: $secondary-gray;
+  font-style: italic;
 }
