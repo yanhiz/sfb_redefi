@@ -122,9 +122,15 @@ h6 {
 /* Homepage two-column scroll layout */
 
 .homepage-scroll-layout {
+  width: calc(90vw - 5rem) !important;
+  max-width: none !important;
+  margin-left: 50% !important;
+  transform: translateX(-50%) !important;
+
   display: grid !important;
-  grid-template-columns: minmax(320px, 30%) minmax(0, 1fr) !important;
-  gap: 3rem !important;
+  grid-template-columns: 30% 62% !important;
+  gap: 1.5rem !important;
+
   height: calc(100vh - 130px) !important;
   overflow: hidden !important;
   align-items: stretch !important;
@@ -136,14 +142,25 @@ h6 {
   height: 100% !important;
   overflow: hidden !important;
   display: flex !important;
-  align-items: flex-start !important;
+  align-items: center !important;
   justify-content: center !important;
 }
 
 .homepage-left img {
-  width: 100% !important;
-  max-height: 100% !important;
-  object-fit: contain !important;
+  display: block !important;
+}
+
+/* Main rotated image */
+
+.homepage-rotated-image {
+  transform: rotate(90deg) scale(0.5) !important;
+  transform-origin: center center !important;
+
+  width: auto !important;
+  height: 88vh !important;
+  max-width: none !important;
+  max-height: none !important;
+
   display: block !important;
 }
 
@@ -152,8 +169,47 @@ h6 {
 .homepage-right {
   height: 100% !important;
   overflow-y: auto !important;
-  padding-right: 1.25rem !important;
+  padding-right: 2rem !important;
+  padding-bottom: 3rem !important;
   min-width: 0 !important;
+
+  font-size: 1.22rem;
+  line-height: 1.75;
+}
+
+/* Opening statement */
+
+.homepage-right > p:first-child {
+  font-size: 1.3rem;
+  line-height: 1.45;
+  margin-bottom: 2rem;
+  color: $main-gray;
+}
+
+/* Highlighted concepts */
+
+.home-highlight-red {
+  color: $sfb-color;
+  font-weight: 700;
+}
+
+.home-highlight-gray {
+  color: $main-gray;
+  font-weight: 700;
+}
+
+.home-highlight-light {
+  color: $secondary-gray;
+  font-weight: 700;
+}
+
+/* Funding statement */
+
+.homepage-right > p:last-child {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid $sfb-color;
+  color: $main-gray;
 }
 
 /* Mobile fallback */
@@ -165,38 +221,33 @@ h6 {
     overflow: visible !important;
   }
 
-  .homepage-left img {
-  width: auto !important;
-  height: 90vh !important;
-  max-width: none !important;
-  max-height: none !important;
-  object-fit: contain !important;
-  display: block !important;
+  .homepage-left {
+    height: auto !important;
+    overflow: visible !important;
+  }
 
-  transform: rotate(90deg) scale(1.15);
-  transform-origin: center center;
-}
+  .homepage-rotated-image {
+    width: auto !important;
+    height: 75vh !important;
+    max-width: none !important;
+    max-height: none !important;
+
+    transform: rotate(90deg) scale(1.25) !important;
+    transform-origin: center center !important;
+  }
 
   .homepage-right {
     height: auto !important;
     overflow: visible !important;
     padding-right: 0 !important;
+    font-size: 1.1rem;
+    line-height: 1.65;
+  }
+
+  .homepage-right > p:first-child {
+    font-size: 1.3rem;
   }
 }
-
-.homepage-rotated-image {
-  transform: rotate(90deg) scale(1.5) !important;
-  transform-origin: center center !important;
-
-  width: auto !important;
-  height: 85vh !important;
-  max-width: none !important;
-  max-height: none !important;
-
-  display: block !important;
-}
-
-
 /* Footer */
 
 footer.footer {

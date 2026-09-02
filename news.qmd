@@ -16,7 +16,7 @@ toc: false
 library(tidyverse)
 library(readxl)
 
-source("./mailing/mailing.R", local = knitr::knit_global())
+# source("./mailing/mailing.R", local = knitr::knit_global())
 
 events <- read_excel('event_list.xlsx')  %>% filter(date>today())
 
