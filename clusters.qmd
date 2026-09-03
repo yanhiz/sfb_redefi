@@ -7,8 +7,10 @@ format:
 toc: false
 ---
 
-<div style="height:80px">
-</div>
+
+<div style="height:5px"></div>
+
+<div style="transform: translateX(60px);">
 
 
 ```{dot}
@@ -30,12 +32,11 @@ graph clusters {
     height = 0.75,
     style = filled,
     fillcolor = "white",
-    color = "#8C1E1F",
-    fontcolor = "#8C1E1F",
+    color = "#8A9696",
+    fontcolor = "#8A9696",
     penwidth = 2.5,
     fontsize = 11,
-    target = "_top",
-    class = "cluster-project"
+    target = "_top"
   ]
 
   edge [
@@ -43,157 +44,540 @@ graph clusters {
     penwidth = 2.5
   ]
 
+
+  // --------------------------------------------------
+  // PROJECT NODES
+  // --------------------------------------------------
+
+
   p01 [
   label = "P01",
   URL = "subprojects/P01.html",
   tooltip = "Open project P01",
-  pos = "0,0!"
-  ]
+  pos = "0,0!",
+  class = "cluster-project p01-hub"
+]
+
+
+  // Experimental methods
+  // Corpus and annotation
+  // Syntax and binding effects
+  // Semantics and discourse effects
+
   p02 [
     label = "P02",
     URL = "subprojects/P02.html",
     tooltip = "Open project P02",
-    pos = "0,2.4!"
+    pos = "0,2.4!",
+    class = "cluster-project c-experimental c-corpus c-syntax c-semantics"
   ]
+
+
+  // Zero elements
+  // Syntax and binding effects
+  // Semantics and discourse effects
 
   p03 [
     label = "P03",
     URL = "subprojects/P03.html",
     tooltip = "Open project P03",
-    pos = "1.52,1.84!"
+    pos = "1.52,1.84!",
+    class = "cluster-project c-zero c-syntax c-semantics"
   ]
 
-  p04 [
-    label = "P04",
-    URL = "subprojects/P04.html",
-    tooltip = "Open project P04",
-    pos = "2.4,0.4!"
-  ]
+  // Experimental methods
+  // Syntax and binding effects
+  // Semantics and discourse effects
 
   p05 [
     label = "P05",
     URL = "subprojects/P05.html",
     tooltip = "Open project P05",
-    pos = "2.08,-1.36!"
+    pos = "2.08,-1.36!",
+    class = "cluster-project c-experimental c-syntax c-semantics"
   ]
+
+
+  // Romance
+  // Clitic pronouns
+  // Syntax and binding effects
 
   p06 [
     label = "P06",
     URL = "subprojects/P06.html",
     tooltip = "Open project P06",
-    pos = "0.88,-2.4!"
+    pos = "0.88,-2.4!",
+    class = "cluster-project c-romance c-clitic c-syntax"
   ]
+
+
+  // Romance
+  // Experimental methods
+  // Corpus and annotation
+  // Clitic pronouns
+  // Zero elements
+  // Semantics and discourse effects
 
   p07 [
     label = "P07",
     URL = "subprojects/P07.html",
     tooltip = "Open project P07",
-    pos = "-0.88,-2.4!"
+    pos = "-0.88,-2.4!",
+    class = "cluster-project c-romance c-experimental c-corpus c-clitic c-zero c-semantics"
   ]
+
+
+  // Romance
+  // Experimental methods
+  // Corpus and annotation
+  // Clitic pronouns
+  // Zero elements
+  // Semantics and discourse effects
 
   p08 [
     label = "P08",
     URL = "subprojects/P08.html",
     tooltip = "Open project P08",
-    pos = "-2.08,-1.36!"
+    pos = "-2.08,-1.36!",
+    class = "cluster-project c-romance c-experimental c-corpus c-clitic c-zero c-semantics"
   ]
+
+
+  // Romance
+  // Experimental methods
+  // Clitic pronouns
+  // Zero elements
+  // Semantics and discourse effects
 
   p09 [
     label = "P09",
     URL = "subprojects/P09.html",
     tooltip = "Open project P09",
-    pos = "-2.4,0.4!"
+    pos = "-2.4,0.4!",
+    class = "cluster-project c-romance c-experimental c-clitic c-zero c-semantics"
   ]
+
+
+  // Experimental methods
+  // Syntax and binding effects
+  // Semantics and discourse effects
 
   p10 [
     label = "P10",
     URL = "subprojects/P10.html",
     tooltip = "Open project P10",
-    pos = "-1.52,1.84!"
+    pos = "-1.52,1.84!",
+    class = "cluster-project c-experimental c-syntax c-semantics"
   ]
 
 
-  p01 -- p02
-  p01 -- p03
-  p01 -- p04
-  p01 -- p05
-  p01 -- p06
-  p01 -- p07
-  p01 -- p08
-  p01 -- p09
-  p01 -- p10
 
-// Romance cluster connections
+  // --------------------------------------------------
+  // CENTRAL P01 CONNECTIONS
+  // --------------------------------------------------
 
-p06 -- p07 [
-  class = "cluster-link",
-  URL = "clusters/romance.html",
-  tooltip = "Open the Romance cluster",
-  target = "_top"
-]
+p01 -- p02 [class = "base-edge p01-edge"]
+p01 -- p03 [class = "base-edge p01-edge"]
+p01 -- p05 [class = "base-edge p01-edge"]
+p01 -- p06 [class = "base-edge p01-edge"]
+p01 -- p07 [class = "base-edge p01-edge"]
+p01 -- p08 [class = "base-edge p01-edge"]
+p01 -- p09 [class = "base-edge p01-edge"]
+p01 -- p10 [class = "base-edge p01-edge"]
 
-p06 -- p08 [
-  class = "cluster-link",
-  URL = "clusters/romance.html",
-  tooltip = "Open the Romance cluster",
-  target = "_top"
-]
 
-p06 -- p09 [
-  class = "cluster-link",
-  URL = "clusters/romance.html",
-  tooltip = "Open the Romance cluster",
-  target = "_top"
-]
 
-p07 -- p08 [
-  class = "cluster-link",
-  URL = "clusters/romance.html",
-  tooltip = "Open the Romance cluster",
-  target = "_top"
-]
+  // --------------------------------------------------
+  // REDUCED CLUSTER CONNECTIONS
+  //
+  // Each physical edge is declared only once.
+  // If an edge belongs to several clusters, it receives
+  // several cluster classes.
+  // --------------------------------------------------
 
-p07 -- p09 [
-  class = "cluster-link",
-  URL = "clusters/romance.html",
-  tooltip = "Open the Romance cluster",
-  target = "_top"
-]
 
-p08 -- p09 [
-  class = "cluster-link",
-  URL = "clusters/romance.html",
-  tooltip = "Open the Romance cluster",
-  target = "_top"
-]
+  // P06 -- P07
+  // Romance + Clitic pronouns
 
-// External Romance label
-romance_label [
-  shape = plain,
-  fixedsize = false,
-  pos = "-2.94,-2.88!",
-  URL = "clusters/romance.html",
-  tooltip = "Open the Romance cluster",
-  target = "_top",
-  class = "cluster-link",
-  label = <
-    <TABLE
-      BORDER="0"
-      CELLBORDER="1.5"
-      CELLSPACING="0"
-      CELLPADDING="6"
-      WIDTH="75"
-      COLOR="#8C1E1F"
-      BGCOLOR="white"
+  p06 -- p07 [
+    class = "cluster-edge c-romance c-clitic"
+  ]
+
+
+  // P07 -- P08
+  // Romance + Experimental methods + Corpus and annotation
+  // + Clitic pronouns + Zero elements
+  // + Semantics and discourse effects
+
+  p07 -- p08 [
+    class = "cluster-edge c-romance c-experimental c-corpus c-clitic c-zero c-semantics"
+  ]
+
+
+  // P08 -- P09
+  // Romance + Experimental methods + Clitic pronouns
+  // + Zero elements + Semantics and discourse effects
+
+  p08 -- p09 [
+    class = "cluster-edge c-romance c-experimental c-clitic c-zero c-semantics"
+  ]
+
+
+  // Experimental methods:
+  // P02 -- P10 -- P09 -- P08 -- P07 -- P05
+
+  p02 -- p10 [
+    class = "cluster-edge c-experimental"
+  ]
+
+  p09 -- p10 [
+    class = "cluster-edge c-experimental c-semantics"
+  ]
+
+  p05 -- p07 [
+    class = "cluster-edge c-experimental c-semantics"
+  ]
+
+
+  // Corpus and annotation:
+  // P02 -- P07 -- P08
+
+  p02 -- p07 [
+    class = "cluster-edge c-corpus"
+  ]
+
+
+  // Zero elements:
+  // P03 -- P07 -- P08 -- P09
+
+  p03 -- p07 [
+    class = "cluster-edge c-zero"
+  ]
+
+
+  // Syntax and binding effects:
+  // P02 -- P03 -- P05 -- P06 -- P10
+
+  p02 -- p03 [
+    class = "cluster-edge c-syntax c-semantics"
+  ]
+
+  p03 -- p05 [
+    class = "cluster-edge c-syntax c-semantics"
+  ]
+
+  p05 -- p06 [
+    class = "cluster-edge c-syntax"
+  ]
+
+  p06 -- p10 [
+    class = "cluster-edge c-syntax"
+  ]
+
+
+  // Semantics and discourse effects:
+  // P02 -- P03 -- P05 -- P07 -- P08 -- P09 -- P10
+  //
+  // Most of these edges already exist above and carry
+  // the c-semantics class.
+
+
+
+  // --------------------------------------------------
+  // CLUSTER LABELS
+  // --------------------------------------------------
+
+
+  // Romance label
+
+  romance_label [
+    shape = plain,
+    fixedsize = false,
+    pos = "-2.3,-2.88!",
+    URL = "clusters/romance.html",
+    tooltip = "Open the Romance cluster",
+    target = "_top",
+    class = "cluster-label c-romance",
+    label = <
+      <TABLE
+        BORDER="0"
+        CELLBORDER="1.5"
+        CELLSPACING="0"
+        CELLPADDING="6"
+        WIDTH="75"
+        COLOR="#8C1E1F"
+        BGCOLOR="white"
+      >
+        <TR>
+          <TD>
+            <FONT COLOR="#8C1E1F"><B>ROMANCE</B></FONT>
+          </TD>
+        </TR>
+      </TABLE>
     >
-      <TR>
-        <TD>
-          <FONT COLOR="#8C1E1F"><B>ROMANCE</B></FONT>
-        </TD>
-      </TR>
-    </TABLE>
-  >
-]
+  ]
+
+
+  // Experimental methods label
+
+  experimental_methods_label [
+    shape = plain,
+    fixedsize = false,
+    pos = "1.8,4.0!",
+    URL = "clusters/experimental-methods.html",
+    tooltip = "Open the Experimental methods cluster",
+    target = "_top",
+    class = "cluster-label c-experimental",
+    label = <
+      <TABLE
+        BORDER="0"
+        CELLBORDER="1.5"
+        CELLSPACING="0"
+        CELLPADDING="6"
+        COLOR="#8C1E1F"
+        BGCOLOR="white"
+      >
+        <TR>
+          <TD>
+            <FONT COLOR="#8C1E1F"><B>EXPERIMENTAL METHODS</B></FONT>
+          </TD>
+        </TR>
+      </TABLE>
+    >
+  ]
+
+
+  // Clitic pronouns label
+
+  clitic_pronouns_label [
+    shape = plain,
+    fixedsize = false,
+    pos = "0,4.3!",
+    URL = "clusters/clitic-pronouns.html",
+    tooltip = "Open the Clitic pronouns cluster",
+    target = "_top",
+    class = "cluster-label c-clitic",
+    label = <
+      <TABLE
+        BORDER="0"
+        CELLBORDER="1.5"
+        CELLSPACING="0"
+        CELLPADDING="6"
+        COLOR="#8C1E1F"
+        BGCOLOR="white"
+      >
+        <TR>
+          <TD>
+            <FONT COLOR="#8C1E1F"><B>CLITIC PRONOUNS</B></FONT>
+          </TD>
+        </TR>
+      </TABLE>
+    >
+  ]
+
+
+  // Zero elements label
+
+  zero_elements_label [
+    shape = plain,
+    fixedsize = false,
+    pos = "0,-3.85!",
+    URL = "clusters/zero-elements.html",
+    tooltip = "Open the Zero elements cluster",
+    target = "_top",
+    class = "cluster-label c-zero",
+    label = <
+      <TABLE
+        BORDER="0"
+        CELLBORDER="1.5"
+        CELLSPACING="0"
+        CELLPADDING="6"
+        COLOR="#8C1E1F"
+        BGCOLOR="white"
+      >
+        <TR>
+          <TD>
+            <FONT COLOR="#8C1E1F"><B>ZERO ELEMENTS</B></FONT>
+          </TD>
+        </TR>
+      </TABLE>
+    >
+  ]
+
+
+  // Semantics and discourse effects label
+
+  semantics_discourse_label [
+    shape = plain,
+    fixedsize = false,
+    pos = "-3.3,0.3!",
+    URL = "clusters/semantics-and-discourse-effects.html",
+    tooltip = "Open the Semantics and discourse effects cluster",
+    target = "_top",
+    class = "cluster-label c-semantics",
+    label = <
+      <TABLE
+        BORDER="0"
+        CELLBORDER="1.5"
+        CELLSPACING="0"
+        CELLPADDING="6"
+        COLOR="#8C1E1F"
+        BGCOLOR="white"
+      >
+        <TR>
+          <TD>
+            <FONT COLOR="#8C1E1F"><B>SEMANTICS AND DISCOURSE EFFECTS</B></FONT>
+          </TD>
+        </TR>
+      </TABLE>
+    >
+  ]
+
+
+  // Corpus and annotation label
+
+  corpus_annotation_label [
+    shape = plain,
+    fixedsize = false,
+    pos = "-1.85,4.0!",
+    URL = "clusters/corpus-and-annotation.html",
+    tooltip = "Open the Corpus and annotation cluster",
+    target = "_top",
+    class = "cluster-label c-corpus",
+    label = <
+      <TABLE
+        BORDER="0"
+        CELLBORDER="1.5"
+        CELLSPACING="0"
+        CELLPADDING="6"
+        COLOR="#8C1E1F"
+        BGCOLOR="white"
+      >
+        <TR>
+          <TD>
+            <FONT COLOR="#8C1E1F"><B>CORPUS AND ANNOTATION</B></FONT>
+          </TD>
+        </TR>
+      </TABLE>
+    >
+  ]
+
+
+  // Syntax and binding effects label
+
+  syntax_binding_label [
+    shape = plain,
+    fixedsize = false,
+    pos = "3.20,0!",
+    URL = "clusters/syntax-and-binding-effects.html",
+    tooltip = "Open the Syntax and binding effects cluster",
+    target = "_top",
+    class = "cluster-label c-syntax",
+    label = <
+      <TABLE
+        BORDER="0"
+        CELLBORDER="1.5"
+        CELLSPACING="0"
+        CELLPADDING="6"
+        COLOR="#8C1E1F"
+        BGCOLOR="white"
+      >
+        <TR>
+          <TD>
+            <FONT COLOR="#8C1E1F"><B>SYNTAX AND BINDING EFFECTS</B></FONT>
+          </TD>
+        </TR>
+      </TABLE>
+    >
+  ]
 
 }
 ```
+
+</div>
+
+
+<script>
+function initialiseClusterHover() {
+
+  const graph = document.querySelector(
+    ".clusters-page .cell-output-display svg"
+  );
+
+  if (!graph) {
+    return;
+  }
+
+  const clusterClasses = [
+    "c-romance",
+    "c-experimental",
+    "c-corpus",
+    "c-clitic",
+    "c-zero",
+    "c-syntax",
+    "c-semantics"
+  ];
+
+  const labels = graph.querySelectorAll("g.cluster-label");
+
+  function clearClusterHighlight() {
+    graph.querySelectorAll(".is-active").forEach(function(element) {
+      element.classList.remove("is-active");
+    });
+  }
+
+  function highlightCluster(clusterClass) {
+
+    clearClusterHighlight();
+
+    graph.querySelectorAll("." + clusterClass).forEach(function(element) {
+
+      if (
+        element.classList.contains("cluster-project") ||
+        element.classList.contains("cluster-edge") ||
+        element.classList.contains("cluster-label")
+      ) {
+        element.classList.add("is-active");
+      }
+
+    });
+  }
+
+  labels.forEach(function(label) {
+
+    const clusterClass = clusterClasses.find(function(className) {
+      return label.classList.contains(className);
+    });
+
+    if (!clusterClass) {
+      return;
+    }
+
+    label.addEventListener("mouseenter", function() {
+      highlightCluster(clusterClass);
+    });
+
+    label.addEventListener("mouseleave", function() {
+      clearClusterHighlight();
+    });
+
+    label.addEventListener("focusin", function() {
+      highlightCluster(clusterClass);
+    });
+
+    label.addEventListener("focusout", function() {
+      clearClusterHighlight();
+    });
+
+  });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener(
+    "DOMContentLoaded",
+    initialiseClusterHover
+  );
+} else {
+  initialiseClusterHover();
+}
+</script>

@@ -1,0 +1,18 @@
+---
+title: "Corpus and Annotation Cluster"
+format:
+  html:
+    page-layout: full
+---
+
+This cluster brings together projects P02, P07, and P08.
+
+### Participating projects
+
+- [P02](../subprojects/P02.qmd)
+- [P07](../subprojects/P07.qmd)
+- [P08](../subprojects/P08.qmd)
+
+### Description
+
+Add the description of the Corpus and Annotation cluster here.

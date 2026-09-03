@@ -70,11 +70,53 @@
     "text": "Past events"
   },
   {
+    "objectID": "clusters/clitic-pronouns.html",
+    "href": "clusters/clitic-pronouns.html",
+    "title": "Clitic Pronouns Cluster",
+    "section": "",
+    "text": "This cluster brings together projects P06, P07, P08, and P09.\n\nParticipating projects\n\nP06\nP07\nP08\nP09\n\n\n\nDescription\nAdd the description of the Clitic Pronouns cluster here."
+  },
+  {
+    "objectID": "clusters/zero-elements.html",
+    "href": "clusters/zero-elements.html",
+    "title": "Zero Elements Cluster",
+    "section": "",
+    "text": "This cluster brings together projects P03, P07, P08, and P09.\n\nParticipating projects\n\nP03\nP07\nP08\nP09\n\n\n\nDescription\nAdd the description of the Zero Elements cluster here."
+  },
+  {
+    "objectID": "clusters/syntax-and-binding-effects.html",
+    "href": "clusters/syntax-and-binding-effects.html",
+    "title": "Syntax and Binding Effects Cluster",
+    "section": "",
+    "text": "This cluster brings together projects P02, P03, P05, P06, and P10.\n\nParticipating projects\n\nP02\nP03\nP05\nP06\nP10\n\n\n\nDescription\nAdd the description of the Syntax and Binding Effects cluster here."
+  },
+  {
+    "objectID": "clusters/semantics-and-discourse-effects.html",
+    "href": "clusters/semantics-and-discourse-effects.html",
+    "title": "Semantics and Discourse Effects Cluster",
+    "section": "",
+    "text": "This cluster brings together projects P02, P03, P05, P07, P08, P09, and P10.\n\nParticipating projects\n\nP02\nP03\nP05\nP07\nP08\nP09\nP10\n\n\n\nDescription\nAdd the description of the Semantics and Discourse Effects cluster here."
+  },
+  {
+    "objectID": "clusters/experimental-methods.html",
+    "href": "clusters/experimental-methods.html",
+    "title": "Experimental Methods Cluster",
+    "section": "",
+    "text": "This cluster brings together projects P02, P05, P07, P08, P09, and P10.\n\nParticipating projects\n\nP02\nP05\nP07\nP08\nP09\nP10\n\n\n\nDescription\nAdd the description of the Experimental Methods cluster here."
+  },
+  {
     "objectID": "clusters/romance.html",
     "href": "clusters/romance.html",
     "title": "Romance Cluster",
     "section": "",
     "text": "This cluster brings together projects P06, P07, P08, and P09.\n\nParticipating projects\n\nP06\nP07\nP08\nP09\n\n\n\nDescription\nAdd the description of the Romance cluster here."
+  },
+  {
+    "objectID": "clusters/corpus-and-annotation.html",
+    "href": "clusters/corpus-and-annotation.html",
+    "title": "Corpus and Annotation Cluster",
+    "section": "",
+    "text": "This cluster brings together projects P02, P07, and P08.\n\nParticipating projects\n\nP02\nP07\nP08\n\n\n\nDescription\nAdd the description of the Corpus and Annotation cluster here."
   },
   {
     "objectID": "sfb_output/publications.html",
@@ -95,7 +137,7 @@
     "href": "clusters.html",
     "title": "Clusters",
     "section": "",
-    "text": "clusters\n\n\np01--p02\n\n\n\n\np01--p03\n\n\n\n\np01--p04\n\n\n\n\np01--p05\n\n\n\n\np01--p06\n\n\n\n\np01--p07\n\n\n\n\np01--p08\n\n\n\n\np01--p09\n\n\n\n\np01--p10\n\n\n\n\np06--p07\n\n\n\n\n\n\n\np06--p08\n\n\n\n\n\n\n\np06--p09\n\n\n\n\n\n\n\np07--p08\n\n\n\n\n\n\n\np07--p09\n\n\n\n\n\n\n\np08--p09\n\n\n\n\n\n\n\np01\n\n\nP01\n\n\n\n\n\np02\n\n\nP02\n\n\n\n\n\np03\n\n\nP03\n\n\n\n\n\np04\n\n\nP04\n\n\n\n\n\np05\n\n\nP05\n\n\n\n\n\np06\n\n\nP06\n\n\n\n\n\np07\n\n\nP07\n\n\n\n\n\np08\n\n\nP08\n\n\n\n\n\np09\n\n\nP09\n\n\n\n\n\np10\n\n\nP10\n\n\n\n\n\nromance_label\n\n\n\n\n          \nROMANCE"
+    "text": "clusters\n\n\np01--p02\n\n\n\n\np01--p03\n\n\n\n\np01--p05\n\n\n\n\np01--p06\n\n\n\n\np01--p07\n\n\n\n\np01--p08\n\n\n\n\np01--p09\n\n\n\n\np01--p10\n\n\n\n\np02--p03\n\n\n\n\np02--p07\n\n\n\n\np02--p10\n\n\n\n\np03--p05\n\n\n\n\np03--p07\n\n\n\n\np05--p06\n\n\n\n\np05--p07\n\n\n\n\np06--p07\n\n\n\n\np06--p10\n\n\n\n\np07--p08\n\n\n\n\np08--p09\n\n\n\n\np09--p10\n\n\n\n\np01\n\n\nP01\n\n\n\n\n\np02\n\n\nP02\n\n\n\n\n\np03\n\n\nP03\n\n\n\n\n\np05\n\n\nP05\n\n\n\n\n\np06\n\n\nP06\n\n\n\n\n\np07\n\n\nP07\n\n\n\n\n\np08\n\n\nP08\n\n\n\n\n\np09\n\n\nP09\n\n\n\n\n\np10\n\n\nP10\n\n\n\n\n\nromance_label\n\n\n\n\n            \nROMANCE\n          \n\n\n\n\n\nexperimental_methods_label\n\n\n\n\n            \nEXPERIMENTAL METHODS\n          \n\n\n\n\n\nclitic_pronouns_label\n\n\n\n\n            \nCLITIC PRONOUNS\n          \n\n\n\n\n\nzero_elements_label\n\n\n\n\n            \nZERO ELEMENTS\n          \n\n\n\n\n\nsemantics_discourse_label\n\n\n\n\n            \nSEMANTICS AND DISCOURSE EFFECTS\n          \n\n\n\n\n\ncorpus_annotation_label\n\n\n\n\n            \nCORPUS AND ANNOTATION\n          \n\n\n\n\n\nsyntax_binding_label\n\n\n\n\n            \nSYNTAX AND BINDING EFFECTS"
   },
   {
     "objectID": "subprojects/P05.html",

@@ -335,7 +335,9 @@ footer.footer {
 
 /* Cluster collaboration diagram */
 
-/* Reduce space below the title on the clusters page */
+/* Cluster collaboration diagram */
+
+/* Reduce space below the title */
 
 .clusters-page .quarto-title-block {
   margin-bottom: 0 !important;
@@ -354,33 +356,33 @@ footer.footer {
 }
 
 
-.cluster-project {
+/* --------------------------------------------------
+   General SVG link behaviour
+-------------------------------------------------- */
+
+.clusters-page .cell-output-display svg a,
+.clusters-page .cell-output-display svg a:hover,
+.clusters-page .cell-output-display svg a:focus {
+  text-decoration: none !important;
+}
+
+
+/* --------------------------------------------------
+   Project nodes
+-------------------------------------------------- */
+
+.clusters-page svg g.cluster-project {
   cursor: pointer;
 }
 
-/* Remove underlines from Graphviz links */
-.cluster-project a,
-.cluster-project a:hover,
-.cluster-project a:focus,
-.cluster-project text {
-  text-decoration: none !important;
-}
-
-/* Also override Quarto/Bootstrap link styling inside the SVG */
-.cell-output-display svg a,
-.cell-output-display svg a:hover,
-.cell-output-display svg a:focus {
-  text-decoration: none !important;
-}
-
-/* Default circle appearance */
-.cluster-project ellipse {
-  fill: #ffffff;
-  stroke: $sfb-color;
-  stroke-width: 2px;
+.clusters-page svg g.cluster-project ellipse {
+  fill: #ffffff !important;
+  stroke: $sfb-color !important;
+  stroke-width: 2px !important;
 
   transition:
     fill 0.15s ease,
+    stroke 0.15s ease,
     stroke-width 0.15s ease,
     transform 0.15s ease;
 
@@ -388,161 +390,130 @@ footer.footer {
   transform-origin: center;
 }
 
-/* Default label appearance */
-.cluster-project text {
-  fill: $sfb-color;
+.clusters-page svg g.cluster-project text {
+  fill: $sfb-color !important;
   font-family: $main-font;
   font-weight: 700;
   text-decoration: none !important;
+
+  transition:
+    fill 0.15s ease;
 }
 
-/* Hover and keyboard-focus appearance */
-.cluster-project:hover ellipse,
-.cluster-project:focus-within ellipse {
+
+/* Individual project hover */
+
+.clusters-page svg g.cluster-project:hover ellipse,
+.clusters-page svg g.cluster-project:focus-within ellipse {
   fill: $sfb-color !important;
   stroke: $sfb-color !important;
-  stroke-width: 2.5px;
+  stroke-width: 2.5px !important;
   transform: scale(1.07);
 }
 
-.cluster-project:hover text,
-.cluster-project:focus-within text {
+.clusters-page svg g.cluster-project:hover text,
+.clusters-page svg g.cluster-project:focus-within text {
   fill: #ffffff !important;
-  text-decoration: none !important;
 }
 
-/* Clickable cluster labels on collaboration edges */
 
-.cluster-link {
-  cursor: pointer;
-}
+/* Project highlighted through cluster hover */
 
-/* Remove Bootstrap link underlining */
-.cluster-link a,
-.cluster-link a:hover,
-.cluster-link a:focus,
-.cluster-link text {
-  text-decoration: none !important;
-}
-
-/* Edge line */
-.cluster-link path {
-  stroke: $secondary-gray;
-  stroke-width: 2.5px;
-  transition:
-    stroke 0.15s ease,
-    stroke-width 0.15s ease;
-}
-
-/* Cluster name */
-.cluster-link text {
-  fill: $sfb-color;
-  font-family: $main-font;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-decoration: none !important;
-}
-
-/* Romance edge and external label hover together */
-
-.cluster-link {
-  cursor: pointer;
-}
-
-.cluster-link a,
-.cluster-link a:hover,
-.cluster-link a:focus,
-.cluster-link text {
-  text-decoration: none !important;
-}
-
-/* Normal collaboration line */
-.cluster-link path {
-  stroke: $secondary-gray;
-  stroke-width: 2.5px;
-  transition:
-    stroke 0.15s ease,
-    stroke-width 0.15s ease;
-}
-
-/* External label */
-.cluster-link polygon {
-  transition:
-    fill 0.15s ease,
-    stroke-width 0.15s ease;
-}
-
-/* Hovering either the label or the edge highlights both */
-.cell-output-display svg:has(.cluster-link:hover) .cluster-link path,
-.cell-output-display svg:has(.cluster-link:focus-within) .cluster-link path {
+.clusters-page svg g.cluster-project.is-active ellipse {
+  fill: #ffffff !important;
   stroke: $sfb-color !important;
-  stroke-width: 2.5px;
+  stroke-width: 3px !important;
 }
 
-.cell-output-display svg:has(.cluster-link:hover) .cluster-link polygon,
-.cell-output-display svg:has(.cluster-link:focus-within) .cluster-link polygon {
+.clusters-page svg g.cluster-project.is-active text {
   fill: $sfb-color !important;
-  stroke: $sfb-color !important;
 }
 
-.cell-output-display svg:has(.cluster-link:hover) .cluster-link text,
-.cell-output-display svg:has(.cluster-link:focus-within) .cluster-link text {
-  fill: #ffffff !important;
-  text-decoration: none !important;
+
+/* --------------------------------------------------
+   Central P01 edges
+-------------------------------------------------- */
+
+.clusters-page svg g.base-edge path {
+  stroke: $secondary-gray !important;
+  stroke-width: 2.5px !important;
 }
 
-/* External cluster labels */
 
-.cluster-label {
-  cursor: pointer;
-}
+/* --------------------------------------------------
+   Cluster edges
+-------------------------------------------------- */
 
-.cluster-label a,
-.cluster-label a:hover,
-.cluster-label a:focus,
-.cluster-label text {
-  text-decoration: none !important;
-}
-
-.cluster-label polygon,
-.cluster-label path {
-  fill: #ffffff;
-  stroke: $sfb-color;
-  stroke-width: 1.8px;
+.clusters-page svg g.cluster-edge path {
+  stroke: $secondary-gray !important;
+  stroke-width: 2.5px !important;
 
   transition:
-    fill 0.15s ease,
+    stroke 0.15s ease,
     stroke-width 0.15s ease;
 }
 
-.cluster-label text {
-  fill: $sfb-color;
+
+/* Cluster edge highlighted through label hover */
+
+.clusters-page svg g.cluster-edge.is-active path {
+  stroke: $sfb-color !important;
+  stroke-width: 3.5px !important;
+}
+
+
+/* --------------------------------------------------
+   External cluster labels
+-------------------------------------------------- */
+
+.clusters-page svg g.cluster-label {
+  cursor: pointer;
+}
+
+.clusters-page svg g.cluster-label a,
+.clusters-page svg g.cluster-label a:hover,
+.clusters-page svg g.cluster-label a:focus,
+.clusters-page svg g.cluster-label text {
+  text-decoration: none !important;
+}
+
+.clusters-page svg g.cluster-label polygon,
+.clusters-page svg g.cluster-label path {
+  fill: #ffffff !important;
+  stroke: $sfb-color !important;
+  stroke-width: 1.8px !important;
+
+  transition:
+    fill 0.15s ease,
+    stroke 0.15s ease,
+    stroke-width 0.15s ease;
+}
+
+.clusters-page svg g.cluster-label text {
+  fill: $sfb-color !important;
   font-family: $main-font;
   font-weight: 700;
   letter-spacing: 0.06em;
 }
 
-.cluster-label:hover polygon,
-.cluster-label:hover path,
-.cluster-label:focus-within polygon,
-.cluster-label:focus-within path {
+
+/* Label being hovered */
+
+.clusters-page svg g.cluster-label:hover polygon,
+.clusters-page svg g.cluster-label:hover path,
+.clusters-page svg g.cluster-label:focus-within polygon,
+.clusters-page svg g.cluster-label:focus-within path,
+.clusters-page svg g.cluster-label.is-active polygon,
+.clusters-page svg g.cluster-label.is-active path {
   fill: $sfb-color !important;
-  stroke-width: 2.3px;
+  stroke: $sfb-color !important;
+  stroke-width: 2.3px !important;
 }
 
-.cluster-label:hover text,
-.cluster-label:focus-within text {
+.clusters-page svg g.cluster-label:hover text,
+.clusters-page svg g.cluster-label:focus-within text,
+.clusters-page svg g.cluster-label.is-active text {
   fill: #ffffff !important;
-  text-decoration: none !important;
-}
-
-/* Lines connecting a cluster label to its projects */
-
-.cluster-membership path {
-  stroke: $secondary-gray;
-  stroke-width: 1px;
-  stroke-dasharray: 5 4;
 }
 
 /* Subproject detail pages */

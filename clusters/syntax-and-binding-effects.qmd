@@ -1,0 +1,20 @@
+---
+title: "Syntax and Binding Effects Cluster"
+format:
+  html:
+    page-layout: full
+---
+
+This cluster brings together projects P02, P03, P05, P06, and P10.
+
+### Participating projects
+
+- [P02](../subprojects/P02.qmd)
+- [P03](../subprojects/P03.qmd)
+- [P05](../subprojects/P05.qmd)
+- [P06](../subprojects/P06.qmd)
+- [P10](../subprojects/P10.qmd)
+
+### Description
+
+Add the description of the Syntax and Binding Effects cluster here.

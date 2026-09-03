@@ -1,0 +1,21 @@
+---
+title: "Experimental Methods Cluster"
+format:
+  html:
+    page-layout: full
+---
+
+This cluster brings together projects P02, P05, P07, P08, P09, and P10.
+
+### Participating projects
+
+- [P02](../subprojects/P02.qmd)
+- [P05](../subprojects/P05.qmd)
+- [P07](../subprojects/P07.qmd)
+- [P08](../subprojects/P08.qmd)
+- [P09](../subprojects/P09.qmd)
+- [P10](../subprojects/P10.qmd)
+
+### Description
+
+Add the description of the Experimental Methods cluster here.
