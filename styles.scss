@@ -439,6 +439,12 @@ footer.footer {
   stroke-width: 2.5px !important;
 }
 
+/* Highlight P01 spokes when P01 is active */
+
+.clusters-page svg g.p01-edge.is-active path {
+  stroke: $sfb-color !important;
+  stroke-width: 3.5px !important;
+}
 
 /* --------------------------------------------------
    Cluster edges

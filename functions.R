@@ -10,7 +10,7 @@ load_publications <- function() {
 }
 
 
-print_publications <- function(publications,level=3) {
+print_publications <- function(publications,level=4) {
   # PRINT BIBLIOGRAPHY
   for (type in publications %>% group_split(type)) {
     cat(str_c(c(rep('#',level),' '),collapse=''),str_c(str_to_sentence(type$type[1]),'s'),'\n\n')

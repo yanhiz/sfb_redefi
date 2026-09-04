@@ -1,18 +1,18 @@
 ---
-title: "Romance Cluster"
+title: "Romance Data Cluster"
 format:
   html:
-    page-layout: full
+    page-layout: article
 ---
-
-This cluster brings together projects P06, P07, P08, and P09.
-
 ### Participating projects
-- [P06](../subprojects/P06.qmd)
-- [P07](../subprojects/P07.qmd)
-- [P08](../subprojects/P08.qmd)
-- [P09](../subprojects/P09.qmd)
+
+This cluster brings together projects
+
+- [**P06** - The (Non-)Deficiency and (Non-)Redundancy of Clitic Pronouns](../subprojects/P06.qmd),
+- [**P07** - Deficiency and Redundancy in Iberoromance Pronominal Systems](../subprojects/P07.qmd),
+- [**P08** - Fading Reference - The Pragmaticalization of Pronoun + Verb](../subprojects/P08.qmd),
+- [**P09** - Animacy Features and the Flexibility of Pronouns](../subprojects/P09.qmd).
 
 ### Description
 
-Add the description of the Romance cluster here.
+The Romance Data cluster focuses on collaborative empirical work across Romance languages and varieties. A central activity has been a data-sharing initiative designed to facilitate access to relevant empirical materials across subprojects, alongside coordinated experimental work. One concrete outcome of this collaboration is a cross-Romance experiment on null objects across eight Romance varieties, involving subprojects P01, P06, P07, and P09 and extending cooperation beyond the immediate cluster.

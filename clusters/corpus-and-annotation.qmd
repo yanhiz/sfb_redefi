@@ -2,17 +2,18 @@
 title: "Corpus and Annotation Cluster"
 format:
   html:
-    page-layout: full
+    page-layout: article
 ---
 
-This cluster brings together projects P02, P07, and P08.
 
 ### Participating projects
 
-- [P02](../subprojects/P02.qmd)
-- [P07](../subprojects/P07.qmd)
-- [P08](../subprojects/P08.qmd)
+This cluster brings together projects
+
+- [**P02** - Grammatical Gender in Discourse](../subprojects/P02.qmd),
+- [**P07** - Deficinecy and Redundancy in Iberoromance Pronominal Systems](../subprojects/P07.qmd),
+- [**P08** - Fading Reference - The Pragmaticalization of Pronoun + Verb](../subprojects/P08.qmd).
 
 ### Description
 
-Add the description of the Corpus and Annotation cluster here.
+The Corpus and Annotation cluster has produced a repository of corpora for Romance languages, covering Spanish and Italian and, to a more limited extent, Portuguese and Catalan. It functions as a network used for consultation between projects working with both custom and existing corpora. The repository provides descriptions of the individual corpora together with access links where available, creating a shared resource for corpus-based research across the project network.

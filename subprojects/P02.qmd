@@ -1,6 +1,6 @@
 ---
 title: "P02 -- Grammatical Gender in Discourse and Grammar"
-image: project_logos/P22.png
+image: project_logos/P2.png
 format:
   html:
     page-layout: full
@@ -10,7 +10,7 @@ toc: true
 ::: {.project-hero}
 
 ::: {.project-hero-logo}
-![](project_logos/P2.svg){alt="P02 project logo"}
+![](project_logos/P2.png){alt="P02 project logo"}
 :::
 
 ::: {.project-hero-text}
@@ -31,7 +31,7 @@ Methodologically, the subproject will conduct several empirical studies to gain 
 ::: {.project-team-grid style="grid-template-columns: repeat(2, minmax(0, 1fr));"}
 
 ::: {.project-member-card}
-![](../img/team/member-name-1.jpg){.project-member-photo}
+![](../img/pictures/Edgar_Onea.jpg){.project-member-photo}
 
 #### Edgar Onea
 
@@ -39,19 +39,21 @@ Methodologically, the subproject will conduct several empirical studies to gain 
 
 University of Graz
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
 
 ::: {.project-member-card}
-![](../img/team/member-name-2.jpg){.project-member-photo}
+![](../img/pictures/Simon_Dampfhofer.jpg){.project-member-photo}
 
 #### Simon Dampfhofer
 
-**Pre-doc research assistant**
+**Pre-doc Research Assistant**
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+University of Graz
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
@@ -62,12 +64,16 @@ Short description of the team member’s research interests, responsibilities wi
 
 ::: {.project-clusters}
 
-[ROMANCE](../clusters/romance.qmd){.project-cluster-badge}
+[Experimental Methods](../clusters/experimental-methods.qmd){.project-cluster-badge}
 
+[Syntax and Binding Effects](../clusters/syntax-and-binding-effects.qmd){.project-cluster-badge}
+
+[Semantics and Discourse Effects](../clusters/semantics-and-discourse-effects.qmd){.project-cluster-badge}
+
+[Corpus and Annotation](../clusters/corpus-and-annotation.qmd){.project-cluster-badge}
 :::
 
-
-### Output 
+### Output
 
 ::: {.project-publications}
 

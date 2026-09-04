@@ -2,18 +2,19 @@
 title: "Clitic Pronouns Cluster"
 format:
   html:
-    page-layout: full
+    page-layout: article
 ---
-
-This cluster brings together projects P06, P07, P08, and P09.
 
 ### Participating projects
 
-- [P06](../subprojects/P06.qmd)
-- [P07](../subprojects/P07.qmd)
-- [P08](../subprojects/P08.qmd)
-- [P09](../subprojects/P09.qmd)
+This cluster brings together projects
+
+
+- [**P06** - The (Non-)Deficiency and (Non-)Redundancy of Clitic Pronouns](../subprojects/P06.qmd),
+- [**P07** - Deficiency and Redundancy in Iberoromance Pronominal Systems](../subprojects/P07.qmd),
+- [**P08** - Fading Referene - The Pragmaticalization of Pronoun + Verb](../subprojects/P08.qmd),
+- [**P09** - Animacy Feattures and the Flexibility of Pronouns](../subprojects/P09.qmd).
 
 ### Description
 
-Add the description of the Clitic Pronouns cluster here.
+The Clitic Pronouns cluster brings together work on clitic systems and related grammatical phenomena across the participating subprojects. Its activities are focused on reading groups and have been closely connected to the Romance cluster, allowing the projects involved to coordinate analyses and empirical work where clitic pronouns intersect with broader questions concerning Romance grammar. 

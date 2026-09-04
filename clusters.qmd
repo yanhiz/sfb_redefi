@@ -1,5 +1,5 @@
 ---
-title: "Clusters"
+title: "Research Clusters"
 format:
   html:
     page-layout: full
@@ -7,16 +7,15 @@ format:
 toc: false
 ---
 
+ <div style="height:1px"></div>
 
-<div style="height:5px"></div>
-
-<div style="transform: translateX(60px);">
+<div style="transform: translateX(35px);">
 
 
 ```{dot}
 //| fig-align: center
-//| fig-width: 11
-//| fig-height: 7.5
+//| fig-width: 12
+//| fig-height: 8.5
 
 graph clusters {
   layout = neato
@@ -49,127 +48,77 @@ graph clusters {
   // PROJECT NODES
   // --------------------------------------------------
 
-
-  p01 [
-  label = "P01",
-  URL = "subprojects/P01.html",
-  tooltip = "Open project P01",
-  pos = "0,0!",
-  class = "cluster-project p01-hub"
-]
-
-
-  // Experimental methods
-  // Corpus and annotation
-  // Syntax and binding effects
-  // Semantics and discourse effects
+    p01 [
+    label = "P01",
+    URL = "subprojects/P01.html",
+    tooltip = "Open project P01",
+    pos = "0,0!",
+    class = "cluster-project p01-hub"
+  ]
 
   p02 [
     label = "P02",
     URL = "subprojects/P02.html",
     tooltip = "Open project P02",
-    pos = "0,2.4!",
+    pos = "0,2.2!",
     class = "cluster-project c-experimental c-corpus c-syntax c-semantics"
   ]
-
-
-  // Zero elements
-  // Syntax and binding effects
-  // Semantics and discourse effects
 
   p03 [
     label = "P03",
     URL = "subprojects/P03.html",
     tooltip = "Open project P03",
-    pos = "1.52,1.84!",
+    pos = "1.56,1.56!",
     class = "cluster-project c-zero c-syntax c-semantics"
   ]
-
-  // Experimental methods
-  // Syntax and binding effects
-  // Semantics and discourse effects
 
   p05 [
     label = "P05",
     URL = "subprojects/P05.html",
     tooltip = "Open project P05",
-    pos = "2.08,-1.36!",
+    pos = "2.2,0!",
     class = "cluster-project c-experimental c-syntax c-semantics"
   ]
-
-
-  // Romance
-  // Clitic pronouns
-  // Syntax and binding effects
 
   p06 [
     label = "P06",
     URL = "subprojects/P06.html",
     tooltip = "Open project P06",
-    pos = "0.88,-2.4!",
+    pos = "1.56,-1.56!",
     class = "cluster-project c-romance c-clitic c-syntax"
   ]
-
-
-  // Romance
-  // Experimental methods
-  // Corpus and annotation
-  // Clitic pronouns
-  // Zero elements
-  // Semantics and discourse effects
 
   p07 [
     label = "P07",
     URL = "subprojects/P07.html",
     tooltip = "Open project P07",
-    pos = "-0.88,-2.4!",
+    pos = "0,-2.2!",
     class = "cluster-project c-romance c-experimental c-corpus c-clitic c-zero c-semantics"
   ]
-
-
-  // Romance
-  // Experimental methods
-  // Corpus and annotation
-  // Clitic pronouns
-  // Zero elements
-  // Semantics and discourse effects
 
   p08 [
     label = "P08",
     URL = "subprojects/P08.html",
     tooltip = "Open project P08",
-    pos = "-2.08,-1.36!",
+    pos = "-1.56,-1.56!",
     class = "cluster-project c-romance c-experimental c-corpus c-clitic c-zero c-semantics"
   ]
-
-
-  // Romance
-  // Experimental methods
-  // Clitic pronouns
-  // Zero elements
-  // Semantics and discourse effects
 
   p09 [
     label = "P09",
     URL = "subprojects/P09.html",
     tooltip = "Open project P09",
-    pos = "-2.4,0.4!",
+    pos = "-2.2,0!",
     class = "cluster-project c-romance c-experimental c-clitic c-zero c-semantics"
   ]
-
-
-  // Experimental methods
-  // Syntax and binding effects
-  // Semantics and discourse effects
 
   p10 [
     label = "P10",
     URL = "subprojects/P10.html",
     tooltip = "Open project P10",
-    pos = "-1.52,1.84!",
+    pos = "-1.56,1.56!",
     class = "cluster-project c-experimental c-syntax c-semantics"
   ]
-
 
 
   // --------------------------------------------------
@@ -202,7 +151,10 @@ p01 -- p10 [class = "base-edge p01-edge"]
   p06 -- p07 [
     class = "cluster-edge c-romance c-clitic"
   ]
-
+  
+  p06 -- p09 [
+  class = "cluster-edge c-romance c-clitic"
+  ]
 
   // P07 -- P08
   // Romance + Experimental methods + Corpus and annotation
@@ -221,12 +173,16 @@ p01 -- p10 [class = "base-edge p01-edge"]
   p08 -- p09 [
     class = "cluster-edge c-romance c-experimental c-clitic c-zero c-semantics"
   ]
-
+  
 
   // Experimental methods:
   // P02 -- P10 -- P09 -- P08 -- P07 -- P05
 
   p02 -- p10 [
+    class = "cluster-edge c-experimental c-syntax"
+  ]
+  
+  p02 -- p05 [
     class = "cluster-edge c-experimental"
   ]
 
@@ -245,7 +201,10 @@ p01 -- p10 [class = "base-edge p01-edge"]
   p02 -- p07 [
     class = "cluster-edge c-corpus"
   ]
-
+  
+  p02 -- p08 [
+  class = "cluster-edge c-corpus"
+  ]
 
   // Zero elements:
   // P03 -- P07 -- P08 -- P09
@@ -254,6 +213,9 @@ p01 -- p10 [class = "base-edge p01-edge"]
     class = "cluster-edge c-zero"
   ]
 
+p03 -- p09 [
+    class = "cluster-edge c-zero"
+  ]
 
   // Syntax and binding effects:
   // P02 -- P03 -- P05 -- P06 -- P10
@@ -274,15 +236,6 @@ p01 -- p10 [class = "base-edge p01-edge"]
     class = "cluster-edge c-syntax"
   ]
 
-
-  // Semantics and discourse effects:
-  // P02 -- P03 -- P05 -- P07 -- P08 -- P09 -- P10
-  //
-  // Most of these edges already exist above and carry
-  // the c-semantics class.
-
-
-
   // --------------------------------------------------
   // CLUSTER LABELS
   // --------------------------------------------------
@@ -293,7 +246,7 @@ p01 -- p10 [class = "base-edge p01-edge"]
   romance_label [
     shape = plain,
     fixedsize = false,
-    pos = "-2.3,-2.88!",
+    pos = "-1.85,-3.2!",
     URL = "clusters/romance.html",
     tooltip = "Open the Romance cluster",
     target = "_top",
@@ -310,7 +263,7 @@ p01 -- p10 [class = "base-edge p01-edge"]
       >
         <TR>
           <TD>
-            <FONT COLOR="#8C1E1F"><B>ROMANCE</B></FONT>
+            <FONT COLOR="#8C1E1F"><B>ROMANCE DATA</B></FONT>
           </TD>
         </TR>
       </TABLE>
@@ -381,7 +334,7 @@ p01 -- p10 [class = "base-edge p01-edge"]
   zero_elements_label [
     shape = plain,
     fixedsize = false,
-    pos = "0,-3.85!",
+    pos = "0,-4.2!",
     URL = "clusters/zero-elements.html",
     tooltip = "Open the Zero elements cluster",
     target = "_top",
@@ -410,7 +363,7 @@ p01 -- p10 [class = "base-edge p01-edge"]
   semantics_discourse_label [
     shape = plain,
     fixedsize = false,
-    pos = "-3.3,0.3!",
+    pos = "-3,0.0!",
     URL = "clusters/semantics-and-discourse-effects.html",
     tooltip = "Open the Semantics and discourse effects cluster",
     target = "_top",
@@ -468,7 +421,7 @@ p01 -- p10 [class = "base-edge p01-edge"]
   syntax_binding_label [
     shape = plain,
     fixedsize = false,
-    pos = "3.20,0!",
+    pos = "3.0,0!",
     URL = "clusters/syntax-and-binding-effects.html",
     tooltip = "Open the Syntax and binding effects cluster",
     target = "_top",
@@ -526,6 +479,34 @@ function initialiseClusterHover() {
     });
   }
 
+
+  // Move active edges above all other edges,
+  // but keep them underneath the project nodes
+
+  function bringActiveEdgesToFront() {
+
+  const graphGroup = graph.querySelector("g.graph");
+
+  if (!graphGroup) {
+    return;
+  }
+
+  const firstNode = graphGroup.querySelector("g.node");
+
+  if (!firstNode) {
+    return;
+  }
+
+  const activeEdges = graphGroup.querySelectorAll(
+    "g.cluster-edge.is-active, g.p01-edge.is-active"
+  );
+
+  activeEdges.forEach(function(edge) {
+    graphGroup.insertBefore(edge, firstNode);
+  });
+}
+
+
   function highlightCluster(clusterClass) {
 
     clearClusterHighlight();
@@ -541,7 +522,10 @@ function initialiseClusterHover() {
       }
 
     });
+
+    bringActiveEdgesToFront();
   }
+
 
   labels.forEach(function(label) {
 
@@ -570,6 +554,49 @@ function initialiseClusterHover() {
     });
 
   });
+
+
+  // P01 hover behaviour
+
+  const p01 = graph.querySelector("g.p01-hub");
+  const p01Edges = graph.querySelectorAll("g.p01-edge");
+
+  function highlightP01() {
+
+    clearClusterHighlight();
+
+    if (p01) {
+      p01.classList.add("is-active");
+    }
+
+    p01Edges.forEach(function(edge) {
+      edge.classList.add("is-active");
+    });
+
+    bringActiveEdgesToFront();
+  }
+
+
+  if (p01) {
+
+    p01.addEventListener("mouseenter", function() {
+      highlightP01();
+    });
+
+    p01.addEventListener("mouseleave", function() {
+      clearClusterHighlight();
+    });
+
+    p01.addEventListener("focusin", function() {
+      highlightP01();
+    });
+
+    p01.addEventListener("focusout", function() {
+      clearClusterHighlight();
+    });
+
+  }
+
 }
 
 if (document.readyState === "loading") {

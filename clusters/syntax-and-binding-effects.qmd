@@ -2,19 +2,21 @@
 title: "Syntax and Binding Effects Cluster"
 format:
   html:
-    page-layout: full
+    page-layout: article
 ---
 
-This cluster brings together projects P02, P03, P05, P06, and P10.
+
 
 ### Participating projects
 
-- [P02](../subprojects/P02.qmd)
-- [P03](../subprojects/P03.qmd)
-- [P05](../subprojects/P05.qmd)
-- [P06](../subprojects/P06.qmd)
-- [P10](../subprojects/P10.qmd)
+This cluster brings together projects
+
+- [**P02** - Grammatcal Gender in Discourse](../subprojects/P02.qmd),
+- [**P03** - Mismatches in Binding and Coreference](../subprojects/P03.qmd),
+- [**P05** - The Role of Self in Pronominal Reference](../subprojects/P05.qmd),
+- [**P06** - The (Non-Deficiency) and (Non-)Redundancy of Clitic Pronouns](../subprojects/P06.qmd),
+- [**P10** - Deficiency and Redundancy in Expressing Temporal Relations](../subprojects/P10.qmd).
 
 ### Description
 
-Add the description of the Syntax and Binding Effects cluster here.
+The Syntax and Binding Effects cluster has concluded its work after providing a forum for collaboration on syntactic structure and binding-related phenomena. Its activities included reading groups and contributions to the Redefi Days 2025, supporting exchange across the participating subprojects and helping to consolidate shared theoretical interests.

@@ -12,7 +12,10 @@ toc: true
 
 ::: {.project-hero-text}
 ### Project description
-No description available on the Graz Website
+
+With a focus on clitic doubling (CD), this subproject poses the fundamental question of the ontology of the domain between agreement , clitics, and weak and strong pronouns, as well as the underlying nature of the categories it contains. The strong hypothesis is that these all instantiate the same grammatical class of elements, but differ in the size of the underlying structure, as well as in the features that trigger the realization of varying degrees of strength. Hypothesizing that the answer to the latter question lies in Kiparsky's 2008 D-hierarchy (Kallulli, 2016, 2018, 2019), and assuming universal realization of all items in the hierarchy, this subproject aims to model the strength of realization with respect to different types of D and R , including operations such as impoverishment or rules of exponentiation. In particular, the hypothesis is put forward that the feature responsible for all repeated realizations is [topic], but that it is weakened in the process of grammaticalization. 
+
+Ultimately, doubling is generalized and driven by mere syntactic locality. What begins as topic doubling in a specific position ends as agreement with the highest argument or as universal clitic doubling. Depending on various factors, primarily the degree of grammaticalization and syntactic position, languages exhibit doubling effects of varying strength, from different null elements through agreement to clitics. The main empirical questions addressed by this subproject concern binding, reconstruction effects, resumption, the person-case constraint, and (anti-)locality effects associated with clitic pronouns. The comparison of languages with and without clitics or CD regarding the underlying semantic features informs Q1 and Q3, the way in which CD influences binding relationships is relevant for Q2, and the analysis of LF and PF effects in connection with CD informs Q4.
 
 :::
 
@@ -31,7 +34,7 @@ No description available on the Graz Website
 
 University of Vienna
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
@@ -41,22 +44,26 @@ Short description of the team member’s research interests, responsibilities wi
 
 #### Adina Camelia Bleotu
 
-**PostDoc**
+**Post-doc Research Assistant**
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+University of Vienna
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
 
 
 ::: {.project-member-card}
-![](../img/team/member-name-2.jpg){.project-member-photo}
+![](../img/pictures/Ekaterina_Levina.jpg){.project-member-photo}
 
 #### Ekaterina Levina 
 
-**PostDoc **
+**Post-doc Research Assistant**
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+University of Vienna
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
@@ -68,7 +75,11 @@ Short description of the team member’s research interests, responsibilities wi
 
 ::: {.project-clusters}
 
-[ROMANCE](../clusters/romance.qmd){.project-cluster-badge}
+[Romance Data](../clusters/romance.qmd){.project-cluster-badge}
+
+[Clitic Pronouns](../clusters/clitic-pronouns.qmd){.project-cluster-badge}
+
+[Syntax and Binding Effects](../clusters/syntax-and-binding-effects.qmd){.project-cluster-badge}
 
 :::
 

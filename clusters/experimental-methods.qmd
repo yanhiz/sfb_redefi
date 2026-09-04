@@ -2,20 +2,22 @@
 title: "Experimental Methods Cluster"
 format:
   html:
-    page-layout: full
+    page-layout: article
 ---
 
-This cluster brings together projects P02, P05, P07, P08, P09, and P10.
+### Participating Projects
 
-### Participating projects
 
-- [P02](../subprojects/P02.qmd)
-- [P05](../subprojects/P05.qmd)
-- [P07](../subprojects/P07.qmd)
-- [P08](../subprojects/P08.qmd)
-- [P09](../subprojects/P09.qmd)
-- [P10](../subprojects/P10.qmd)
+This cluster brings together projects 
+
+- [**P02** - Grammatical Gender in Discourse](../subprojects/P02.qmd), 
+- [**P05** - The Role of Self in Pronominal Coreference](../subprojects/P05.qmd), 
+- [**P07** - Deficiency and Redundancy in Iberoromance Pronominal Systems ](../subprojects/P07.qmd), 
+- [**P08** - Fading Reference - The Pragmaticalization of Pronoun + Verb](../subprojects/P08.qmd), 
+- [**P09** - Animacy Features and the Flexibility of Pronouns](../subprojects/P09.qmd),  
+- [**P10** - Deficiency and Redundacy in Expressing Temporal Relations](../subprojects/P10.qmd).
+
 
 ### Description
 
-Add the description of the Experimental Methods cluster here.
+The Experimental Methods cluster supports the development and exchange of methodological expertise across the project network. Its activities have included a statistics workshop, a reading group, the establishment of shared infrastructure, and the exchange of practical experience in experimental work. The cluster has also organized an online workshop on conducting online experiments and has maintained close interaction with the Romance cluster. 

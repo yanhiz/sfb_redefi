@@ -2,18 +2,19 @@
 title: "Zero Elements Cluster"
 format:
   html:
-    page-layout: full
+    page-layout: article
 ---
 
-This cluster brings together projects P03, P07, P08, and P09.
 
 ### Participating projects
 
-- [P03](../subprojects/P03.qmd)
-- [P07](../subprojects/P07.qmd)
-- [P08](../subprojects/P08.qmd)
-- [P09](../subprojects/P09.qmd)
+This cluster brings together projects 
+
+- [**P03** - Mismatches in Binding and Coreference](../subprojects/P03.qmd),
+- [**P07** - Deficiency and Redundancy in Iberoromance Pronominal Systems](../subprojects/P07.qmd),
+- [**P08** - Fading Reference - The Pragmaticalization of Pronoun + Verb](../subprojects/P08.qmd),
+- [**P09** - Animacy Features and the Flexibility of Pronouns](../subprojects/P09.qmd).
 
 ### Description
 
-Add the description of the Zero Elements cluster here.
+The Zero Elements cluster brings together research on structures in which linguistic material is absent, omitted, or not overtly realized. Its activities have been closely linked to the Romance cluster, reflecting substantial overlap in the empirical domains investigated by the participating projects, such as null or zero pronominal elements and ellipsis phenomena. 

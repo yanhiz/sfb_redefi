@@ -1,23 +1,129 @@
 ---
 title: "P10 -- Deficiency and Redundancy in Expressing Temporal Relations"
 image: project_logos/P10.svg
-format: html
+format:
+  html:
+    page-layout: full
+toc: true
 ---
 
+::: {.project-hero}
+
+::: {.project-hero-logo}
+
+![](project_logos/P10.svg){alt="P10 project logo"}
+:::
+
+::: {.project-hero-text}
+
+### Project description
+
+This subproject develops a formal semantic theory of temporal pronouns and embeds it within a larger semantic model of temporal expressions, including temporal adverbials, quantifying adverbials, and aspect. Of particular interest is the temporal (sub)specification of tense features on tense morphemes and their behavior when bound by other tense forms, intensional verbs, or temporal adverbials. Focusing on these aspects allows us to directly apply the ideas on free and bound personal pronouns developed in particular in subprojects 02 and 03 to a different ontological domain, thereby testing the hypothesis that there are non-surface commonalities between pronominal systems across domains. 
+
+The investigation in this subproject is based on a comparative analysis of languages ​​with articulated tense systems such as English and German, languages ​​with articulated aspect systems such as Russian and other Slavic languages, and so-called tense-less languages ​​such as Mandarin Chinese. This subproject not only extends the empirical scope of the Collaborative Research Centre (CRC) to a new ontological domain, but also focuses centrally on Q1 by examining equilibria between the domain of meanings and a limited domain of available forms. It informs Q2 regarding binding in the temporal domain and investigates the role of syntactic structure (Q4) and feature specification (Q3) in formal semantics. 
+
+:::
+
+:::
+
+### Team
+
+:::: {.project-team-grid style="grid-template-columns: repeat(2, minmax(0, 1fr));"}
+
+::: {.project-member-card}
+
+![](../img/team/member-name-1.jpg){.project-member-photo}
+
+#### Daniel Bühring
+
+**Principal Investigator**
+
+University of Vienna
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+
+:::
+
+::: {.project-member-card}
+
+![](../img/pictures/Melanie_Loitzl.jpg){.project-member-photo}
+
+#### Melanie Loitzl
+
+**Prae-doc Research Assistant**
+
+University of Vienna
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+
+:::
+
+::: {.project-member-card}
+
+![](../img/pictures/Justina_Schindler.jpg){.project-member-photo}
+
+#### Justina Schindler
+
+**Prae-doc Research Assistant**
+
+University of Vienna
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+
+:::
+
+::: {.project-member-card}
+
+![](../img/team/member-name-2.jpg){.project-member-photo}
+
+#### Madeleine Butschety
+
+**Post-doc Research Assistant**
+
+University of Vienna
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
+
+[Institutional profile](https://example.com)
+
+:::
+
+::::
+
+### Cluster membership
+
+::: {.project-clusters}
+
+[Experimental Methods](../clusters/experimental-methods.qmd){.project-cluster-badge}
+
+[Syntax and Binding Effects](../clusters/syntax-and-binding-effects.qmd){.project-cluster-badge}
+
+[Semantics and Discourse Effects](../clusters/semantics-and-discourse-effects.qmd){.project-cluster-badge}
+
+:::
+
+
+### Output
 
 
 ::: {.project-publications}
+
 ```{r}
 #| output: asis
 
 source("../functions.R", local = knitr::knit_global())
 
 load_publications() %>% 
-  filter(project=="P10") %>% 
+  filter(project=="P09") %>% 
   print_publications()
 
 
 ```
-
 
 :::

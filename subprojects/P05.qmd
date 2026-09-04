@@ -16,7 +16,10 @@ toc: true
 ::: {.project-hero-text}
 ### Project description
 
-No description available on the Graz Website
+Seeking for a better understanding of pronoun binding, the subproject tackles the question why cross-linguistically intensified pronouns (IntPros) tend to grammaticalize into reflexive anaphors. The hypothesis is that binding functions at the level of information structure roles: the topic binds the focus. The intensifier is the element that drives this process: a focal reflexive bound by the topic. While this is transparently the case in compositional IntPros, redundant and deficient interface operations lead both to the licensing of local rather than sentential topics as binders (see P06 for a simlar process in clitic doubling) and to the facultative interpretation of focal feature on the bindee, giving rise to vP and DP level reflexivization. Plausibly, the cycle closes with the full grammaticalization of IntPros via anaphors into reflexives, and the reemergence of fully interpreted IntPros. 
+
+In result, IntPros as the strongest pronouns do not follow the general tendency of strength regarding binding that the stronger a pronoun, the larger the structural domain in which it must be free (Cardinaletti and Starke, 1999): although strong, IntPros contain a focal reflexive, which imposes local binding by the topic. This sets the choice of target language types to Malayalam with IntPros both for intensification and as anaphors, English with IntPros mainly as anaphors, requiring additional focal pronouns for intensification, German with simple anaphors and an intensifier that strengthens their reflexivity and BCMS with simple reflexives and fully compositional IntPros. The main hypotheses directly address binding, a hallmark of R and D, as a way how grammar exploits pragmatics to economize the expressed information.
+
 :::
 
 :::
@@ -26,7 +29,7 @@ No description available on the Graz Website
 ::: {.project-team-grid}
 
 ::: {.project-member-card}
-![](../img/team/member-name-1.jpg){.project-member-photo}
+![](../img/pictures/Boban_Arsenijević.png){.project-member-photo}
 
 ####  Boban Arsenijević
 
@@ -34,7 +37,7 @@ No description available on the Graz Website
 
 University of Graz
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
@@ -46,20 +49,24 @@ Short description of the team member’s research interests, responsibilities wi
 
 **Pre-doc research assistant**
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+Univeristy of Graz
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
 
 
 ::: {.project-member-card}
-![](../img/team/member-name-2.jpg){.project-member-photo}
+![](../img/pictures/Joeri_Vinke.jpg){.project-member-photo}
 
 #### Joeri Vinke
 
 **Pre-doc research assistant**
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+University of Graz
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
@@ -71,14 +78,16 @@ Short description of the team member’s research interests, responsibilities wi
 
 ::: {.project-clusters}
 
-[ROMANCE](../clusters/romance.qmd){.project-cluster-badge}
+
+[Experimental Methods](../clusters/experimental-methods.qmd){.project-cluster-badge}
+
+[Syntax and Binding Effects](../clusters/syntax-and-binding-effects.qmd){.project-cluster-badge}
+
+[Semantics and Discourse Effects](../clusters/semantics-and-discourse-effects.qmd){.project-cluster-badge}
 
 :::
 
-
-### Output 
-
-
+### Output
 
 ::: {.project-publications}
 

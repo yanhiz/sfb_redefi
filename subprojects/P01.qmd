@@ -23,10 +23,10 @@ This subproject coordinates the activities of the Special Research Area “Langu
 
 ### Team
 
-::: {.project-team-grid}
+::: {.project-team-grid style="grid-template-columns: repeat(2, minmax(0, 1fr));"}
 
 ::: {.project-member-card}
-![](../img/team/member-name-1.jpg){.project-member-photo}
+![](../img/pictures/Edgar_Onea.jpg){.project-member-photo}
 
 #### Edgar Onea
 
@@ -39,41 +39,46 @@ University of Graz
 :::
 
 ::: {.project-member-card}
-![](../img/team/member-name-2.jpg){.project-member-photo}
+![](../img/pictures/Sarah_Melker.jpeg){.project-member-photo}
 
 #### Sarah Melker
 
-**Coordinating postdoc**
+**Coordinating Postdoc**
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+University of Graz
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
 
 ::: {.project-member-card}
-![](../img/team/member-name-3.jpg){.project-member-photo}
+![](../img/pictures/Martina_Barili.jpeg){.project-member-photo}
 
 #### Martina Barili
 
-**Pre-doc research assistant**
+**Pre-doc Research Assistant**
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+University of Graz
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
 
 ::: {.project-member-card}
-![](../img/team/member-name-4.jpg){.project-member-photo}
+![](../img/pictures/member-name-4.jpg){.project-member-photo}
 
 #### Nastaran Divani
 
-**Pre-doc research assistant**
+**Pre-doc Research Assistant**
 
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
+University of Graz
+
+Short description of the team member’s research interests, responsibilities, and institutional affiliation.
 
 [Institutional profile](https://example.com)
 :::
 
+
 :::
-
-
