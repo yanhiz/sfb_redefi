@@ -4,6 +4,9 @@ format:
   html:
     page-layout: full
     body-classes: activities-page
+    include-after-body:
+      - text: |
+          <script type="text/javascript" src="calendar.js"></script>
 toc: false
 ---
 
@@ -18,7 +21,7 @@ library(readxl)
 
 source("./mailing/mailing.R", local = knitr::knit_global())
 
-events <- read_excel('event_list.xlsx')  %>% filter(date>today())
+events <- read_excel('event_list.xlsx')  %>% filter(date>=today())
 
 for (i in 1:nrow(events)) {
   e <- events[i,]
@@ -93,8 +96,61 @@ for (i in 1:nrow(events)) {
 
 ## Past events
 
-::: {.event-list .past-events}
 
-<!-- Past event entries go here -->
 
-:::
+```{r}
+#| output: asis
+library(tidyverse)
+library(readxl)
+
+source("./mailing/mailing.R", local = knitr::knit_global())
+
+events <- read_excel('event_list.xlsx')  %>% filter(date<today())
+
+years <- events$year %>% unique() %>% sort(decreasing = T)
+
+for (y in years) {
+  cat('<details class="past-events-section"><summary><h3>',y,'</h3></summary>')
+  cat('::: {.event-list .past-events}\n\n')
+  for (i in 1:nrow(events %>% filter(year==y))) {
+    e <- events[i,]
+    cat('<details class="event-card">')
+    cat('<summary>')
+    cat('<div class="event-date">')
+    cat('<span class="event-day">')
+    cat(e$day)
+    cat('</span>')
+    cat('<span class="event-month">')
+    cat(e$month)
+    cat('</span>')
+    cat('<span class="event-year">')
+    cat(e$year)
+    cat('</span>')
+    cat('</div>')
+    cat('<div class="event-summary">')
+    cat('<span class="event-type">')
+    cat(e$type)
+    cat('</span>')
+    cat('<h3>')
+    cat(e$title)
+    cat('</h3>')
+    cat('<p class="event-people">')
+    cat(e$people)
+    cat('</p>')
+    cat('<p class="event-affiliation">')
+    cat(e$affiliation)
+    cat('</p>')
+    cat('</div>')
+    cat('</summary>')
+    cat('<div class="event-details">')
+    cat(e$details)
+    cat('</div>')
+    cat('</details>')
+  }
+  cat(':::\n\n')
+  cat('</details>')
+}
+
+```
+
+

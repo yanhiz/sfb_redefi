@@ -1,6 +1,6 @@
 ---
 title: "P09 -- Animacy Features and the Flexibility of Pronouns"
-image: project_logos/P9.svg
+image: /img/project_logos/P9.svg
 format:
   html:
     page-layout: full
@@ -10,7 +10,7 @@ toc: true
 ::: {.project-hero}
 
 ::: {.project-hero-logo}
-![](project_logos/P9.svg){alt="P09 project logo"}
+![](/img/project_logos/P9.svg){alt="P09 project logo"}
 :::
 
 ::: {.project-hero-text}
@@ -29,33 +29,13 @@ This subproject thus investigates how repetition and diffusion enable core g
 
 ::: {.project-team-grid style="grid-template-columns: repeat(2, minmax(0, 1fr));"}
 
-::: {.project-member-card}
-![](../img/pictures/Steffen_Heidinger.jpeg){.project-member-photo}
+```{r, results='asis'}
 
-#### Steffen Heidinger 
+source('../functions.R')
+print_card_members('P09')
 
-**Principal Investigator**
+```
 
-University of Graz
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/pictures/Yanis_daCunha.jpeg){.project-member-photo}
-
-#### Yanis da Cunha
-
-**Post-doc Research Assistant**
-
-University of Graz
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
 
 :::
 

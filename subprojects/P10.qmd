@@ -1,6 +1,6 @@
 ---
 title: "P10 -- Deficiency and Redundancy in Expressing Temporal Relations"
-image: project_logos/P10.svg
+image: /img/project_logos/P10.svg
 format:
   html:
     page-layout: full
@@ -11,7 +11,7 @@ toc: true
 
 ::: {.project-hero-logo}
 
-![](project_logos/P10.svg){alt="P10 project logo"}
+![](/img/project_logos/P10.svg){alt="P10 project logo"}
 :::
 
 ::: {.project-hero-text}
@@ -30,69 +30,13 @@ The investigation in this subproject is based on a comparative analysis of langu
 
 :::: {.project-team-grid style="grid-template-columns: repeat(2, minmax(0, 1fr));"}
 
-::: {.project-member-card}
+```{r, results='asis'}
 
-![](../img/team/member-name-1.jpg){.project-member-photo}
+source('../functions.R')
+print_card_members('P10')
 
-#### Daniel Bühring
+```
 
-**Principal Investigator**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-
-:::
-
-::: {.project-member-card}
-
-![](../img/pictures/Melanie_Loitzl.jpg){.project-member-photo}
-
-#### Melanie Loitzl
-
-**Prae-doc Research Assistant**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-
-:::
-
-::: {.project-member-card}
-
-![](../img/pictures/Justina_Schindler.jpg){.project-member-photo}
-
-#### Justina Schindler
-
-**Prae-doc Research Assistant**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-
-:::
-
-::: {.project-member-card}
-
-![](../img/team/member-name-2.jpg){.project-member-photo}
-
-#### Madeleine Butschety
-
-**Post-doc Research Assistant**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-
-:::
 
 ::::
 

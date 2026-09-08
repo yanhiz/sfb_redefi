@@ -1,6 +1,6 @@
 ---
 title: "P07 — Deficiency and Redundancy in Iberoromance Pronominal Systems"
-image: project_logos/P7.svg
+image: /img/project_logos/P7.svg
 format:
   html:
     page-layout: full
@@ -10,7 +10,7 @@ toc: true
 ::: {.project-hero}
 
 ::: {.project-hero-logo}
-![](project_logos/P7.svg){alt="P07 project logo"}
+![](/img/project_logos/P7.svg){alt="P07 project logo"}
 :::
 
 ::: {.project-hero-text}
@@ -26,48 +26,12 @@ The project also develops a unified account of these constructions across Iberor
 ### Team
 
 ::: {.project-team-grid}
+```{r, results='asis'}
 
-::: {.project-member-card}
-![](../img/pictures/Albert_Wall.jpg){.project-member-photo}
+source('../functions.R')
+print_card_members('P07')
 
-#### Albert Wall
-
-**Principal Investigator**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/pictures/Philippa_Adolf.jpeg){.project-member-photo}
-
-#### Philippa Adolf
-
-**Pre-doc Research Assistant**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/pictures/Marco_Losavio.jpg){.project-member-photo}
-
-#### Marco Losavio
-
-**Pre-doc Research Assistant**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
+```
 
 :::
 

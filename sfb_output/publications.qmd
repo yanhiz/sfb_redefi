@@ -1,9 +1,10 @@
 ---
 title: "Publications & Talks"
-format: html
+format:
+  html:
+    page-layout: full
 toc: false
 ---
-
 
 
 ::: {.project-publications}

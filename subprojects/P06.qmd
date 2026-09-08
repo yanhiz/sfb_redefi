@@ -1,13 +1,13 @@
 ---
 title: "P06 - The (Non-)Deficiency and (Non-)Redundancy of Clitic Pronouns"
-image: project_logos/P6.svg
+image: /img/project_logos/P6.svg
 toc: true
 ---
 
 ::: {.project-hero}
 
 ::: {.project-hero-logo}
-![](project_logos/P6.svg){alt="P06 project logo"}
+![](/img/project_logos/P6.svg){alt="P06 project logo"}
 :::
 
 ::: {.project-hero-text}
@@ -25,49 +25,12 @@ Ultimately, doubling is generalized and driven by mere syntactic locality. What 
 
 ::: {.project-team-grid}
 
-::: {.project-member-card}
-![](../img/team/member-name-1.jpg){.project-member-photo}
+```{r, results='asis'}
 
-####  Dalina Kallulli
+source('../functions.R')
+print_card_members('P06')
 
-**Principal Investigator**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/team/member-name-2.jpg){.project-member-photo}
-
-#### Adina Camelia Bleotu
-
-**Post-doc Research Assistant**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-
-::: {.project-member-card}
-![](../img/pictures/Ekaterina_Levina.jpg){.project-member-photo}
-
-#### Ekaterina Levina 
-
-**Post-doc Research Assistant**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
+```
 
 :::
 

@@ -1,6 +1,6 @@
 ---
 title: "P05 -- The Role of Self in Pronominal Coreference"
-image: project_logos/P5.svg
+image: /img/project_logos/P5.svg
 format:
   html:
     page-layout: full
@@ -10,7 +10,7 @@ toc: true
 ::: {.project-hero}
 
 ::: {.project-hero-logo}
-![](project_logos/P5.svg){alt="P05 project logo"}
+![](/img/project_logos/P5.svg){alt="P05 project logo"}
 :::
 
 ::: {.project-hero-text}
@@ -27,49 +27,12 @@ In result, IntPros as the strongest pronouns do not follow the general tendency 
 ### Team
 
 ::: {.project-team-grid}
+```{r, results='asis'}
 
-::: {.project-member-card}
-![](../img/pictures/Boban_Arsenijević.png){.project-member-photo}
+source('../functions.R')
+print_card_members('P05')
 
-####  Boban Arsenijević
-
-**Principal Investigator**
-
-University of Graz
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/team/member-name-2.jpg){.project-member-photo}
-
-#### Aleksandra Milosavljević
-
-**Pre-doc research assistant**
-
-Univeristy of Graz
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-
-::: {.project-member-card}
-![](../img/pictures/Joeri_Vinke.jpg){.project-member-photo}
-
-#### Joeri Vinke
-
-**Pre-doc research assistant**
-
-University of Graz
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
+```
 
 
 :::

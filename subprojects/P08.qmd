@@ -1,6 +1,6 @@
 ---
 title: "P08 -- Fading Reference -- The Pragmaticalization of Pronoun + Verb"
-image: project_logos/P8.svg
+image: /img/project_logos/P8.svg
 format:
   html:
     page-layout: full
@@ -10,7 +10,7 @@ toc: true
 ::: {.project-hero}
 
 ::: {.project-hero-logo}
-![](project_logos/P8.svg){alt="P08 project logo"}
+![](/img/project_logos/P8.svg){alt="P08 project logo"}
 :::
 
 ::: {.project-hero-text}
@@ -28,48 +28,12 @@ This subproject therefore investigates the influence of the feature specificatio
 ### Team
 
 ::: {.project-team-grid}
+```{r, results='asis'}
 
-::: {.project-member-card}
-![](../img/pictures/Eva-Maria_Remberger.jpg){.project-member-photo}
+source('../functions.R')
+print_card_members('P08')
 
-#### Eva-Maria Remberger
-
-**Principal Investigator**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://homepage.univie.ac.at/eva-maria.remberger/)
-:::
-
-::: {.project-member-card}
-![](../img/pictures/Andrea_Miglietta.jpg){.project-member-photo}
-
-#### Andrea Miglietta
-
-**Pre-doc Research Assistant**
-
-University of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://homepage.univie.ac.at/andrea.miglietta/)
-:::
-
-::: {.project-member-card}
-![](../img/team/member-name-3.jpg){.project-member-photo}
-
-#### Ignasi Planas Villalba
-
-**Pre-doc Research Assistant**
-
-Univeristy of Vienna
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://homepage.univie.ac.at/ignasi.planas.villalba/)
-:::
+```
 
 
 :::

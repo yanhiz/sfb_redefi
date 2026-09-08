@@ -7,7 +7,11 @@ format:
 toc: false
 ---
 
-<div style="height:1px"></div>
+
+The subprojects of our SFB are connected by several [clusters]{.highlight-red}. Those bring together the interests of the different subprojects to favor fruitful collaborations and larger projects.
+
+This graph presents our clusters:
+
 
 <div style="transform: translateX(35px);">
 

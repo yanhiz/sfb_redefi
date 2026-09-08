@@ -2,15 +2,16 @@ project:
   type: website
   output-dir: docs
 
+
 website:
   favicon: img/logos/logo red white rund.png
   navbar:
     left:
-      - text: "People"
+      - text: "Our team"
         href: people.qmd
-      - text: "Subprojects"
+      - text: "Our subprojects"
         href: subprojects.qmd
-      - text: "Clusters"
+      - text: "Research clusters"
         href: clusters.qmd
       - text: "Activities & Events"
         href: news.qmd
@@ -24,7 +25,6 @@ website:
     ![](/img/logos/Uni_Wien_Logo.jpg){height=70px}
     ![](/img/logos/FWF_Logo.png){height=23px}
    
-
 format:
   html:
     embed-resources: false
@@ -33,6 +33,7 @@ format:
       - brand
       - styles.scss
     toc: true
+
 
 echo: false
 warning: false

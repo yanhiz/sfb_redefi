@@ -1,6 +1,6 @@
 ---
 title: "P03 -- Mismatches in Binding and Coreference"
-image: project_logos/P3.svg
+image: /img/project_logos/P3.svg
 format:
   html:
     page-layout: full
@@ -10,7 +10,7 @@ toc: true
 ::: {.project-hero}
 
 ::: {.project-hero-logo}
-![](project_logos/P3.svg){alt="P03 project logo"}
+![](/img/project_logos/P3.svg){alt="P03 project logo"}
 :::
 
 ::: {.project-hero-text}
@@ -30,75 +30,12 @@ In addition to its theoretical focus, P03 also includes an empirical component: 
 
 ::: {.project-team-grid}
 
-::: {.project-member-card}
-![](../img/pictures/Susi_Wurmbrand.jpg){.project-member-photo}
+```{r, results='asis'}
 
-####  Susanne Wurmbrand
+source('../functions.R')
+print_card_members('P03')
 
-**Principal Investigator**
-
-University of Salzburg
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/team/member-name-2.jpg){.project-member-photo}
-
-#### Franziska Keller
-
-**Pre-doc Research Assistant**
-
-Univeristy of Salzburg
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/pictures/member-name.jpg){.project-member-photo}
-
-#### Filipe Hisao de Salles Kobayashi
-
-**Post-doc Research Assistant**
-
-University of Salzburg
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/team/member-name-2.jpg){.project-member-photo}
-
-#### Caroline Gardner
-
-**Pre-doc Research Assistant**
-
-Univeristy of Salzburg
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/pictures/member-name-2.jpg){.project-member-photo}
-
-#### Anita Riedl
-
-**Pre-doc Research Assistant**
-
-University of Salzburg
-
-Short description of the team member’s research interests, responsibilities within P07, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
+```
 
 :::
 

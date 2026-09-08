@@ -20,3 +20,22 @@ print_publications <- function(publications,level=4) {
     }
   }
 }
+
+
+print_card_members <- function(project) {
+  library(tidyverse)
+  
+  members <- readxl::read_excel('../member_list.xlsx') %>% 
+    filter(subproject==project)
+  
+  for (i in 1:nrow(members)) {
+    member <- members[i,]
+    cat('::: {.project-member-card}\n\n',sep="")
+    cat('![](..',member$picture,'){.project-member-photo}\n\n',sep="")
+    cat('#### ',member$short_name,'\n\n',sep="")
+    cat('**',member$position,'**<br>','**University of ',member$university,'**\n\n',sep="")
+    cat(member$description,' [Read more](/people.qmd#',member$short_name %>% str_replace(' ','_'),'){.read-more}\n\n',sep="")
+    cat('[Institutional profile](',member$website,')\n\n',sep="")
+    cat(':::\n\n')
+  }
+} 

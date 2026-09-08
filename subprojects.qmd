@@ -1,5 +1,5 @@
 ---
-title: "Subprojects"
+title: "Our subprojects"
 format:
   html:
     page-layout: full

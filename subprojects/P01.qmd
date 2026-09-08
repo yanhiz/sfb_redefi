@@ -1,6 +1,6 @@
 ---
 title: "P01 -- Theoretical Task Force"
-image: project_logos/P1.svg
+image: /img/project_logos/P1.svg
 format:
   html:
     page-layout: full
@@ -10,7 +10,7 @@ toc: true
 ::: {.project-hero}
 
 ::: {.project-hero-logo}
-![](project_logos/P1.svg){alt="P01 project logo"}
+![](/img/project_logos/P1.svg){alt="P01 project logo"}
 :::
 
 ::: {.project-hero-text}
@@ -23,62 +23,13 @@ This subproject coordinates the activities of the Special Research Area “Langu
 
 ### Team
 
-::: {.project-team-grid style="grid-template-columns: repeat(2, minmax(0, 1fr));"}
+::: {.project-team-grid}
 
-::: {.project-member-card}
-![](../img/pictures/Edgar_Onea.jpg){.project-member-photo}
+```{r, results='asis'}
 
-#### Edgar Onea
+source('../functions.R')
+print_card_members('P01')
 
-**Principal Investigator**
-
-University of Graz
-
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/pictures/Sarah_Melker.jpeg){.project-member-photo}
-
-#### Sarah Melker
-
-**Coordinating Postdoc**
-
-University of Graz
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/pictures/Martina_Barili.jpeg){.project-member-photo}
-
-#### Martina Barili
-
-**Pre-doc Research Assistant**
-
-University of Graz
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
-::: {.project-member-card}
-![](../img/pictures/member-name-4.jpg){.project-member-photo}
-
-#### Nastaran Divani
-
-**Pre-doc Research Assistant**
-
-University of Graz
-
-Short description of the team member’s research interests, responsibilities, and institutional affiliation.
-
-[Institutional profile](https://example.com)
-:::
-
+```
 
 :::

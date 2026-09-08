@@ -17,5 +17,8 @@ typography:
   fonts:
     - family: Source Sans 3
       source: google
-  base: Source Sans 3
+  base: 
+    family: Source Sans 3
+    size: 1.1rem
+    line-height: 1.2
   headings: Source Sans 3

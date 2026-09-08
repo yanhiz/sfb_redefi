@@ -1,11 +1,14 @@
 ---
-title: "People"
+title: "Our team"
 format:
   html:
     page-layout: full
     body-classes: people-page
+    include-after-body:
+      text: <script type="text/javascript" src="open_accordion.js"></script>
 toc: false
 ---
+
 
 ```{r, results='asis'}
 
@@ -24,45 +27,46 @@ projects <- c('P01'='P01 – Theoretical Task Force',
 
 members <- read_excel('member_list.xlsx')
 
-
 for (p in names(projects)) {
-  cat(str_c('<a style="text-decoration: none !important;" href="/subprojects/',p,'.qmd"><h2>',projects[p],'</h2></a>\n\n'))
+  cat(str_c('<a class="project-title" href="/subprojects/',p,'.qmd"><h2>',projects[p],'</h2></a>\n\n'))
   cat('<div class="accordion">')
   
   project_members <- members %>% filter(subproject==p)
-  
+
   for (i in 1:nrow(project_members)) {
     member <- project_members[i,]
-    cat('<input type="radio" name="select" class="accordion-select" />')
-    cat('<div class="accordion-title"><span>')
+    cat('<input type="radio" name="select" class="accordion-select" id="')
+    cat(member$short_name %>% str_replace(' ','_'))
+    cat('"><div class="accordion-title"><span>')
     cat(member$name)
     cat('</span></div>')
     cat('<div class="accordion-content">')
+    cat('<div class="accordion-box">')
     cat('<div class="accordion-leftcontent">')
     cat('<img class="accordion-picture" src="')
     cat(member$picture)
     cat('">')
-    cat('<p class="accordion-links">')
-    cat('<a href="mailto:')
-    cat(member$mail)
-    cat('"><i class="bi bi-envelope"></i> ')
-    cat(member$mail)
-    cat('</a>')
-    cat('<br>')
-    cat('<a href="')
-    cat(member$website)
-    cat('"><i class="bi bi-link-45deg"></i> My website</a>')
-    cat('</p>')
     cat('</div>')
     cat('<div class="accordion-rightcontent">')
-    cat('<span class="accordion-position">')
-    cat(member$position)
+    cat('<div class="accordion-tags"><span class="accordion-position">')
+    cat(member$position) 
     cat('</span>')
     cat('<span class="accordion-university">University of ')
     cat(member$university)
-    cat('</span>')
+    cat('</span></div>')
+    cat('<p class="accordion-links">') 
+    cat('<a href="mailto:')
+    cat(member$mail)
+    cat('"><i class="bi bi-envelope"></i> <b> ')
+    cat(member$mail %>% str_replace('@','[at]'))
+    cat('</b></a>')
+    cat('<a href="')
+    cat(member$website)
+    cat('"><i class="bi bi-link-45deg"></i> <b>  Institutional profile</b></a>')
+    cat('</p>')
     cat('<div class="accordion-bio">')
     cat(member$bio %>% str_replace_all('\\n','<br>'))
+    cat('</div>')
     cat('</div>')
     cat('</div>')
     cat('</div> ')
@@ -71,6 +75,7 @@ for (p in names(projects)) {
   cat('</div> ')
   cat('\n\n')
 }
+
 
 ```
 
@@ -105,3 +110,4 @@ for (p in names(projects)) {
 <!-- <div class="accordion-title"><span>Title</span></div> -->
 <!-- <div class="accordion-content">Content</div>  -->
 <!-- </div>  -->
+
