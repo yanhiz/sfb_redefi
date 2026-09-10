@@ -39,8 +39,7 @@ for (p in names(projects)) {
   cat(str_c('### ',p,' \n\n'))
   cat('[',projects[p],']{.project-title}','\n\n')
   cat(str_c('<a href="/subprojects/',p,'.qmd">More about this project.</a>\n\n'))
-  load_publications() %>% 
-    filter(project==p) %>% 
+  load_publications(p) %>% 
     print_publications(level=4)
 }
 

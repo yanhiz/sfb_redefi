@@ -1,12 +1,13 @@
 library(tidyverse)
 
-load_publications <- function() {
+load_publications <- function(subproject='P') {
   read_csv('../sfb_output/publication_list.csv',
            col_names = c('project','type','year','ref')) %>% 
     # MAKE LINKS CLICKABLE
     mutate(ref= str_replace(ref,'(https://.*)','[\\1](\\1)')) %>% 
     # SORT THE DATA FRAME AND ORDER YEARS
-    arrange(type,desc(year),ref) %>% mutate(year=factor(year,levels=(unique(year)))) 
+    arrange(type,desc(year),ref) %>% mutate(year=factor(year,levels=(unique(year)))) |> 
+    filter(str_detect(project,subproject))
 }
 
 

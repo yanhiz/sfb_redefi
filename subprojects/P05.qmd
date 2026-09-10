@@ -59,8 +59,7 @@ print_card_members('P05')
 
 source("../functions.R", local = knitr::knit_global())
 
-load_publications() %>% 
-  filter(project=="P05") %>% 
+load_publications("P05") %>% 
   print_publications()
 
 
