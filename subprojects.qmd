@@ -4,7 +4,12 @@ format:
   html:
     page-layout: full
 listing:
+  id: subprojects-listing
   contents: subprojects
   type: grid
-  grid-columns: 2
+  grid-columns: 3
 ---
+
+
+::: {#subprojects-listing .column-page}
+:::

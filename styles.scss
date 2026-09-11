@@ -66,17 +66,9 @@ h6 {
 
 /* Subproject listing layout */
 
-.quarto-listing {
-  width: min(900px, calc(100vw - 4rem)) !important;
-  max-width: none !important;
-  margin-left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-
 /* Force the listing grid itself to use two wide columns */
 
 .quarto-listing .grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   column-gap: 2rem !important;
   row-gap: 2rem !important;
 }
