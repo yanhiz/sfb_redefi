@@ -17,7 +17,7 @@ format:
 
 **Language is one of our most fundamental cognitive capacities.**
 
-This <span class="highlight-red">Special Research Area (SFB) Network</span> is developing a new approach tomodeling the linguistic system. The starting point is the hypothesis that the cognitive core of language ability is based on logical-symbolic calculations, but is embedded in a cognitive system of stochastic nature. 
+This <span class="highlight-red">Special Research Area (SFB) Network</span> is developing a new approach to modeling the linguistic system. The starting point is the hypothesis that the cognitive core of language ability is based on logical-symbolic calculations, but is embedded in a cognitive system of stochastic nature. 
 <span class="highlight-gray">As an interface between the symbolic and stochastic components, grammar uses the central optimization factors of redundancy and deficiency</span>, which can underlie linguistic operations and make it possible to process both under- and over-specified inputs. 
 
 The Network brings together the particularly strong linguistic research at the <span class="highlight-red">Universities of Graz, Vienna, and Salzburg</span> and deals with uniformly defined, comprehensive empirical areas of grammar (pronouns and ellipsis). The sub-projects illuminate, classify and model these theoretically and empirically from the perspective of the concepts of redundancy and deficiency. Expected findings not only promise a <span class="highlight-gray">deeper understanding of the basic mechanisms of the grammatical system</span>, but also open up new perspectives for central questions in cognitive science regarding the role of language in cognition.

@@ -16,16 +16,18 @@ toc: true
 ::: {.project-hero-text}
 ### Project description
 
-This subproject investigates clitic doubling and null objects across Spanish and Portuguese varieties, with a focus on River Plate Spanish and Mineiro Brazilian Portuguese. It examines whether the observed microvariation and gradient acceptability can be explained through the SFB concepts of redundancy and deficiency, including the influence of discourse factors such as familiarity and D-linking.
+Subproject P07 examines variation in accusative clitic doubling (ACD) and null direct objects (NDOs) within and across Spanish and Portuguese varieties. Although these languages share a substantial inventory of pronominal elements and surface configurations, they differ in striking ways that challenge unified theoretical accounts (Maddox, 2021). Many existing generalizations also require systematic empirical verification.
 
-The project also develops a unified account of these constructions across Iberoromance and evaluates existing proposals, including Maddox’s (2021) Object Agreement Cycle and the Clitic Doubling Parameter proposed by Fischer et al. (2019).
+Building on Di Tullio et al.’s (2019) research on ACD in Rioplatense Spanish, P07 addresses key gaps in the study of null objects across Spanish varieties and clitic doubling in Portuguese. This includes the recently documented ACD system of Mineiro Brazilian Portuguese (Machado Rocha and Ramos, 2016). Through parallel experimental studies, the project will establish a closely comparable dataset for at least four varieties: Rioplatense Spanish, Peninsular Spanish, Mineiro Brazilian Portuguese, and European Portuguese. By investigating minimal contrasts among these systems, P07 aims to determine how redundancy and deficiency operate across closely related but grammatically divergent varieties.
+
+
 :::
 
 :::
 
 ### Team
 
-::: {.project-team-grid}
+
 ```{r, results='asis'}
 
 source('../functions.R')
@@ -33,7 +35,7 @@ print_card_members('P07')
 
 ```
 
-:::
+
 
 ### Cluster membership
 

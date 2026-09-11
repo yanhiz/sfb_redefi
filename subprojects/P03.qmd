@@ -16,11 +16,11 @@ toc: true
 ::: {.project-hero-text}
 ### Project description
 
-This project focuses on two empirical areas: fake indexicals (and other bound pronouns) and unbound pronouns that exhibit covariance. Project P03 investigates the morphological, syntactic, and semantic properties of these types of pronouns and integrates them into a model where syntax mediates between LF and PF, transferring features exhaustively or redundantly to the interfaces. It is shown that fake indexicals involve an R operation from syntax to LF, while unbound pronouns employ an R operation from syntax to PF. These two otherwise quite distinct phenomena are thus mirror images of each other within the framework of R/D of the Collaborative Research Centre (CRC). 
+Project P03 investigates two empirical domains: fake indexicals and other bound pronouns, and unbound pronouns exhibiting covariance. It examines their morphological, syntactic, and semantic properties within a model where syntax mediates between LF and PF by transferring features exhaustively or redundantly. Fake indexicals are analyzed as involving an R operation from syntax to LF, whereas unbound pronouns involve an R operation from syntax to PF. The phenomena thus form mirror images within the CRC’s R/D framework.
 
-The starting point of this subproject is a detailed syntactic investigation of pronoun structure (e.g., size and type of syntactic projections), the features involved in syntax, morphology, and semantics, any mismatches between components, and the origin of features (binding, unexpressed structures). The initial hypotheses are that i) fake indexicals involve syntactic binding through the genuine indexical , enabled by (syntactic) focus binding, and ii) that unbound pronouns are definite noun phrases in syntax that undergo an ellipsis process. This subproject is directly relevant to all the questions raised by the Collaborative Research Centre (CRC) and aims to contribute a model that allows for the formalization of the R/D mechanisms. 
+The project examines pronoun structure, feature distribution across grammar, mismatches between components, and possible feature sources. It tests two hypotheses: fake indexicals are syntactically bound through the genuine indexical via focus binding, while unbound pronouns are definite noun phrases that undergo ellipsis.
 
-In addition to its theoretical focus, P03 also includes an empirical component: a detailed investigation of fake indexicals  in Romance and Slavic languages. P03 is linked—empirically and/or theoretically—to most of the other subprojects, and several collaborations have already been envisioned. 
+P03 aims to formalize redundancy/deficiency mechanisms and includes a detailed study of fake indexicals in Romance and Slavic languages. Its broad empirical and theoretical scope supports collaboration with most other CRC subprojects.
 
 :::
 
@@ -28,7 +28,7 @@ In addition to its theoretical focus, P03 also includes an empirical component: 
 
 ### Team
 
-::: {.project-team-grid}
+
 
 ```{r, results='asis'}
 
@@ -37,7 +37,6 @@ print_card_members('P03')
 
 ```
 
-:::
 
 ### Cluster membership
 

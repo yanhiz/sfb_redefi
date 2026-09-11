@@ -16,10 +16,9 @@ toc: true
 ::: {.project-hero-text}
 ### Project description
 
-This project examines pronoun-verb combinations (prVCs), primarily in spoken Spanish and Italian. It focuses on their prototypical occurrence as content-rich predicates, their potentially grammaticalized form as discourse markers, and, most importantly, the varying degrees of fixation in intermediate forms, such as parenthetical ones. The discourse functions of prVCs formed from verbs of cognition, communication, and perception are presented, along with their dependence on pronoun types and their feature characteristics, verb type and form, the presence of other functional elements, and the syntactic positions involved. Basic grammatical operations in morphosyntax and morphophonology, as well as at the semantic-pragmatic interface, appear either to disregard the features present in the pronominal item ( R ) or to reinterpret them at the interface of language language and discourse context as different or additional pragmatic features that were not originally specified as such ( D ). 
+This project investigates pronoun–verb combinations (prVCs), primarily in spoken Spanish and Italian. It examines their development from content-rich predicates through partially fixed parenthetical constructions to grammaticalized discourse markers. Particular attention is paid to combinations involving verbs of cognition, communication, and perception, and to how their discourse functions depend on pronoun features, verb type and form, additional functional elements, and syntactic position.
 
-This subproject therefore investigates the influence of the feature specification of pronouns with respect to R (suppressing referential features) and D (enriching them with pragmatic features related to the language context) on the development of pronoun-related constructs (prVCs). The subproject contributes to the overarching goals of the Collaborative Research Centre (CRC) by taking a microscopic look at how the flexibility of R and D at the interfaces with phonological features (PF) and language language (LF) can be theoretically modeled to explain the potential for change and the effects of contextual linguistic and extralinguistic factors (including frequency in language use) on the grammatical system. The subproject addresses three main questions of the SFB: Q1 by focusing on grammaticalization/pragmaticalization processes as a strategy for bridging discrepancies between forms and communicative goals, Q2 by investigating the syntactic consequences of these discrepancies at the left periphery, and Q3 by investigating the feature specifications of pronouns in prVCs. 
-
+The project analyzes how grammatical operations treat pronominal features across morphosyntax, morphophonology, and the syntax–discourse interface. Redundancy (R) may suppress or disregard referential features, while deficiency (D) may reinterpret or enrich them with context-dependent pragmatic features. By tracing these processes, the project models how flexibility at the PF and LF interfaces enables grammatical and pragmatic change and how linguistic, extralinguistic, and frequency-related factors shape the grammatical system. It contributes to the SFB’s questions on grammaticalization and pragmaticalization (Q1), their consequences at the left periphery (Q2), and pronoun feature specifications in prVCs (Q3).
 
 :::
 
@@ -27,7 +26,7 @@ This subproject therefore investigates the influence of the feature specificatio
 
 ### Team
 
-::: {.project-team-grid}
+
 ```{r, results='asis'}
 
 source('../functions.R')
@@ -36,7 +35,6 @@ print_card_members('P08')
 ```
 
 
-:::
 
 ### Cluster membership
 

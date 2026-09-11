@@ -16,10 +16,9 @@ toc: true
 ::: {.project-hero-text}
 ### Project description
 
-This subproject investigates the mapping between morphosyntactic and semantic features of French and Spanish personal pronouns from the perspective of R and D. These pronouns are highly flexible expressions due to their minimal descriptive content, and additional flexibility arises because their animacy features are not invariable (e.g., French strong pronouns are mostly used for human referents but can also refer to inanimate objects under certain conditions (Heidinger, 2019)). This subproject assumes that strong and weak pronouns are specified differently for animacy (Cardinaletti and Starke, 1999; Dobrovie-Sorin, 1999) and investigates how the animacy features of the pronouns are then manipulated by R and D to increase their flexibility and allow for non-canonical assignments (e.g., strong pronouns referring to inanimate objects). 
+This subproject investigates the mapping between morphosyntactic and semantic features of French and Spanish personal pronouns from the perspective of redundancy and deficiency. Because pronouns have minimal descriptive content, they are highly flexible expressions whose animacy features may vary. French strong pronouns, for example, generally refer to humans but can denote inanimate objects under certain conditions (Heidinger, 2019). Building on the assumption that strong and weak pronouns differ in their animacy specifications, the project examines how R and D manipulate these features to license non-canonical reference.
 
-This subproject thus investigates how repetition and diffusion enable core grammar to cope with general cognitive pressure through additional flexibility; for example, through adjustments in pronoun choice triggered by the demands of resolving anaphora. The animacy features of French and Spanish personal pronouns (especially in PPs) offer insight into the diversity and limitations of such additional flexibility. The comparative perspective of French and Spanish allows the subproject to pursue a further theoretical objective directly related to the goals of the Collaborative Research Centre (CRC): The pronoun inventories of French and Spanish both include the opposition between strong and weak pronouns. However, the languages ​​differ in the availability of weak forms in PPs. This provides an ideal testbed to examine how repetition and diffusion function in minimally different pronoun systems. 
-
+More broadly, it investigates how redundancy and deficiency allow core grammar to respond to cognitive pressures and the demands of anaphora resolution through flexible pronoun choice. The animacy properties of French and Spanish pronouns, particularly within prepositional phrases, reveal both the scope and limits of this flexibility. Since both languages distinguish strong and weak pronouns but differ in the availability of weak forms in prepositional phrases, they provide an ideal comparative testbed.
 
 :::
 
@@ -27,7 +26,6 @@ This subproject thus investigates how repetition and diffusion enable core g
 
 ### Team
 
-::: {.project-team-grid style="grid-template-columns: repeat(2, minmax(0, 1fr));"}
 
 ```{r, results='asis'}
 
@@ -37,7 +35,6 @@ print_card_members('P09')
 ```
 
 
-:::
 
 ### Cluster membership
 

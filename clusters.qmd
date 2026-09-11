@@ -7,19 +7,14 @@ format:
 toc: false
 ---
 
+The subprojects within our SFB are connected through several thematic [clusters]{.highlight-red}. These clusters bring together shared research questions, theoretical perspectives, and methodological approaches across individual subprojects, fostering collaboration and broader joint initiatives.
 
-The subprojects of our SFB are connected by several [clusters]{.highlight-red}. Those bring together the interests of the different subprojects to favor fruitful collaborations and larger projects.
-
-This graph presents our clusters:
-
-
-<div style="transform: translateX(35px);">
 
 
 ```{dot}
 //| fig-align: center
-//| fig-width: 12
-//| fig-height: 8.5
+//| fig-width: 16
+//| fig-height: 12.5
 
 graph clusters {
   layout = neato

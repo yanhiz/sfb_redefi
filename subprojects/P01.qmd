@@ -16,14 +16,14 @@ toc: true
 ::: {.project-hero-text}
 ### Project description
 
-This subproject coordinates the activities of the Special Research Area “Language between Redundancy and Deficiency” and hosts two affiliated PhD projects funded by the University of Graz.
+This subproject coordinates the activities of the Special Research Area Language between Redundancy and Deficiency and hosts two affiliated PhD projects funded by the University of Graz.
 :::
 
 :::
 
 ### Team
 
-::: {.project-team-grid}
+
 
 ```{r, results='asis'}
 
@@ -32,4 +32,3 @@ print_card_members('P01')
 
 ```
 
-:::

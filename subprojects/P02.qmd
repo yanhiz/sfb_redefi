@@ -16,7 +16,7 @@ toc: true
 ::: {.project-hero-text}
 ### Project description
 
-Subproject 2 is interested in an analysis of the discourse structural interpretation of gender features. The main focus of the subproject is the study of gender mismatches, which describe cases where grammatical gender does not agree with semantic gender (e.g., in German “das Mädchen”, where a neuter determiner is used in an expression referring to a semantically feminine girl).
+Subproject P02 is interested in an analysis of the discourse structural interpretation of gender features. The main focus of the subproject is the study of gender mismatches, which describe cases where grammatical gender does not agree with semantic gender (e.g., in German “das Mädchen”, where a neuter determiner is used in an expression referring to a semantically feminine girl).
 
 The goal is to construct a detailed theory for the syntax-semantics interface of gender, enabling the explanation of gender mismatch phenomena. One central hypothesis is that gender might be described analogously to an analysis of so-called referential loci in sign languages. 
 
@@ -29,7 +29,6 @@ Methodologically, the subproject will conduct several empirical studies to gain 
 
 ### Team
 
-::: {.project-team-grid}
 
 ```{r, results='asis'}
 
@@ -38,7 +37,6 @@ print_card_members('P02')
 
 ```
 
-:::
 
 
 
