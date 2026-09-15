@@ -3,10 +3,6 @@ title: "Activities and Events"
 format:
   html:
     page-layout: full
-    body-classes: activities-page
-    include-after-body:
-      - text: |
-          <script type="text/javascript" src="calendar.js"></script>
 toc: false
 ---
 
@@ -21,7 +17,9 @@ library(readxl)
 
 source("./mailing/mailing.R", local = knitr::knit_global())
 
-events <- read_excel('event_list.xlsx')  %>% filter(date>=today())
+events <- read_excel('event_list.xlsx')  %>% 
+  arrange(date) %>%
+  filter(date>=today())
 
 for (i in 1:nrow(events)) {
   e <- events[i,]
@@ -103,17 +101,18 @@ for (i in 1:nrow(events)) {
 library(tidyverse)
 library(readxl)
 
-source("./mailing/mailing.R", local = knitr::knit_global())
-
-events <- read_excel('event_list.xlsx')  %>% filter(date<today())
+events <- read_excel('event_list.xlsx')  %>% 
+    arrange(date) %>%
+    filter(date<today())
 
 years <- events$year %>% unique() %>% sort(decreasing = T)
 
 for (y in years) {
   cat('<details class="past-events-section"><summary><h3>',y,'</h3></summary>')
   cat('::: {.event-list .past-events}\n\n')
-  for (i in 1:nrow(events %>% filter(year==y))) {
-    e <- events[i,]
+  events_subset <- events %>% filter(year==y)
+  for (i in 1:nrow(events_subset)) {
+    e <- events_subset[i,]
     cat('<details class="event-card">')
     cat('<summary>')
     cat('<div class="event-date">')

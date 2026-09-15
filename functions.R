@@ -1,7 +1,7 @@
 library(tidyverse)
 
-load_publications <- function(subproject='P') {
-  read_csv('../sfb_output/publication_list.csv',
+load_publications <- function(subproject='P',path='../sfb_output/publication_list.csv') {
+  read_csv(path,
            col_names = c('project','type','year','ref')) %>% 
     # MAKE LINKS CLICKABLE
     mutate(ref= str_replace(ref,'(https://.*)','[\\1](\\1)')) %>% 

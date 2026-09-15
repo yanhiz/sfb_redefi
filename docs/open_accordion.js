@@ -1,5 +1,3 @@
-console.log('Voici un test')
-
 // Check if URL of browser window has hash tag
 if (location.hash) {
   console.log('Hash trouvé')
@@ -13,8 +11,5 @@ if (location.hash) {
   if(checkbox) {
     // Set selected checkbox as checked
     checkbox.checked = true;
-    console.log('Fait')
   }
 }
-
-console.log(document.querySelectorAll('*[id]'))

@@ -1,5 +1,5 @@
 ---
-title: "Publications & Talks"
+title: "Publications and Talks"
 format:
   html:
     page-layout: full
@@ -15,15 +15,15 @@ toc: false
 
 ```{r}
 #| output: asis
-source("../functions.R", local = knitr::knit_global())
-load_publications() %>% 
+source("functions.R", local = knitr::knit_global())
+load_publications(path='sfb_output/publication_list.csv') %>% 
   print_publications(level=4)
 ```
 
 
 ```{r}
 #| output: asis
-source("../functions.R", local = knitr::knit_global())
+source("functions.R", local = knitr::knit_global())
 
 projects <- c('P02'='P02 – Grammatical Gender in Discourse and Grammar',
               'P03'='P03 – Mismatches in Binding and Coreference',
@@ -39,7 +39,7 @@ for (p in names(projects)) {
   cat(str_c('### ',p,' \n\n'))
   cat('[',projects[p],']{.project-title}','\n\n')
   cat(str_c('<a href="/subprojects/',p,'.qmd">More about this project.</a>\n\n'))
-  load_publications(p) %>% 
+  load_publications(p,path='sfb_output/publication_list.csv') %>% 
     print_publications(level=4)
 }
 

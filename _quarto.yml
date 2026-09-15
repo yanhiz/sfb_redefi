@@ -14,9 +14,9 @@ website:
       - text: "Research clusters"
         href: clusters.qmd
       - text: "Activities & Events"
-        href: news.qmd
+        href: events.qmd
       - text: "Publications & Talks"
-        href: sfb_output/publications.qmd
+        href: publications.qmd
 
   page-footer: |
     © 2026 SFB Language between Redundancy and Deficiency

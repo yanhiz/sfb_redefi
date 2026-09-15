@@ -10,8 +10,7 @@ $secondary-gray: #8A9696;
 /* Navbar */
 .navbar-nav .nav-item {
   font-size: 1.1em;
-  margin-left: 20px;
-  font-weight: 500;
+  margin-left: 25px;
   a:hover {
     color: $sfb-color;
     background: white;
@@ -624,6 +623,13 @@ footer.footer {
   font-weight: normal !important;
   font-style: italic;
   text-decoration: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  padding: 0px 5px 0px 5px;
+  &:hover {
+    color: white;
+    background: $sfb-color;
+  }
 }
 
 .project-member-photo {
@@ -754,7 +760,7 @@ footer.footer {
 
 /* Activities and Events page */
 
-.activities-page .event-list {
+.event-list {
   display: grid;
   gap: 1.25rem;
   max-width: 1000px;
@@ -763,7 +769,7 @@ footer.footer {
 
 /* Event card */
 
-.activities-page .event-card {
+.event-card {
   overflow: hidden;
   border: 2px solid $sfb-color;
   border-radius: 0.2rem;
@@ -774,13 +780,13 @@ footer.footer {
 }
 
 
-.activities-page .event-card:hover {
+.event-card:hover {
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 /* Clickable summary */
 
-.activities-page .event-card summary {
+.event-card summary {
   position: relative;
   display: grid;
   grid-template-columns: 105px minmax(0, 1fr);
@@ -791,13 +797,13 @@ footer.footer {
   list-style: none;
 }
 
-.activities-page .event-card summary::-webkit-details-marker {
+.event-card summary::-webkit-details-marker {
   display: none;
 }
 
 /* Expand/collapse symbol */
 
-.activities-page .event-card summary::after {
+.event-card summary::after {
   content: "+";
   position: absolute;
   top: 50%;
@@ -808,13 +814,13 @@ footer.footer {
   font-weight: 600;
 }
 
-.activities-page .event-card[open] summary::after {
+.event-card[open] summary::after {
   content: "−";
 }
 
 /* Date block */
 
-.activities-page .event-date {
+.event-date {
   display: flex;
   min-height: 90px;
   flex-direction: column;
@@ -826,20 +832,20 @@ footer.footer {
   text-align: center;
 }
 
-.activities-page .event-day {
+.event-day {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1;
 }
 
-.activities-page .event-month {
+.event-month {
   margin-top: 0.25rem;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.08em;
 }
 
-.activities-page .event-year {
+ .event-year {
   margin-top: 0.1rem;
   color: $main-gray;
   font-size: 0.85rem;
@@ -847,11 +853,11 @@ footer.footer {
 
 /* Event summary text */
 
-.activities-page .event-summary {
+ .event-summary {
   min-width: 0;
 }
 
-.activities-page .event-type {
+ .event-type {
   display: inline-block;
   margin-bottom: 0.35rem;
   color: $sfb-color;
@@ -861,7 +867,7 @@ footer.footer {
   text-transform: uppercase;
 }
 
-.activities-page .event-summary h3 {
+ .event-summary h3 {
   margin: 0 0 0.45rem 0;
   color: $sfb-color;
   font-size: 1.25rem;
@@ -870,52 +876,52 @@ footer.footer {
   letter-spacing: 0.01em;
 }
 
-.activities-page .event-people,
-.activities-page .event-affiliation {
+ .event-people,
+ .event-affiliation {
   margin: 0;
   line-height: 1.45;
 }
 
-.activities-page .event-people {
+ .event-people {
   font-weight: 600;
 }
 
-.activities-page .event-affiliation {
+ .event-affiliation {
   color: #5f6b69;
   font-size: 0.95rem;
 }
 
 /* Expanded details */
 
-.activities-page .event-details {
-  padding: 1.25rem 2rem 1.5rem 9rem;
+ .event-details {
+  padding: 1.25rem 2rem 1.5rem 2rem;
   border-top: 1px solid #d5dada;
   background-color: #fafafa;
 }
 
-.activities-page .event-details p:last-child {
+ .event-details p:last-child {
   margin-bottom: 0;
 }
 
-.activities-page .event-link {
+ .event-link {
   color: $sfb-color;
   font-weight: 700;
 }
 
 /* Past events */
 
-.activities-page .past-events .event-card {
+ .past-events .event-card {
   border-color: $secondary-gray;
   background-color: #F7F7F7;
 }
 
-.activities-page .past-events .event-date,
-.activities-page .past-events .event-type,
-.activities-page .past-events .event-summary h3 {
+ .past-events .event-date,
+ .past-events .event-type,
+ .past-events .event-summary h3 {
   color: $main-gray;
 }
 
-.activities-page .past-events-section {
+ .past-events-section {
   
   summary::marker {
     font-size: 30px;
@@ -924,7 +930,7 @@ footer.footer {
   display: inline;
   margin-bottom: 20px;
 }}
-.activities-page .past-events-section[open] > summary {
+ .past-events-section[open] > summary {
   margin-bottom: 50px;
 }
 
@@ -932,26 +938,26 @@ footer.footer {
 /* Mobile */
 
 @media (max-width: 650px) {
-  .activities-page .event-card summary {
+   .event-card summary {
     grid-template-columns: 75px minmax(0, 1fr);
     gap: 1rem;
     padding: 1rem 3rem 1rem 1rem;
   }
 
-  .activities-page .event-date {
+   .event-date {
     min-height: 75px;
     padding-right: 0.75rem;
   }
 
-  .activities-page .event-day {
+   .event-day {
     font-size: 1.6rem;
   }
 
-  .activities-page .event-summary h3 {
+   .event-summary h3 {
     font-size: 1.1rem;
   }
 
-  .activities-page .event-details {
+   .event-details {
     padding: 1.25rem;
   }
 }
@@ -1186,4 +1192,171 @@ footer.footer {
   text-align: justify;
 }
 
+
+/* Home page Version 2 */
+.homepage-banner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 100px;
+  background: $sfb-color;
+  padding: 0px 20px;
+}
+
+.homepage-picture {
+  align-self: flex-start;
+  color: white;
+  font-size: 4em;
+  img {
+    width: 40%;
+  }
+}
+
+.homepage-numbers {
+  align-self: flex-end;
+  p {
+    color: white;
+    font-size: 3em;
+    letter-spacing: -0.05em;
+  }
+  span {
+    font-size: 4em;
+    line-height: 0;
+  }
+}
+
+
+@property --num1 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num2 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num3 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@keyframes counter {
+  from {
+    --num1: 0;
+    --num2: 0;
+    --num3: 10;
+  }
+  to {
+    --num1: 3;
+    --num2: 8;
+    --num3: 29;
+  }
+}
+#count1 {
+  animation: counter 1.5s 1 normal ease-in-out forwards;
+  counter-reset: num1 var(--num1);
+}
+#count1::after {
+  content: counter(num1);
+}
+
+#count2 {
+  animation: counter 1.75s 1 normal ease-in-out forwards;
+  counter-reset: num2 var(--num2);
+}
+#count2::after {
+  content: counter(num2);
+}
+
+#count3 {
+  animation: counter 2s 1 normal ease-in-out forwards;
+  counter-reset: num3 var(--num3);
+}
+#count3::after {
+  content: counter(num3);
+}
+
+.homepage-welcome {
+  text-align: justify;
+}
+
+.homepage-explore {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	width: 75%;
+	height: 100px;
+	a {
+	  text-decoration: none;
+	}
+}
+
+.explore-card {
+  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 15px;
+  border: 1px solid $sfb-color;
+  padding: 10px;
+	align-self: center;
+	width: 100%;
+	height: 100%;
+  font-size: 1.3em;
+	color: $main-gray;
+  position: relative;
+  &:hover {
+    background: $sfb-color;
+    color: white;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+  &:hover::after {
+    border-color: white;
+  }
+}
+.explore-card::after{
+  content: '';
+  border-left: 4px solid $sfb-color;
+  border-top: 4px solid $sfb-color;
+  width: 20px;
+  height: 20px;
+  transform: rotate(135deg);
+  margin-top: 5px;
+  margin-right: 10px;
+  float: right;
+}
+
+.homepage-events {
+  display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 2fr 2fr 1fr;
+	width: 100%;
+	gap: 20px
+}
+
+#see-more-events {
+  text-decoration: none;
+  height: 50px;
+  margin-top: 90px;
+}
+
+#see-more-events div {
+  padding: 10px;
+	color: $sfb-color;
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+#see-more-events div::after {
+  content: '';
+  border-left: 4px solid $sfb-color;
+  border-top: 4px solid $sfb-color;
+  width: 20px;
+  height: 20px;
+  margin-top: -40px;
+  transform: rotate(135deg);
+  float: right;
+}
 
