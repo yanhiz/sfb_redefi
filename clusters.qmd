@@ -178,7 +178,7 @@ p01 -- p10 [class = "base-edge p01-edge"]
   // P02 -- P10 -- P09 -- P08 -- P07 -- P05
 
   p02 -- p10 [
-    class = "cluster-edge c-experimental c-syntax"
+    class = "cluster-edge c-experimental c-syntax c-semantics"
   ]
   
   p02 -- p05 [
