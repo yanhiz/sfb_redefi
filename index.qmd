@@ -4,6 +4,9 @@ toc: false
 format:
   html:
     page-layout: full
+    include-in-header: 
+      text: |
+        <link rel="preload" as="image" href="img/R&D.png" />
 ---
 
 
@@ -51,10 +54,7 @@ The Network brings together the particularly strong linguistic research at the <
 
 </div>
 
-# Events  {.column-page}
 
-
-::: {.homepage-events}
 
 ```{r}
 #| output: asis
@@ -63,11 +63,19 @@ library(readxl)
 
 source("./mailing/mailing.R", local = knitr::knit_global())
 
-events <- read_excel('event_list.xlsx')  %>%
+events <- read_excel('event_list.xlsx')  %>% 
+  filter(date>=today()) %>%
   arrange(date) %>%
-  filter(date>=today()) %>% 
+  split_date(date) %>%
   head(2)
 
+if (nrow(events) > 0) {
+
+cat('<h1 class="column-page">Events</h3>')
+
+if (nrow(events) == 1) {cat('<div class="homepage-events1">')}
+  else {cat('<div class="homepage-events2">')}
+  
 for (i in 1:nrow(events)) {
   e <- events[i,]
   cat('<div>')
@@ -106,15 +114,20 @@ for (i in 1:nrow(events)) {
   cat('</div>')
 }
 
+if (nrow(events) == 1) {cat('<a href="events.qmd" id="see-more-events1" class="see-more-events">')}
+  else {cat('<a href="events.qmd" id="see-more-events2" class="see-more-events">')}
+
+cat('<div>')
+cat('See more events')
+cat('</div>')
+cat('</a>')
+
+cat('</div>')
+}
 ```
 
-<a href="events.qmd" id="see-more-events">
-<div>
-See more events
-</div>
-</a>
 
-:::
+
 
 
 <div style="height:100px;"></div>

@@ -18,8 +18,10 @@ library(readxl)
 source("./mailing/mailing.R", local = knitr::knit_global())
 
 events <- read_excel('event_list.xlsx')  %>% 
+  filter(date>=today()) %>%
   arrange(date) %>%
-  filter(date>=today())
+  split_date(date) 
+  
 
 for (i in 1:nrow(events)) {
   e <- events[i,]
