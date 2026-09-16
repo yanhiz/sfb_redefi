@@ -21,7 +21,7 @@ events <- read_excel('event_list.xlsx')  %>%
   filter(date>=today()) %>%
   arrange(date) %>%
   split_date(date) 
-  
+
 
 for (i in 1:nrow(events)) {
   e <- events[i,]

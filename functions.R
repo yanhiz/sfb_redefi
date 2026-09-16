@@ -1,5 +1,14 @@
 library(tidyverse)
 
+months <- c("01"="JAN","02"="FEB", "03"="MAR", "04"="AVR", "05"="MAY", "06"="JUN", "07"="JUL", "08"="AUG", "09"="SEP", "10"="OCT", "11"="NOV", "12"="DEC" )
+
+split_date <- function(data,date) {
+  data %>%
+    mutate(day=format(date, "%d")) %>%
+    mutate(month=months[format(date, "%m")]) %>%
+    mutate(year=format(date, "20%y"))
+}
+
 load_publications <- function(subproject='P',path='../sfb_output/publication_list.csv') {
   read_csv(path,
            col_names = c('project','type','year','ref')) %>% 

@@ -61,7 +61,7 @@ The Network brings together the particularly strong linguistic research at the <
 library(tidyverse)
 library(readxl)
 
-source("./mailing/mailing.R", local = knitr::knit_global())
+source("functions.R", local = knitr::knit_global())
 
 events <- read_excel('event_list.xlsx')  %>% 
   filter(date>=today()) %>%
