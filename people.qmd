@@ -6,10 +6,10 @@ format:
     body-classes: people-page
     include-after-body:
       text: <script type="text/javascript" src="open_accordion.js"></script>
-toc: false
 ---
 
-```{r, results='asis'}
+```{r}
+#| results: asis
 
 library(tidyverse)
 library(readxl)
@@ -77,6 +77,34 @@ for (p in names(projects)) {
 
 
 ```
+
+<h1>Associated members</h1>
+
+
+```{r}
+#| results: asis
+
+associated <- read_excel('member_list.xlsx',sheet=2) 
+
+cat('<ul id="associated-members" style="height:',str_c(20.3*nrow(associated),'px;">'))
+
+for (i in 1:nrow(associated)) {
+  member <- associated[i,]
+  
+  if (is.na(member$website)) {
+    cat('<li>',member$name)
+  } else {
+    cat('<li><a href="',member$website,'">',member$name,'</a>')
+  }
+  
+}
+
+
+cat('</ul>')
+
+
+```
+
 
 
 

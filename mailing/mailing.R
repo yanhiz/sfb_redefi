@@ -46,7 +46,8 @@ if (nrow(upcoming) > 0) {
   add('</html>')
 
   send.mail(from = sender[1],
-            to = subscribers,
+            to = sender[1],
+            bcc = subscribers,
             subject = "SFB ReDefi - Newsletter",
             body = mail,
             html = TRUE,

@@ -7,24 +7,26 @@ format:
     include-in-header: 
       text: |
         <link rel="preload" as="image" href="img/R&D.png" />
+        <link rel="preload" as="image" href="img/test.png" />
 ---
 
 
 <div class="column-screen homepage-banner">
 
 <div class="homepage-picture">
-Redundancy & Deficiency <br>
-<img src="img/R&D.png">
+<img src="img/test.png">
 </div>
-
 
 <div class="homepage-numbers">
 <p>
 <span id="count1"></span>universities 
-<span id="count2"></span>projects 
+<span id="count2"></span>projects
 <span id="count3"></span>members 
 </p>
 </div>
+
+
+
 
 </div>
 

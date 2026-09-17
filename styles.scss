@@ -1192,37 +1192,56 @@ footer.footer {
   text-align: justify;
 }
 
+#associated-members {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 2;
+  li::marker {
+    content: "\25BA     ";
+    color: $main-gray;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
 
 /* Home page Version 2 */
 .homepage-banner {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: stretch;
   background: $sfb-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
   padding: 0px 20px;
 }
 
 .homepage-picture {
-  align-self: flex-start;
-  color: white;
-  font-size: 4em;
+	align-self: flex-start;
+  width: 40%;
+  margin: -15px 0px -30px -50px;
+  text-align: right;
   img {
-    width: 40%;
+    width: 80%;
   }
 }
 
+
 .homepage-numbers {
   align-self: flex-end;
+  width: 60%;
+  text-align: right;
   p {
     color: white;
     font-size: 3em;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.025em;
   }
   span {
-    font-size: 3em;
-    line-height: 0;
+    font-size: 2.25em;
+    line-height: .7;
+    margin-left: 10px;
   }
 }
 
