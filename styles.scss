@@ -11,11 +11,36 @@ $secondary-gray: #8A9696;
 .navbar-nav .nav-item {
   font-size: 1.1em;
   margin-left: 25px;
+
   a:hover {
     color: $sfb-color;
     background: white;
   }
-  
+}
+
+/* Let desktop menu links fill the navbar vertically so their hover
+   background covers the red bar from top to bottom. */
+
+@media (min-width: 992px) {
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-collapse,
+  .navbar-nav,
+  .navbar-nav .nav-item {
+    align-self: stretch;
+  }
+
+  .navbar-nav .nav-item {
+    display: flex;
+  }
+
+  .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Typography */
@@ -457,22 +482,6 @@ footer.footer {
   fill: $sfb-color !important;
 }
 
-
-/* --------------------------------------------------
-   Central P01 edges
--------------------------------------------------- */
-
-.clusters-page svg g.base-edge path {
-  stroke: $secondary-gray !important;
-  stroke-width: 2.5px !important;
-}
-
-/* Highlight P01 spokes when P01 is active */
-
-.clusters-page svg g.p01-edge.is-active path {
-  stroke: $sfb-color !important;
-  stroke-width: 3.5px !important;
-}
 
 /* --------------------------------------------------
    Cluster edges
@@ -1208,40 +1217,126 @@ footer.footer {
 
 /* Home page Version 2 */
 .homepage-banner {
+  --homepage-banner-pad-y: clamp(18px, 2vw, 36px);
+  /* Adjust these three values to size and position the pictogram. */
+  --homepage-pictogram-width: 60%;
+  --homepage-pictogram-x: -130px;
+  --homepage-pictogram-y: -0px;
   background: $sfb-color;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: stretch;
-  align-content: stretch;
-  padding: 0px 20px;
+  align-items: center;
+  gap: clamp(16px, 2vw, 32px);
+  height: 28vw;
+  min-height: 0;
+  overflow: hidden;
+  padding: var(--homepage-banner-pad-y) clamp(24px, 3vw, 56px);
+  box-sizing: border-box;
 }
 
 .homepage-picture {
-	align-self: flex-start;
-  width: 40%;
-  margin: -15px 0px -30px -50px;
-  text-align: right;
+  flex: 0 0 var(--homepage-pictogram-width);
+  width: var(--homepage-pictogram-width);
+  margin: calc(-1 * var(--homepage-banner-pad-y)) 0;
+  p {
+    margin: 0;
+  }
   img {
-    width: 80%;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: translate(
+      var(--homepage-pictogram-x),
+      var(--homepage-pictogram-y)
+    );
   }
 }
 
 
 .homepage-numbers {
+  flex: 1 1 0;
+  min-width: 0;
   align-self: flex-end;
-  width: 60%;
+  width: auto;
   text-align: right;
   p {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: clamp(10px, 1.3vw, 24px);
+    margin: 0;
     color: white;
-    font-size: 3em;
+    white-space: nowrap;
+    font-family: "Source Sans 3", "Source Sans Pro", Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(3.5rem, 3.0vw, 4rem);
+    line-height: 1;
     letter-spacing: -0.025em;
   }
-  span {
+
+  .homepage-stat {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .homepage-stat > span {
     font-size: 2.25em;
     line-height: .7;
-    margin-left: 10px;
+    margin-right: .12em;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .homepage-banner {
+    --homepage-banner-pad-y: 18px;
+    min-height: 0;
+    padding: var(--homepage-banner-pad-y) 24px;
+  }
+
+  .homepage-numbers {
+    p {
+      font-size: 1em;
+    }
+
+    .homepage-stat > span {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .homepage-banner {
+    --homepage-pictogram-width: 100%;
+    --homepage-pictogram-x: 0px;
+    --homepage-pictogram-y: 0px;
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+    padding: 24px 20px;
+  }
+
+  .homepage-picture,
+  .homepage-numbers {
+    flex: 0 1 auto;
+    width: 100%;
+  }
+
+  .homepage-picture {
+    margin: 0;
+  }
+
+  .homepage-picture img {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .homepage-numbers {
+    align-self: center;
+    text-align: center;
   }
 }
 
@@ -1398,4 +1493,3 @@ footer.footer {
   transform: rotate(135deg);
   float: right;
 }
-

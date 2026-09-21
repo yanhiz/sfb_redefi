@@ -14,14 +14,14 @@ format:
 <div class="column-screen homepage-banner">
 
 <div class="homepage-picture">
-<img src="img/test.png">
+<img src="img/website-banner-pictogram.svg">
 </div>
 
 <div class="homepage-numbers">
 <p>
-<span id="count1"></span>universities 
-<span id="count2"></span>projects
-<span id="count3"></span>members 
+<span class="homepage-stat"><span id="count1"></span>universities</span>
+<span class="homepage-stat"><span id="count2"></span>projects</span>
+<span class="homepage-stat"><span id="count3"></span>members</span>
 </p>
 </div>
 

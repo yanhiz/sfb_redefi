@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 -70 1600 740"
+     width="1600"
+     height="740"
+     role="img"
+     aria-labelledby="draft-title draft-description">
+  <title id="draft-title">Cable-extension draft</title>
+  <desc id="draft-description">Review mock-up of smoothly extended cable cords meeting the top and bottom edges of the red banner.</desc>
+
+  <!-- White page surrounding the red banner, included only for review. -->
+  <rect x="0" y="-70" width="1600" height="740" fill="#ffffff"/>
+  <rect x="0" y="0" width="1600" height="600" fill="#8c1e1f"/>
+
+  <!-- Original full-size pictogram used as a stable visual base for review. -->
+  <image href="website-banner-pictogram.png"
+         xlink:href="website-banner-pictogram.png"
+         x="0"
+         y="0"
+         width="1600"
+         height="600"/>
+
+  <!-- Longer overlapping curves create seamless continuations of the cords. -->
+  <g fill="none"
+     stroke="#ffffff"
+     stroke-width="18"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+    <path d="M296 432 C258 427 231 443 216 470 C199 500 182 548 168 610"/>
+    <path d="M1218 168 C1261 160 1307 176 1342 153 C1371 134 1385 106 1396 75 C1408 43 1415 17 1420 -10"/>
+  </g>
+
+  <text x="460"
+        y="82"
+        fill="#ffffff"
+        font-family="'Source Sans 3', 'Source Sans Pro', Arial, sans-serif"
+        font-size="44"
+        font-weight="700"
+        text-anchor="middle">Language between</text>
+</svg>

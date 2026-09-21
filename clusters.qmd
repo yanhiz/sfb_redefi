@@ -18,7 +18,9 @@ The subprojects within our SFB are connected through several thematic [clusters]
 
 graph clusters {
   layout = neato
-  normalize = true
+  // Positions below are specified in the final display orientation. Keeping
+  // normalization off prevents edge-order changes from rotating the graph.
+  normalize = false
   outputorder = edgesfirst
   bgcolor = transparent
   pad = 0.25
@@ -47,19 +49,11 @@ graph clusters {
   // PROJECT NODES
   // --------------------------------------------------
 
-    p01 [
-    label = "P01",
-    URL = "subprojects/P01.html",
-    tooltip = "Open project P01",
-    pos = "0,0!",
-    class = "cluster-project p01-hub"
-  ]
-
   p02 [
     label = "P02",
     URL = "subprojects/P02.html",
     tooltip = "Open project P02",
-    pos = "0,2.2!",
+    pos = "2.2,0!",
     class = "cluster-project c-experimental c-corpus c-syntax c-semantics"
   ]
 
@@ -67,7 +61,7 @@ graph clusters {
     label = "P03",
     URL = "subprojects/P03.html",
     tooltip = "Open project P03",
-    pos = "1.56,1.56!",
+    pos = "1.56,-1.56!",
     class = "cluster-project c-zero c-syntax c-semantics"
   ]
 
@@ -75,7 +69,7 @@ graph clusters {
     label = "P05",
     URL = "subprojects/P05.html",
     tooltip = "Open project P05",
-    pos = "2.2,0!",
+    pos = "0,-2.2!",
     class = "cluster-project c-experimental c-syntax c-semantics"
   ]
 
@@ -83,7 +77,7 @@ graph clusters {
     label = "P06",
     URL = "subprojects/P06.html",
     tooltip = "Open project P06",
-    pos = "1.56,-1.56!",
+    pos = "-1.56,-1.56!",
     class = "cluster-project c-romance c-clitic c-syntax"
   ]
 
@@ -91,7 +85,7 @@ graph clusters {
     label = "P07",
     URL = "subprojects/P07.html",
     tooltip = "Open project P07",
-    pos = "0,-2.2!",
+    pos = "-2.2,0!",
     class = "cluster-project c-romance c-experimental c-corpus c-clitic c-zero c-semantics"
   ]
 
@@ -99,7 +93,7 @@ graph clusters {
     label = "P08",
     URL = "subprojects/P08.html",
     tooltip = "Open project P08",
-    pos = "-1.56,-1.56!",
+    pos = "-1.56,1.56!",
     class = "cluster-project c-romance c-experimental c-corpus c-clitic c-zero c-semantics"
   ]
 
@@ -107,7 +101,7 @@ graph clusters {
     label = "P09",
     URL = "subprojects/P09.html",
     tooltip = "Open project P09",
-    pos = "-2.2,0!",
+    pos = "0,2.2!",
     class = "cluster-project c-romance c-experimental c-clitic c-zero c-semantics"
   ]
 
@@ -115,25 +109,9 @@ graph clusters {
     label = "P10",
     URL = "subprojects/P10.html",
     tooltip = "Open project P10",
-    pos = "-1.56,1.56!",
+    pos = "1.56,1.56!",
     class = "cluster-project c-experimental c-syntax c-semantics"
   ]
-
-
-  // --------------------------------------------------
-  // CENTRAL P01 CONNECTIONS
-  // --------------------------------------------------
-
-p01 -- p02 [class = "base-edge p01-edge"]
-p01 -- p03 [class = "base-edge p01-edge"]
-p01 -- p05 [class = "base-edge p01-edge"]
-p01 -- p06 [class = "base-edge p01-edge"]
-p01 -- p07 [class = "base-edge p01-edge"]
-p01 -- p08 [class = "base-edge p01-edge"]
-p01 -- p09 [class = "base-edge p01-edge"]
-p01 -- p10 [class = "base-edge p01-edge"]
-
-
 
   // --------------------------------------------------
   // REDUCED CLUSTER CONNECTIONS
@@ -142,7 +120,6 @@ p01 -- p10 [class = "base-edge p01-edge"]
   // If an edge belongs to several clusters, it receives
   // several cluster classes.
   // --------------------------------------------------
-
 
   // P06 -- P07
   // Romance + Clitic pronouns
@@ -200,7 +177,7 @@ p01 -- p10 [class = "base-edge p01-edge"]
   p02 -- p07 [
     class = "cluster-edge c-corpus"
   ]
-  
+
   p02 -- p08 [
   class = "cluster-edge c-corpus"
   ]
@@ -245,7 +222,7 @@ p03 -- p09 [
   romance_label [
     shape = plain,
     fixedsize = false,
-    pos = "-1.85,-3.2!",
+    pos = "-3.2,1.85!",
     URL = "clusters/romance.html",
     tooltip = "Open the Romance cluster",
     target = "_top",
@@ -275,7 +252,7 @@ p03 -- p09 [
   experimental_methods_label [
     shape = plain,
     fixedsize = false,
-    pos = "1.8,4.0!",
+    pos = "4.0,-1.8!",
     URL = "clusters/experimental-methods.html",
     tooltip = "Open the Experimental methods cluster",
     target = "_top",
@@ -304,7 +281,7 @@ p03 -- p09 [
   clitic_pronouns_label [
     shape = plain,
     fixedsize = false,
-    pos = "0,4.3!",
+    pos = "4.3,0!",
     URL = "clusters/clitic-pronouns.html",
     tooltip = "Open the Clitic pronouns cluster",
     target = "_top",
@@ -333,7 +310,7 @@ p03 -- p09 [
   zero_elements_label [
     shape = plain,
     fixedsize = false,
-    pos = "0,-4.2!",
+    pos = "-4.2,0!",
     URL = "clusters/zero-elements.html",
     tooltip = "Open the Zero elements cluster",
     target = "_top",
@@ -362,7 +339,7 @@ p03 -- p09 [
   semantics_discourse_label [
     shape = plain,
     fixedsize = false,
-    pos = "-3,0.0!",
+    pos = "0,3!",
     URL = "clusters/semantics-and-discourse-effects.html",
     tooltip = "Open the Semantics and discourse effects cluster",
     target = "_top",
@@ -391,7 +368,7 @@ p03 -- p09 [
   corpus_annotation_label [
     shape = plain,
     fixedsize = false,
-    pos = "-1.85,4.0!",
+    pos = "4.0,1.85!",
     URL = "clusters/corpus-and-annotation.html",
     tooltip = "Open the Corpus and annotation cluster",
     target = "_top",
@@ -420,7 +397,7 @@ p03 -- p09 [
   syntax_binding_label [
     shape = plain,
     fixedsize = false,
-    pos = "3.0,0!",
+    pos = "0,-3.0!",
     URL = "clusters/syntax-and-binding-effects.html",
     tooltip = "Open the Syntax and binding effects cluster",
     target = "_top",
@@ -471,6 +448,36 @@ function initialiseClusterHover() {
   ];
 
   const labels = graph.querySelectorAll("g.cluster-label");
+  const tooltipTargets = graph.querySelectorAll(
+    "g.cluster-label, g.cluster-project"
+  );
+
+  // Without their own title, interactive nodes otherwise inherit Graphviz's
+  // graph-level tooltip ("clusters") when hovered.
+  const graphTitle = graph.querySelector("g.graph > title");
+
+  if (graphTitle) {
+    graphTitle.remove();
+  }
+
+  // Graphviz adds native SVG tooltips for every node. These expose internal
+  // names such as "romance_label" and "p02". Remove both the generated
+  // title and the link title from cluster labels and project nodes.
+  tooltipTargets.forEach(function(target) {
+    target.querySelectorAll("title").forEach(function(title) {
+      title.remove();
+    });
+
+    target.querySelectorAll("[title]").forEach(function(element) {
+      const accessibleLabel = element.getAttribute("title");
+
+      if (accessibleLabel && !element.hasAttribute("aria-label")) {
+        element.setAttribute("aria-label", accessibleLabel);
+      }
+
+      element.removeAttribute("title");
+    });
+  });
 
   function clearClusterHighlight() {
     graph.querySelectorAll(".is-active").forEach(function(element) {
@@ -497,7 +504,7 @@ function initialiseClusterHover() {
   }
 
   const activeEdges = graphGroup.querySelectorAll(
-    "g.cluster-edge.is-active, g.p01-edge.is-active"
+    "g.cluster-edge.is-active"
   );
 
   activeEdges.forEach(function(edge) {
@@ -553,49 +560,6 @@ function initialiseClusterHover() {
     });
 
   });
-
-
-  // P01 hover behaviour
-
-  const p01 = graph.querySelector("g.p01-hub");
-  const p01Edges = graph.querySelectorAll("g.p01-edge");
-
-  function highlightP01() {
-
-    clearClusterHighlight();
-
-    if (p01) {
-      p01.classList.add("is-active");
-    }
-
-    p01Edges.forEach(function(edge) {
-      edge.classList.add("is-active");
-    });
-
-    bringActiveEdgesToFront();
-  }
-
-
-  if (p01) {
-
-    p01.addEventListener("mouseenter", function() {
-      highlightP01();
-    });
-
-    p01.addEventListener("mouseleave", function() {
-      clearClusterHighlight();
-    });
-
-    p01.addEventListener("focusin", function() {
-      highlightP01();
-    });
-
-    p01.addEventListener("focusout", function() {
-      clearClusterHighlight();
-    });
-
-  }
-
 }
 
 if (document.readyState === "loading") {
