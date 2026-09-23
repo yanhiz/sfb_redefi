@@ -7,9 +7,9 @@ website:
   favicon: img/logos/logo red white rund.png
   navbar:
     left:
-      - text: "Our team"
+      - text: "Team"
         href: people.qmd
-      - text: "Our subprojects"
+      - text: "Subprojects"
         href: subprojects.qmd
       - text: "Research clusters"
         href: clusters.qmd
@@ -17,6 +17,8 @@ website:
         href: events.qmd
       - text: "Publications & Talks"
         href: publications.qmd
+      - text: "Science communication"
+        href: communication.qmd
 
   page-footer: |
     © 2026 SFB Language between Redundancy and Deficiency
@@ -32,7 +34,7 @@ format:
       - cosmo
       - brand
       - styles.scss
-    toc: true
+    toc: false
 
 
 echo: false

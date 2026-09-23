@@ -5,9 +5,9 @@ format:
   html:
     page-layout: full
     include-in-header: 
-      text: |
-        <link rel="preload" as="image" href="img/R&D.png" />
-        <link rel="preload" as="image" href="img/test.png" />
+      text: <link rel="preload" as="image" href="img/website-banner-pictogram.svg"/>
+    include-after-body: 
+      text: <script type="text/javascript" src="show_bibtex.js"/>
 ---
 
 
@@ -36,6 +36,8 @@ format:
 
 
 ::: {.column-page-inset .homepage-welcome}
+
+**Language is one of our most fundamental cognitive capacities.**
 This <span class="highlight-red">Special Research Area (SFB) Network</span> is developing a new approach to modeling the linguistic system. The starting point is the hypothesis that the cognitive core of language ability is based on logical-symbolic calculations, but is embedded in a cognitive system of stochastic nature.
 <span class="highlight-gray">As an interface between the symbolic and stochastic components, grammar uses the central optimization factors of redundancy and deficiency</span>, which can underlie linguistic operations and make it possible to process both under- and over-specified inputs.
 
@@ -53,6 +55,7 @@ The Network brings together the particularly strong linguistic research at the <
 <a href="subprojects.qmd"><div class="explore-card">Our subprojects</div></a>
 <a href="clusters.qmd"><div class="explore-card">Our research clusters</div></a>
 <a href="publications.qmd"><div class="explore-card">Our publications</div></a>
+<a href="communication.qmd"><div class="explore-card">Our science communication</div></a>
 
 </div>
 
@@ -116,8 +119,12 @@ for (i in 1:nrow(events)) {
   cat('</div>')
 }
 
-if (nrow(events) == 1) {cat('<a href="events.qmd" id="see-more-events1" class="see-more-events">')}
-  else {cat('<a href="events.qmd" id="see-more-events2" class="see-more-events">')}
+if (nrow(events) == 1) {
+  cat('<a href="events.qmd" id="see-more-events1" class="see-more-events">')
+  }
+  else {
+  cat('<a href="events.qmd" id="see-more-events2" class="see-more-events">')
+}
 
 cat('<div>')
 cat('See more events')
@@ -129,10 +136,36 @@ cat('</div>')
 ```
 
 
+# Latest publications {.column-page}
 
 
+::: {.project-publications style="margin-bottom:0px;"}
 
-<div style="height:100px;"></div>
+
+```{r}
+#| output: asis
+library(tidyverse)
+library(readxl)
+
+source("functions.R", local = knitr::knit_global())
+
+load_publications(path='sfb_output/publication_list.csv') %>%
+  filter(type=='publication',year==format(today(),"20%y")) %>%
+  head(3) %>%
+  print_publications(header=FALSE)
+
+
+```
+
+::: 
+
+<a href="publications.qmd" id="see-more-publications">
+<div>
+See more publications
+</div>
+</a>
+
+
 
 <!-- ::: {.homepage-scroll-layout} -->
 

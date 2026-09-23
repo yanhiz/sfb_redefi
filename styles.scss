@@ -10,11 +10,12 @@ $secondary-gray: #8A9696;
 /* Navbar */
 .navbar-nav .nav-item {
   font-size: 1.1em;
-  margin-left: 25px;
-
   a:hover {
     color: $sfb-color;
     background: white;
+  }
+  .nav-link {
+    padding: 0px 20px;
   }
 }
 
@@ -25,6 +26,7 @@ $secondary-gray: #8A9696;
   .navbar {
     padding-top: 0;
     padding-bottom: 0;
+    margin-top: -1px;
   }
 
   .navbar-collapse,
@@ -689,7 +691,7 @@ footer.footer {
   margin: 1.25rem 0;
 }
 
-.project-cluster-badge {
+.project-cluster-badge,.navigation-next {
   display: inline-block;
   padding: 0.45rem 0.85rem;
   border: 2px solid $sfb-color;
@@ -704,11 +706,18 @@ footer.footer {
     background-color 0.15s ease;
 }
 
-.project-cluster-badge:hover {
+.project-cluster-badge:hover,.navigation-next:hover {
   color: #ffffff;
   background-color: $sfb-color;
 }
 
+.subproject-navigation {
+    position: fixed;
+}
+
+.navigation-next {
+  font-size: 1.1em !important;
+}
 
 /* Publications */
 
@@ -728,7 +737,7 @@ footer.footer {
   line-height: 1.6;
 }
 
-.project-title {
+.project-publications .project-title {
   color: $sfb-color;
   font-size: 1.75em;
   font-weight: 600;
@@ -1009,6 +1018,46 @@ footer.footer {
   }
 }
 
+.apa-entry {
+  margin-bottom: 10px;
+}
+
+.bibtex-button {
+  color: $sfb-color;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border: none;
+}
+.bibtex-entry {
+  background: #E8E8E8;
+  margin-left: 2.25rem;
+  padding: 0px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0px;
+  overflow: hidden;
+  content-visibility: hidden;
+  height: 0;
+  transition: height 0.4s ease-in-out;
+}
+.bibtex-entry.shown {
+  content-visibility: visible;
+  margin-bottom: 30px;
+  padding: 10px;
+  overflow: scroll;
+  height: 200px;
+}
+.bibtex-copy {
+  background: #E8E8E8;
+  border: 1px solid black;
+  width: 175px !important;
+  border-radius: 5px;
+}
+
 /* People  */
 
 
@@ -1207,7 +1256,7 @@ footer.footer {
   flex-wrap: wrap;
   line-height: 2;
   li::marker {
-    content: "\25BA     ";
+    content: "\2B9E     ";
     color: $main-gray;
     font-weight: 600;
     font-size: 15px;
@@ -1257,9 +1306,8 @@ footer.footer {
 
 .homepage-numbers {
   flex: 1 1 0;
-  min-width: 0;
   align-self: flex-end;
-  width: auto;
+  width: 40%;
   text-align: right;
   p {
     display: flex;
@@ -1267,13 +1315,13 @@ footer.footer {
     justify-content: flex-end;
     align-items: baseline;
     gap: clamp(10px, 1.3vw, 24px);
-    margin: 0;
+    margin-bottom: -50px;
     color: white;
     white-space: nowrap;
     font-family: "Source Sans 3", "Source Sans Pro", Arial, sans-serif;
-    font-weight: 700;
-    font-size: clamp(3.5rem, 3.0vw, 4rem);
-    line-height: 1;
+    font-weight: 600;
+    font-size: clamp(3rem, 3.0vw, 3rem);
+    line-height: 2;
     letter-spacing: -0.025em;
   }
 
@@ -1285,7 +1333,7 @@ footer.footer {
   .homepage-stat > span {
     font-size: 2.25em;
     line-height: .7;
-    margin-right: .12em;
+    margin-right: 10px;
   }
 }
 
@@ -1402,7 +1450,7 @@ footer.footer {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 15px;
 	width: 75%;
-	height: 100px;
+	height: auto;
 	a {
 	  text-decoration: none;
 	}
@@ -1416,7 +1464,7 @@ footer.footer {
 	align-self: center;
 	width: 100%;
 	height: 100%;
-  font-size: 1.3em;
+  font-size: 1.2em;
 	color: $main-gray;
   position: relative;
   right: 0;
@@ -1490,6 +1538,42 @@ footer.footer {
   width: 20px;
   height: 20px;
   margin-top: 5px;
+  transform: rotate(135deg);
+  float: right;
+}
+
+#see-more-publications {
+  text-decoration: none;
+  height: 50px;
+  position: relative;
+}
+
+#see-more-publications div {
+  float: right;
+  text-align: right;
+  width: 30%;
+  padding: 10px;
+	color: $sfb-color;
+	font-size: 1.3em;
+	font-weight: 600;
+	position: relative;
+  transition: right ease 0.5s;
+  right: 60px;
+  &:hover {
+    right: 50px;
+  }
+  p {
+    margin-right: 30px;
+  }
+}
+
+#see-more-publications div::after {
+  content: '';
+  border-left: 4px solid $sfb-color;
+  border-top: 4px solid $sfb-color;
+  width: 20px;
+  height: 20px;
+  margin-top: -40px;
   transform: rotate(135deg);
   float: right;
 }

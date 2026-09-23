@@ -1,0 +1,9 @@
+---
+title: "Science communication"
+format: html
+---
+
+We have introduced the SFB on the blog of the Cognitive Science Society, which aims to make scientific research accessible to a larger audience. [Read it here](https://cognitivesciencesociety.org/symbolic-linguistics-in-the-age-of-generative-ai/).
+
+
+Compare Romance languages across several phenomena with our interactive interface! It features many of our comparative acceptability judgment experiments. [Discover it here](https://yanis-da-cunha.shinyapps.io/shiny_rom-comp-exp/).

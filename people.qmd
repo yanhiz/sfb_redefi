@@ -4,8 +4,6 @@ format:
   html:
     page-layout: full
     body-classes: people-page
-    include-after-body:
-      text: <script type="text/javascript" src="open_accordion.js"></script>
 ---
 
 ```{r}
@@ -107,34 +105,20 @@ cat('</ul>')
 
 
 
-
-<!-- <div class="accordion"> -->
-<!-- <input type="radio" name="select" class="accordion-select" /> -->
-<!-- <div class="accordion-title"><span>Dr. Yanis da Cunha</span></div> -->
-<!-- <div class="accordion-content"> -->
-<!-- <div class="accordion-leftcontent"> -->
-<!-- <img class="accordion-picture" src="/img/pictures/Yanis_daCunha.jpeg"> -->
-<!-- <p class="accordion-links"> -->
-<!-- <a href="mailto:yanis@gmail.com"><i class="bi bi-envelope"></i> yanis.dc@gmail.com</a> -->
-<!-- <br> -->
-<!-- <a href="link.html"><i class="bi bi-link-45deg"> My website</i></a> -->
-<!-- </p> -->
-<!-- </div> -->
-<!-- <div class="accordion-rightcontent"> -->
-<!-- <span class="accordion-position">Postdoc</span> -->
-<!-- <span class="accordion-university">University of Graz</span> -->
-<!-- <div class="accordion-bio"> -->
-<!-- Yanis da Cunha works as a researcher in Romance linguistics at the University of Graz. His PhD thesis (Université Paris Cité, France) deals with gender effects on function assignment (male-subject and female-object biases). More broadly, his research aims at discovering the factors underlying syntactic alternations (such as voice and word order alternations) across various languages (English, French, modern Greek, Spanish). -->
-<!-- <br> -->
-<!-- He is currently working on pronouns in French and Spanish within the subproject "Animacy features and the flexibility of pronouns". His contribution focuses on gender in the pronominal domain. He seeks to address the role of grammatical gender features in the animacy restrictions found on some pronouns (e.g., strong pronouns in French) and the way mismatches between grammatical and semantic gender features are accommodated by pronouns (e.g., a pronoun referring to a gender-underspecified noun). -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div>  -->
-<!-- <input type="radio" name="select" class="accordion-select" /> -->
-<!-- <div class="accordion-title"><span>Title</span></div> -->
-<!-- <div class="accordion-content">Content</div>  -->
-<!-- <input type="radio" name="select" class="accordion-select" /> -->
-<!-- <div class="accordion-title"><span>Title</span></div> -->
-<!-- <div class="accordion-content">Content</div>  -->
-<!-- </div>  -->
-
+<script>
+// Check if URL of browser window has hash tag
+if (location.hash) {
+  console.log('Hash trouvé')
+  // Get URL hash tag
+  const hash = window.location.hash;
+  console.log(hash)
+  // Select checkbox with ID of hashtag
+  const checkbox = document.querySelector(hash);
+  console.log(checkbox)
+  // Check if checkbox exists
+  if(checkbox) {
+    // Set selected checkbox as checked
+    checkbox.checked = true;
+  }
+}
+</script>

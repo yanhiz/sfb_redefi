@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Our subprojects</title>
+<title>Science communication</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,8 +34,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./img/logos/logo red white rund.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -77,69 +75,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-subprojects-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-subprojects-listing'] = new List('listing-subprojects-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -162,7 +102,7 @@ window.Quarto = {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./subprojects.html" aria-current="page"> 
+    <a class="nav-link" href="./subprojects.html"> 
 <span class="menu-text">Subprojects</span></a>
   </li>  
   <li class="nav-item">
@@ -178,7 +118,7 @@ window.Quarto = {
 <span class="menu-text">Publications &amp; Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./communication.html"> 
+    <a class="nav-link active" href="./communication.html" aria-current="page"> 
 <span class="menu-text">Science communication</span></a>
   </li>  
 </ul>
@@ -189,21 +129,21 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content page-columns page-full column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Our subprojects</h1>
+<h1 class="title">Science communication</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta">
 
     
   
@@ -215,201 +155,8 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-subprojects-listing" class="column-page quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1790151779630" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
-<a href="./subprojects/P01.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/project_logos/P1.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P01 – Theoretical Task Force
-</h5>
-<div class="card-text listing-description delink">
-This subproject coordinates the activities of the Special Research Area Language between Redundancy and Deficiency and hosts two affiliated PhD projects funded by the…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1790151777456" data-listing-reading-time-sort="1" data-listing-word-count-sort="165">
-<a href="./subprojects/P02.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/project_logos/P2.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P02 – Grammatical Gender in Discourse and Grammar
-</h5>
-<div class="card-text listing-description delink">
-Subproject P02 is interested in an analysis of the discourse structural interpretation of gender features. The main focus of the subproject is the study of gender…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1790151779206" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
-<a href="./subprojects/P03.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/project_logos/P3.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P03 – Mismatches in Binding and Coreference
-</h5>
-<div class="card-text listing-description delink">
-Project P03 investigates two empirical domains: fake indexicals and other bound pronouns, and unbound pronouns exhibiting covariance. It examines their morphological…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1790151779245" data-listing-reading-time-sort="1" data-listing-word-count-sort="194">
-<a href="./subprojects/P05.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/project_logos/P5.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P05 – The Role of Self in Pronominal Coreference
-</h5>
-<div class="card-text listing-description delink">
-This subproject investigates why intensified pronouns (IntPros) tend cross-linguistically to grammaticalize into reflexive anaphors. It proposes that binding operates…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1790151779325" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
-<a href="./subprojects/P06.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/project_logos/P6.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P06 - The (Non-)Deficiency and (Non-)Redundancy of Clitic Pronouns
-</h5>
-<div class="card-text listing-description delink">
-Focusing on clitic doubling (CD), this project investigates the relationship between agreement, clitics, and weak and strong pronouns. It hypothesizes that these forms…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1790151779354" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
-<a href="./subprojects/P07.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/project_logos/P7.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P07 — Deficiency and Redundancy in Iberoromance Pronominal Systems
-</h5>
-<div class="card-text listing-description delink">
-Subproject P07 examines variation in accusative clitic doubling (ACD) and null direct objects (NDOs) within and across Spanish and Portuguese varieties. Although these…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1790151779407" data-listing-reading-time-sort="1" data-listing-word-count-sort="189">
-<a href="./subprojects/P08.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/project_logos/P8.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P08 – Fading Reference – The Pragmaticalization of Pronoun + Verb
-</h5>
-<div class="card-text listing-description delink">
-This project investigates pronoun–verb combinations (prVCs), primarily in spoken Spanish and Italian. It examines their development from content-rich predicates through…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1790151779457" data-listing-reading-time-sort="1" data-listing-word-count-sort="192">
-<a href="./subprojects/P09.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/project_logos/P9.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P09 – Animacy Features and the Flexibility of Pronouns
-</h5>
-<div class="card-text listing-description delink">
-This subproject investigates the mapping between morphosyntactic and semantic features of French and Spanish personal pronouns from the perspective of redundancy and…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1790151775423" data-listing-reading-time-sort="1" data-listing-word-count-sort="152">
-<a href="./subprojects/P10.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/project_logos/P10.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P10 – Deficiency and Redundancy in Expressing Temporal Relations
-</h5>
-<div class="card-text listing-description delink">
-This subproject develops a formal semantic theory of temporal pronouns and integrates it into a broader model of temporal expressions, including temporal and quantifying…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-
+<p>We have introduced the SFB on the blog of the Cognitive Science Society, which aims to make scientific research accessible to a larger audience. <a href="https://cognitivesciencesociety.org/symbolic-linguistics-in-the-age-of-generative-ai/">Read it here</a>.</p>
+<p>Compare Romance languages across several phenomena with our interactive interface! It features many of our comparative acceptability judgment experiments. <a href="https://yanis-da-cunha.shinyapps.io/shiny_rom-comp-exp/">Discover it here</a>.</p>
 
 
 

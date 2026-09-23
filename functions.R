@@ -11,26 +11,27 @@ split_date <- function(data,date) {
 
 load_publications <- function(subproject='P',path='../sfb_output/publication_list.csv') {
   read_csv(path,
-           col_names = c('project','type','year','ref')) %>% 
+           col_names = c('project','type','year','apa','bibtex')) %>% 
     # MAKE LINKS CLICKABLE
-    mutate(ref= str_replace(ref,'(https://.*)','[\\1](\\1)')) %>% 
+    mutate(apa= str_replace(apa,'(https://.*)','[\\1](\\1)')) %>% 
     # SORT THE DATA FRAME AND ORDER YEARS
-    arrange(type,desc(year),ref) %>% mutate(year=factor(year,levels=(unique(year)))) |> 
+    arrange(type,desc(year),apa) %>% mutate(year=factor(year,levels=(unique(year)))) |> 
     filter(str_detect(project,subproject))
 }
 
 
-print_publications <- function(publications,level=4) {
+print_publications <- function(publications,level=4,header=TRUE) {
   # PRINT BIBLIOGRAPHY
   for (type in publications %>% group_split(type)) {
-    cat(str_c(c(rep('#',level),' '),collapse=''),str_c(str_to_sentence(type$type[1]),'s'),'\n\n')
+    if (header) {cat(str_c(c(rep('#',level),' '),collapse=''),str_c(str_to_sentence(type$type[1]),'s'),'\n\n')}
     for (year in type %>% group_split(year)) {
-      cat(str_c(c(rep('#',level+1),' '),collapse=''),as.character(year$year[1]),'\n\n')
-      cat(year$ref,'\n\n',sep='\n\n')
+      if (header) {cat(str_c(c(rep('#',level+1),' '),collapse=''),as.character(year$year[1]),'\n\n')}
+      year$bibtex <- year$bibtex %>% str_replace_all('\\},','\\},<br>&emsp;') %>% str_replace(', author',',<br>&emsp;author') %>% str_replace('\\}$','\n\\}') %>% str_replace_all('@','\\\\@')
+      year$ref <- str_c('<p>',year$apa,' <input type="button" value="Get Bibtex" class="bibtex-button"/></p><div class="bibtex-entry"><div>',year$bibtex,'</div><input type="button" class="bibtex-copy" value="Copy to clipboard"/></div>')
+      cat(year$ref,'\n\n\n',sep='\n\n')
     }
   }
 }
-
 
 print_card_members <- function(project) {
   library(tidyverse)

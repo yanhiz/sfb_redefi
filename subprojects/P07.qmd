@@ -4,8 +4,16 @@ image: /img/project_logos/P7.svg
 format:
   html:
     page-layout: full
-toc: true
+    include-after-body: 
+      text: <script type="text/javascript" src="../show_bibtex.js"/>
 ---
+
+```{=html}
+<div class="column-margin subproject-navigation">
+<a href="P08.qmd" class="navigation-next">Go to next subproject</a>
+</div>
+```
+
 
 ::: {.project-hero}
 

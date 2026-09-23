@@ -1,8 +1,19 @@
 ---
 title: "P06 - The (Non-)Deficiency and (Non-)Redundancy of Clitic Pronouns"
 image: /img/project_logos/P6.svg
-toc: true
+format:
+  html:
+    page-layout: full
+    include-after-body: 
+      text: <script type="text/javascript" src="../show_bibtex.js"/>
 ---
+
+```{=html}
+<div class="column-margin subproject-navigation">
+<a href="P07.qmd" class="navigation-next">Go to next subproject</a>
+</div>
+```
+
 
 ::: {.project-hero}
 
@@ -63,6 +74,5 @@ load_publications("P06") %>%
 
 ```
 
-#### Talks
 
 :::

@@ -3,6 +3,8 @@ title: "Publications and Talks"
 format:
   html:
     page-layout: full
+    include-after-body: 
+      text: <script type="text/javascript" src="show_bibtex.js"></script>
 toc: false
 ---
 
@@ -19,6 +21,7 @@ source("functions.R", local = knitr::knit_global())
 load_publications(path='sfb_output/publication_list.csv') %>% 
   print_publications(level=4)
 ```
+
 
 
 ```{r}
@@ -42,8 +45,6 @@ for (p in names(projects)) {
   load_publications(p,path='sfb_output/publication_list.csv') %>% 
     print_publications(level=4)
 }
-
-
 
 ```
 
