@@ -149,6 +149,67 @@ h6 {
   line-height: 1.15 !important;
 }
 
+/* Science communication cards, matching the subproject cards */
+
+.communication-page .communication-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.communication-page .communication-card {
+  display: flex;
+  min-width: 0;
+  min-height: 15rem;
+  flex-direction: column;
+  padding: 1.25rem;
+  border: 3px solid $sfb-color;
+  border-radius: 0.25rem;
+  background: #ffffff;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.18);
+  color: $main-gray;
+  text-decoration: none;
+  transition: box-shadow 0.15s ease;
+}
+
+.communication-page .communication-card:hover,
+.communication-page .communication-card:focus-visible {
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.22);
+  color: $main-gray;
+  text-decoration: none;
+}
+
+.communication-page .communication-card:focus-visible {
+  outline: 3px solid $sfb-color;
+  outline-offset: 3px;
+}
+
+.communication-page .communication-card h2 {
+  margin: 0 0 0.75rem;
+  color: $sfb-color;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.communication-page .communication-card p {
+  margin: 0 0 1rem;
+}
+
+.communication-page .communication-card-action {
+  margin-top: auto;
+  color: $sfb-color;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .communication-page .communication-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Homepage two-column scroll layout */
 
 .homepage-scroll-layout {
@@ -691,7 +752,7 @@ footer.footer {
   margin: 1.25rem 0;
 }
 
-.project-cluster-badge,.navigation-next {
+.project-cluster-badge {
   display: inline-block;
   padding: 0.45rem 0.85rem;
   border: 2px solid $sfb-color;
@@ -706,7 +767,7 @@ footer.footer {
     background-color 0.15s ease;
 }
 
-.project-cluster-badge:hover,.navigation-next:hover {
+.project-cluster-badge:hover {
   color: #ffffff;
   background-color: $sfb-color;
 }
@@ -716,7 +777,42 @@ footer.footer {
 }
 
 .navigation-next {
-  font-size: 1.1em !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.65rem;
+  border: 0;
+  background-color: transparent;
+  color: $sfb-color;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none !important;
+  white-space: nowrap;
+  position: relative;
+  right: 0;
+  transition: right ease 0.5s;
+}
+
+.navigation-next:visited {
+  color: $sfb-color;
+}
+
+.navigation-next::after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  flex: 0 0 11px;
+  border-left: 3px solid $sfb-color;
+  border-top: 3px solid $sfb-color;
+  transform: rotate(135deg);
+}
+
+.navigation-next:hover,
+.navigation-next:focus-visible {
+  color: $sfb-color;
+  background-color: transparent;
+  right: -5px;
 }
 
 /* Publications */
@@ -792,6 +888,7 @@ footer.footer {
   border: 2px solid $sfb-color;
   border-radius: 0.2rem;
   background-color: #ffffff;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.18);
   transition:
     box-shadow 0.15s ease,
     border-color 0.15s ease;
@@ -799,7 +896,7 @@ footer.footer {
 
 
 .event-card:hover {
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.22);
 }
 
 /* Clickable summary */
@@ -1016,6 +1113,17 @@ footer.footer {
     background-color: $sfb-color !important;
     }
   }
+}
+
+/* Publication project-filter tabs use the same shadow as the Explore cards. */
+.project-publications .panel-tabset .nav-tabs .nav-item {
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.18);
+  transition: box-shadow 0.15s ease;
+}
+
+.project-publications .panel-tabset .nav-tabs .nav-item:hover,
+.project-publications .panel-tabset .nav-tabs .nav-item:focus-within {
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.22);
 }
 
 .apa-entry {
@@ -1268,9 +1376,9 @@ footer.footer {
 .homepage-banner {
   --homepage-banner-pad-y: clamp(18px, 2vw, 36px);
   /* Adjust these three values to size and position the pictogram. */
-  --homepage-pictogram-width: 60%;
-  --homepage-pictogram-x: -130px;
-  --homepage-pictogram-y: -0px;
+  --homepage-pictogram-width: 65%;
+  --homepage-pictogram-x: -110px;
+  --homepage-pictogram-y: 15px;
   background: $sfb-color;
   display: flex;
   flex-direction: row;
@@ -1307,7 +1415,7 @@ footer.footer {
 .homepage-numbers {
   flex: 1 1 0;
   align-self: flex-end;
-  width: 40%;
+  width: 33%;
   text-align: right;
   p {
     display: flex;
@@ -1320,7 +1428,7 @@ footer.footer {
     white-space: nowrap;
     font-family: "Source Sans 3", "Source Sans Pro", Arial, sans-serif;
     font-weight: 600;
-    font-size: clamp(3rem, 3.0vw, 3rem);
+    font-size: clamp(2.5rem, 3.0vw, 3rem);
     line-height: 2;
     letter-spacing: -0.025em;
   }
@@ -1457,7 +1565,7 @@ footer.footer {
 }
 
 .explore-card {
-  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.18);
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid $sfb-color;
   padding: 10px;
@@ -1468,9 +1576,9 @@ footer.footer {
 	color: $main-gray;
   position: relative;
   right: 0;
-  transition: right ease 0.5s;
+  transition: right ease 0.5s, box-shadow ease 0.5s;
   &:hover {
-    box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.22);
     right: -5px;
   }
 }
@@ -1505,75 +1613,63 @@ footer.footer {
 
 
 #see-more-events1 {
-  text-decoration: none;
-  height: 50px;
-  position: relative;
   top: 55px;
 }
 
 #see-more-events2 {
-  text-decoration: none;
-  height: 50px;
-  position: relative;
   top: 90px;
 }
 
-.see-more-events div {
+.see-more-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  box-sizing: border-box;
+  min-height: 50px;
   padding: 10px;
-	color: $sfb-color;
-	font-size: 1.3em;
-	font-weight: 600;
-	position: relative;
-  transition: right ease 0.5s;
-  right: 0;
-  &:hover {
-    right: -10px;
-  }
+  color: $sfb-color;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: transform ease 0.5s;
 }
 
-.see-more-events div::after {
+.see-more-link:hover {
+  transform: translateX(10px);
+}
+
+.see-more-link::after {
   content: '';
   border-left: 4px solid $sfb-color;
   border-top: 4px solid $sfb-color;
   width: 20px;
   height: 20px;
-  margin-top: 5px;
+  flex: 0 0 20px;
   transform: rotate(135deg);
-  float: right;
 }
 
 #see-more-publications {
-  text-decoration: none;
-  height: 50px;
-  position: relative;
+  width: max-content;
+  max-width: 100%;
+  margin-left: auto;
 }
 
-#see-more-publications div {
-  float: right;
-  text-align: right;
-  width: 30%;
-  padding: 10px;
-	color: $sfb-color;
-	font-size: 1.3em;
-	font-weight: 600;
-	position: relative;
-  transition: right ease 0.5s;
-  right: 60px;
-  &:hover {
-    right: 50px;
-  }
-  p {
-    margin-right: 30px;
-  }
+.see-more-events {
+  width: max-content;
+  max-width: 100%;
+  justify-self: end;
 }
 
-#see-more-publications div::after {
-  content: '';
-  border-left: 4px solid $sfb-color;
-  border-top: 4px solid $sfb-color;
-  width: 20px;
-  height: 20px;
-  margin-top: -40px;
-  transform: rotate(135deg);
-  float: right;
+@media (max-width: 700px) {
+  .homepage-events1,
+  .homepage-events2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #see-more-events1,
+  #see-more-events2 {
+    top: 0;
+  }
 }

@@ -1,9 +1,21 @@
 ---
-title: "Science communication"
-format: html
+title: "Science Communication"
+format:
+  html:
+    body-classes: communication-page
 ---
 
-We have introduced the SFB on the blog of the Cognitive Science Society, which aims to make scientific research accessible to a larger audience. [Read it here](https://cognitivesciencesociety.org/symbolic-linguistics-in-the-age-of-generative-ai/).
-
-
-Compare Romance languages across several phenomena with our interactive interface! It features many of our comparative acceptability judgment experiments. [Discover it here](https://yanis-da-cunha.shinyapps.io/shiny_rom-comp-exp/).
+```{=html}
+<div class="communication-cards">
+  <a class="communication-card" href="https://cognitivesciencesociety.org/symbolic-linguistics-in-the-age-of-generative-ai/">
+    <h2 class="no-anchor">Cognitive Science Society blog</h2>
+    <p>We have introduced the SFB on the blog of the Cognitive Science Society, which aims to make scientific research accessible to a larger audience.</p>
+    <span class="communication-card-action">Read the article <span aria-hidden="true">→</span></span>
+  </a>
+  <a class="communication-card" href="https://yanis-da-cunha.shinyapps.io/shiny_rom-comp-exp/">
+    <h2 class="no-anchor">Compare Romance languages</h2>
+    <p>Explore several linguistic phenomena through an interactive interface featuring many of our comparative acceptability judgment experiments.</p>
+    <span class="communication-card-action">Open the interactive app <span aria-hidden="true">→</span></span>
+  </a>
+</div>
+```

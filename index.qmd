@@ -51,11 +51,11 @@ The Network brings together the particularly strong linguistic research at the <
 
 <div class="homepage-explore">
 
-<a href="people.qmd"><div class="explore-card">Our team</div></a>
-<a href="subprojects.qmd"><div class="explore-card">Our subprojects</div></a>
-<a href="clusters.qmd"><div class="explore-card">Our research clusters</div></a>
-<a href="publications.qmd"><div class="explore-card">Our publications</div></a>
-<a href="communication.qmd"><div class="explore-card">Our science communication</div></a>
+<a href="people.qmd"><div class="explore-card">**Team**</div></a>
+<a href="subprojects.qmd"><div class="explore-card">**Subprojects**</div></a>
+<a href="clusters.qmd"><div class="explore-card">**Research Clusters**</div></a>
+<a href="publications.qmd"><div class="explore-card">**Publications**</div></a>
+<a href="communication.qmd"><div class="explore-card">**Science Communication**</div></a>
 
 </div>
 
@@ -120,16 +120,11 @@ for (i in 1:nrow(events)) {
 }
 
 if (nrow(events) == 1) {
-  cat('<a href="events.qmd" id="see-more-events1" class="see-more-events">')
+  cat('<a href="events.qmd" id="see-more-events1" class="see-more-link see-more-events">See more</a>')
   }
   else {
-  cat('<a href="events.qmd" id="see-more-events2" class="see-more-events">')
+  cat('<a href="events.qmd" id="see-more-events2" class="see-more-link see-more-events">See more</a>')
 }
-
-cat('<div>')
-cat('See more events')
-cat('</div>')
-cat('</a>')
 
 cat('</div>')
 }
@@ -159,11 +154,7 @@ load_publications(path='sfb_output/publication_list.csv') %>%
 
 ::: 
 
-<a href="publications.qmd" id="see-more-publications">
-<div>
-See more publications
-</div>
-</a>
+<a href="publications.qmd" id="see-more-publications" class="see-more-link">See more</a>
 
 
 

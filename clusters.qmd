@@ -437,6 +437,33 @@ function initialiseClusterHover() {
     return;
   }
 
+  // Use an SVG-native shadow so the small diagram nodes have a clearly
+  // visible shadow in local previews as well as in the rendered site.
+  const svgNS = "http://www.w3.org/2000/svg";
+  const defs = document.createElementNS(svgNS, "defs");
+  const shadow = document.createElementNS(svgNS, "filter");
+  const dropShadow = document.createElementNS(svgNS, "feDropShadow");
+
+  shadow.setAttribute("id", "cluster-node-shadow");
+  shadow.setAttribute("x", "-50%");
+  shadow.setAttribute("y", "-100%");
+  shadow.setAttribute("width", "200%");
+  shadow.setAttribute("height", "300%");
+  dropShadow.setAttribute("dx", "4");
+  dropShadow.setAttribute("dy", "6");
+  dropShadow.setAttribute("stdDeviation", "4");
+  dropShadow.setAttribute("flood-color", "#000000");
+  dropShadow.setAttribute("flood-opacity", "0.55");
+  shadow.appendChild(dropShadow);
+  defs.appendChild(shadow);
+  graph.insertBefore(defs, graph.firstChild);
+
+  graph.querySelectorAll(
+    "g.cluster-project ellipse, g.cluster-label polygon:first-of-type"
+  ).forEach(function(shape) {
+    shape.setAttribute("filter", "url(#cluster-node-shadow)");
+  });
+
   const clusterClasses = [
     "c-romance",
     "c-experimental",

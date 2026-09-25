@@ -17,7 +17,7 @@ website:
         href: events.qmd
       - text: "Publications & Talks"
         href: publications.qmd
-      - text: "Science communication"
+      - text: "Science Communication"
         href: communication.qmd
 
   page-footer: |

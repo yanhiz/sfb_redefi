@@ -27,7 +27,7 @@ print_publications <- function(publications,level=4,header=TRUE) {
     for (year in type %>% group_split(year)) {
       if (header) {cat(str_c(c(rep('#',level+1),' '),collapse=''),as.character(year$year[1]),'\n\n')}
       year$bibtex <- year$bibtex %>% str_replace_all('\\},','\\},<br>&emsp;') %>% str_replace(', author',',<br>&emsp;author') %>% str_replace('\\}$','\n\\}') %>% str_replace_all('@','\\\\@')
-      year$ref <- str_c('<p>',year$apa,' <input type="button" value="Get Bibtex" class="bibtex-button"/></p><div class="bibtex-entry"><div>',year$bibtex,'</div><input type="button" class="bibtex-copy" value="Copy to clipboard"/></div>')
+      year$ref <- str_c('<p>',year$apa,' <input type="button" value="Get Bibtex" class="bibtex-button"/></p><div class="bibtex-entry"><div>',year$bibtex,'</div><input type="button" class="bibtex-copy" value="Copy"/></div>')
       cat(year$ref,'\n\n\n',sep='\n\n')
     }
   }
