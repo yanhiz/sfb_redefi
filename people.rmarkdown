@@ -1,0 +1,134 @@
+---
+title: "Our team"
+format:
+  html:
+    page-layout: full
+    body-classes: people-page
+---
+
+```{r}
+#| results: asis
+
+library(tidyverse)
+library(readxl)
+
+projects <- c('P01'='P01 – Theoretical Task Force',
+              'P02'='P02 – Grammatical Gender in Discourse and Grammar',
+              'P03'='P03 – Mismatches in Binding and Coreference',
+              'P05'='P05 – The Role of Self in Pronominal Coreference',
+              'P06'='P06 - The (Non-)Deficiency and (Non-)Redundancy of Clitic Pronouns',
+              'P07'='P07 — Deficiency and Redundancy in Iberoromance Pronominal Systems',
+              'P08'='P08 – Fading Reference – The Pragmaticalization of Pronoun + Verb',
+              'P09'='P09 – Animacy Features and the Flexibility of Pronouns',
+              'P10'='P10 – Deficiency and Redundancy in Expressing Temporal Relations')
+
+members <- read_excel('member_list.xlsx')
+
+for (p in names(projects)) {
+  cat(str_c('<a class="project-title" href="/subprojects/',p,'.qmd"><h2>',projects[p],'</h2></a>\n\n'))
+  cat('<div class="accordion">')
+  
+  project_members <- members %>% filter(subproject==p)
+
+  for (i in 1:nrow(project_members)) {
+    member <- project_members[i,]
+    cat('<input type="radio" name="select" class="accordion-select" id="')
+    cat(member$short_name %>% str_replace(' ','_'))
+    cat('"><div class="accordion-title"><span>')
+    cat(member$name)
+    cat('</span></div>')
+    cat('<div class="accordion-content">')
+    cat('<div class="accordion-box">')
+    cat('<div class="accordion-leftcontent">')
+    cat('<img class="accordion-picture" src="')
+    cat(member$picture)
+    cat('">')
+    cat('</div>')
+    cat('<div class="accordion-rightcontent">')
+    cat('<div class="accordion-tags"><span class="accordion-position">')
+    cat(member$position) 
+    cat('</span>')
+    cat('<span class="accordion-university">University of ')
+    cat(member$university)
+    cat('</span></div>')
+    cat('<p class="accordion-links">') 
+    cat('<a href="mailto:')
+    cat(member$mail)
+    cat('"><i class="bi bi-envelope"></i> <b> ')
+    cat(member$mail %>% str_replace('@','[at]'))
+    cat('</b></a>')
+    cat('<a href="')
+    cat(member$website)
+    cat('"><i class="bi bi-link-45deg"></i> <b>  Institutional profile</b></a>')
+    cat('</p>')
+    cat('<div class="accordion-bio">')
+    cat(member$bio %>% str_replace_all('\\n','<br>'))
+    cat('</div>')
+    cat('</div>')
+    cat('</div>')
+    cat('</div> ')
+  }
+  
+  cat('</div> ')
+  cat('\n\n')
+}
+
+
+```
+
+
+
+
+<h1>Associated members</h1>
+
+
+
+
+
+```{r}
+#| results: asis
+
+associated <- read_excel('member_list.xlsx',sheet=2) 
+
+cat('<ul id="associated-members" style="height:',str_c(20.3*nrow(associated),'px;">'))
+
+for (i in 1:nrow(associated)) {
+  member <- associated[i,]
+  
+  if (is.na(member$website)) {
+    cat('<li>',member$name)
+  } else {
+    cat('<li><a href="',member$website,'">',member$name,'</a>')
+  }
+  
+}
+
+
+cat('</ul>')
+
+
+```
+
+
+
+
+
+
+<script>
+// Check if URL of browser window has hash tag
+if (location.hash) {
+  console.log('Hash trouvé')
+  // Get URL hash tag
+  const hash = window.location.hash;
+  console.log(hash)
+  // Select checkbox with ID of hashtag
+  const checkbox = document.querySelector(hash);
+  console.log(checkbox)
+  // Check if checkbox exists
+  if(checkbox) {
+    // Set selected checkbox as checked
+    checkbox.checked = true;
+  }
+}
+</script>
+

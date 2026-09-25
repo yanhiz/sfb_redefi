@@ -1,0 +1,94 @@
+---
+title: "P10 -- Deficiency and Redundancy in Expressing Temporal Relations"
+image: /img/project_logos/P10.svg
+format:
+  html:
+    page-layout: full
+    include-after-body: 
+      text: <script type="text/javascript" src="../show_bibtex.js"/>
+---
+
+```{=html}
+<div class="column-margin subproject-navigation">
+<a href="P01.qmd" class="navigation-next">Go to next subproject</a>
+</div>
+```
+
+
+
+
+::: {.project-hero}
+
+::: {.project-hero-logo}
+
+![](/img/project_logos/P10.svg){alt="P10 project logo"}
+:::
+
+::: {.project-hero-text}
+
+### Project description
+
+This subproject develops a formal semantic theory of temporal pronouns and integrates it into a broader model of temporal expressions, including temporal and quantifying adverbials, tense, and aspect. It examines the temporal specification or underspecification of features on tense morphemes and their interpretation when bound by other tense forms, intensional verbs, or temporal adverbials. By applying insights about free and bound personal pronouns from P02 and P03 to the temporal domain, the project tests whether pronominal systems share underlying principles across distinct ontological domains.
+
+The comparative analysis includes languages with articulated tense systems, such as English and German; languages with articulated aspect systems, including Russian and other Slavic languages; and so-called tenseless languages, such as Mandarin Chinese. 
+
+
+:::
+
+:::
+
+### Team
+
+
+
+
+
+
+```{r, results='asis'}
+
+source('../functions.R')
+print_card_members('P10')
+
+```
+
+
+
+
+
+
+### Cluster membership
+
+::: {.project-clusters}
+
+[Experimental Methods](../clusters/experimental-methods.qmd){.project-cluster-badge}
+
+[Syntax and Binding Effects](../clusters/syntax-and-binding-effects.qmd){.project-cluster-badge}
+
+[Semantics and Discourse Effects](../clusters/semantics-and-discourse-effects.qmd){.project-cluster-badge}
+
+:::
+
+
+### Output
+
+
+::: {.project-publications}
+
+
+
+
+```{r}
+#| output: asis
+
+source("../functions.R", local = knitr::knit_global())
+
+load_publications("P10") %>% 
+  print_publications()
+
+
+```
+
+
+
+
+:::

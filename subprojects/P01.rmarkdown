@@ -1,0 +1,49 @@
+---
+title: "P01 -- Theoretical Task Force"
+image: /img/project_logos/P1.svg
+format:
+  html:
+    page-layout: full
+    include-after-body: 
+      text: <script type="text/javascript" src="../show_bibtex.js"/>
+---
+
+```{=html}
+<div class="column-margin subproject-navigation">
+<a href="P02.qmd" class="navigation-next">Go to next subproject</a>
+</div>
+```
+
+
+
+
+
+
+::: {.project-hero}
+
+::: {.project-hero-logo}
+![](/img/project_logos/P1.svg){alt="P01 project logo"}
+:::
+
+::: {.project-hero-text}
+### Project description
+
+This subproject coordinates the activities of the Special Research Area Language between Redundancy and Deficiency and hosts two affiliated PhD projects funded by the University of Graz.
+:::
+
+:::
+
+### Team
+
+
+
+
+
+
+```{r, results='asis'}
+
+source('../functions.R')
+print_card_members('P01')
+
+```
+

@@ -1,0 +1,91 @@
+---
+title: "P05 -- The Role of Self in Pronominal Coreference"
+image: /img/project_logos/P5.svg
+format:
+  html:
+    page-layout: full
+    include-after-body: 
+      text: <script type="text/javascript" src="../show_bibtex.js"/>
+---
+
+```{=html}
+<div class="column-margin subproject-navigation">
+<a href="P06.qmd" class="navigation-next">Go to next subproject</a>
+</div>
+```
+
+
+
+
+
+::: {.project-hero}
+
+::: {.project-hero-logo}
+![](/img/project_logos/P5.svg){alt="P05 project logo"}
+:::
+
+::: {.project-hero-text}
+### Project description
+
+This subproject investigates why intensified pronouns (IntPros) tend cross-linguistically to grammaticalize into reflexive anaphors. It proposes that binding operates through information-structural roles: topics bind foci. The intensifier drives this relation as a focal reflexive bound by a topic. In compositional IntPros, this structure is transparent; redundant and deficient interface operations can instead license local rather than sentential topics as binders and make interpretation of the bindee’s focus feature optional. These processes yield reflexivization at the vP and DP levels and may culminate in a grammaticalization cycle from IntPros through anaphors to reflexives, followed by renewed compositional IntPros.
+
+Although IntPros are structurally strong pronouns, their focal reflexive component requires local topic binding, countering the usual relation between pronominal strength and binding domain. The project compares Malayalam, English, German, and BCMS, which represent different stages and configurations of this development. Its hypotheses treat binding as a central instance of redundancy and deficiency through which grammar exploits pragmatic structure to economize expressed information.
+
+
+:::
+
+:::
+
+### Team
+
+
+
+
+
+```{r, results='asis'}
+
+source('../functions.R')
+print_card_members('P05')
+
+```
+
+
+
+
+
+
+### Cluster membership
+
+::: {.project-clusters}
+
+
+[Experimental Methods](../clusters/experimental-methods.qmd){.project-cluster-badge}
+
+[Syntax and Binding Effects](../clusters/syntax-and-binding-effects.qmd){.project-cluster-badge}
+
+[Semantics and Discourse Effects](../clusters/semantics-and-discourse-effects.qmd){.project-cluster-badge}
+
+:::
+
+### Output
+
+::: {.project-publications}
+
+
+
+
+```{r}
+#| output: asis
+
+source("../functions.R", local = knitr::knit_global())
+
+load_publications("P05") %>% 
+  print_publications()
+
+
+```
+
+
+
+
+:::
