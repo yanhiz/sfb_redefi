@@ -3,8 +3,11 @@
 .RData
 .Ruserdata
 .positai
+.DS_Store
+~$*.xlsx
 
 /.quarto/
+/docs/index_files/
 **/*.quarto_ipynb
 mailing/sender.txt
 mailing/subscribers.xlsx

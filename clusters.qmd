@@ -9,6 +9,40 @@ toc: false
 
 The subprojects within our SFB are connected through several thematic [clusters]{.highlight-red}. These clusters bring together shared research questions, theoretical perspectives, and methodological approaches across individual subprojects, fostering collaboration and broader joint initiatives.
 
+<!-- Keep these mobile card memberships in sync with the project node classes in the graph below. -->
+```{=html}
+<nav class="cluster-mobile-list" aria-label="Research clusters">
+  <a class="cluster-mobile-card" href="clusters/romance.qmd">
+    <span class="cluster-mobile-title">Romance data</span>
+    <span class="cluster-mobile-projects">Projects: P06, P07, P08, P09</span>
+  </a>
+  <a class="cluster-mobile-card" href="clusters/experimental-methods.qmd">
+    <span class="cluster-mobile-title">Experimental methods</span>
+    <span class="cluster-mobile-projects">Projects: P02, P05, P07, P08, P09, P10</span>
+  </a>
+  <a class="cluster-mobile-card" href="clusters/clitic-pronouns.qmd">
+    <span class="cluster-mobile-title">Clitic pronouns</span>
+    <span class="cluster-mobile-projects">Projects: P06, P07, P08, P09</span>
+  </a>
+  <a class="cluster-mobile-card" href="clusters/zero-elements.qmd">
+    <span class="cluster-mobile-title">Zero elements</span>
+    <span class="cluster-mobile-projects">Projects: P03, P07, P08, P09</span>
+  </a>
+  <a class="cluster-mobile-card" href="clusters/semantics-and-discourse-effects.qmd">
+    <span class="cluster-mobile-title">Semantics and discourse effects</span>
+    <span class="cluster-mobile-projects">Projects: P02, P03, P05, P07, P08, P09, P10</span>
+  </a>
+  <a class="cluster-mobile-card" href="clusters/corpus-and-annotation.qmd">
+    <span class="cluster-mobile-title">Corpus and annotation</span>
+    <span class="cluster-mobile-projects">Projects: P02, P07, P08</span>
+  </a>
+  <a class="cluster-mobile-card" href="clusters/syntax-and-binding-effects.qmd">
+    <span class="cluster-mobile-title">Syntax and binding effects</span>
+    <span class="cluster-mobile-projects">Projects: P02, P03, P05, P06, P10</span>
+  </a>
+</nav>
+```
+
 
 
 ```{dot}
