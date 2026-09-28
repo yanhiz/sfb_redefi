@@ -28,7 +28,7 @@ for (var i = 0; i < copy.length; i++) {
   () => {
     this.value = "Copied!"
     setTimeout(() => {
-  this.value = "Copy";
+  this.value = "Copy to clipboard";
 }, "1000");
   },
   () => {

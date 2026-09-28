@@ -15,7 +15,7 @@ website:
         href: people.qmd
       - text: "Subprojects"
         href: subprojects.qmd
-      - text: "Research clusters"
+      - text: "Research Clusters"
         href: clusters.qmd
       - text: "Activities & Events"
         href: events.qmd

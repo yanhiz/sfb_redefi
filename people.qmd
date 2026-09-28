@@ -22,7 +22,8 @@ projects <- c('P01'='P01 – Theoretical Task Force',
               'P09'='P09 – Animacy Features and the Flexibility of Pronouns',
               'P10'='P10 – Deficiency and Redundancy in Expressing Temporal Relations')
 
-members <- read_excel('member_list.xlsx')
+members <- read_excel('member_list.xlsx') %>%
+  replace_na(list(bio=""))
 
 for (p in names(projects)) {
   cat(str_c('<a class="project-title" href="/subprojects/',p,'.qmd"><h2>',projects[p],'</h2></a>\n\n'))
@@ -73,7 +74,6 @@ for (p in names(projects)) {
   cat('\n\n')
 }
 
-
 ```
 
 <h1>Associated members</h1>
@@ -99,7 +99,6 @@ for (i in 1:nrow(associated)) {
 
 
 cat('</ul>')
-
 
 ```
 

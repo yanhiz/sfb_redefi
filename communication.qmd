@@ -12,10 +12,12 @@ format:
     <p>We have introduced the SFB on the blog of the Cognitive Science Society, which aims to make scientific research accessible to a larger audience.</p>
     <span class="communication-card-action">Read the article <span aria-hidden="true">→</span></span>
   </a>
+  
   <a class="communication-card" href="https://yanis-da-cunha.shinyapps.io/shiny_rom-comp-exp/">
     <h2 class="no-anchor">Compare Romance languages</h2>
-    <p>Explore several linguistic phenomena through an interactive interface featuring many of our comparative acceptability judgment experiments.</p>
+    <p>Explore several linguistic phenomena through an interactive interface featuring many of our comparative acceptability judgquarment experiments.</p>
     <span class="communication-card-action">Open the interactive app <span aria-hidden="true">→</span></span>
   </a>
+  
 </div>
 ```
