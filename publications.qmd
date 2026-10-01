@@ -26,6 +26,7 @@ load_publications(path='sfb_output/publication_list.csv') %>%
 
 ```{r}
 #| output: asis
+
 source("functions.R", local = knitr::knit_global())
 
 projects <- c('P02'='P02 – Grammatical Gender in Discourse and Grammar',

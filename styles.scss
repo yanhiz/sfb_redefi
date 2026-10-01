@@ -15,7 +15,7 @@ $secondary-gray: #8A9696;
     background: white;
   }
   .nav-link {
-    padding: 0px 20px;
+    padding: 0px 15px;
   }
 }
 
@@ -1285,31 +1285,38 @@ footer.footer {
 .bibtex-entry {
   background: #E8E8E8;
   margin-left: 2.25rem;
-  padding: 0;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  gap: 0.75rem; 
   overflow: hidden;
   content-visibility: hidden;
   height: 0;
+  transition: height 0.5s ease-in-out;
 }
+
 .bibtex-entry.shown {
-  content-visibility: visible;
   margin-bottom: 30px;
-  gap: 0.75rem;
   padding: 1rem;
-  overflow: visible;
+  content-visibility: visible;
+  overflow: auto;
   height: auto;
 }
+
+@supports (height: calc-size(auto, size)) {
+.bibtex-entry.shown {
+  height: calc-size(auto, size);
+}
+}
+
+
 .bibtex-entry.shown > div {
   min-width: 0;
-  max-height: 15rem;
-  overflow: auto;
-  overflow-wrap: anywhere;
-  font-size: 0.9rem;
+  font-size: .95rem;
   line-height: 1.4;
 }
+
 .bibtex-copy {
   align-self: flex-end;
   width: auto !important;
