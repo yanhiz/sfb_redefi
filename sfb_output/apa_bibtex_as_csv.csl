@@ -2278,6 +2278,9 @@
     <group delimiter="_">
       <text macro="author-short_bib" text-case="lowercase"/>
       <text macro="issued-year_bib"/>
+      <group prefix="$" suffix="$">
+      <text macro="title_bib"/>
+      </group>
     </group>
   </macro>
   <macro name="author-short_bib">

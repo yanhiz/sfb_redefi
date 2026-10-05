@@ -6,6 +6,8 @@ format:
     body-classes: people-page
 ---
 
+![](/img/group_picture.jpg)
+
 ```{r}
 #| results: asis
 
@@ -76,6 +78,7 @@ for (p in names(projects)) {
 
 ```
 
+
 <h1>Associated members</h1>
 
 
@@ -84,7 +87,7 @@ for (p in names(projects)) {
 
 associated <- read_excel('member_list.xlsx',sheet=2) 
 
-cat('<ul id="associated-members" style="height:',str_c(20.3*nrow(associated),'px;">'))
+cat('<ul class="other-members" style="height:',str_c(20.3*nrow(associated),'px;">'))
 
 for (i in 1:nrow(associated)) {
   member <- associated[i,]
@@ -102,6 +105,33 @@ cat('</ul>')
 
 ```
 
+
+
+<h1>Former members</h1>
+
+
+```{r}
+#| results: asis
+
+former <- read_excel('member_list.xlsx',sheet=3) 
+
+cat('<ul class="other-members" style="height:',str_c(20.3*nrow(former),'px;">'))
+
+for (i in 1:nrow(former)) {
+  member <- former[i,]
+  
+  if (is.na(member$website)) {
+    cat('<li>',member$name)
+  } else {
+    cat('<li><a href="',member$website,'">',member$name,'</a>')
+  }
+  
+}
+
+
+cat('</ul>')
+
+```
 
 
 <script>

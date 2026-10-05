@@ -12,10 +12,21 @@ split_date <- function(data,date) {
 load_publications <- function(subproject='P',path='../sfb_output/publication_list.csv') {
   read_csv(path,
            col_names = c('project','type','year','apa','bibtex')) %>% 
+    # ADD BIBTEX CITATION KEYS
+    mutate(title= str_to_lower(bibtex) %>% 
+             str_extract('\\$[^\\$]+\\$') %>% 
+             str_remove_all('\\$|,|:|–|\\?|\\(|\\)|’|¿|‘|φ|-') %>% 
+             str_remove_all('^(the|of|a|is|in|what|one|to)\\s') %>% 
+             str_extract('^\\w+( \\w+)?') %>% 
+             str_replace(' ','_') %>% 
+             stringi::stri_trans_general("Latin-ASCII")) %>% 
+    mutate(bibtex=str_replace(bibtex,'\\$[^\\$]+\\$',title)) %>% 
+    select(-title) %>%
+    mutate(bibtex=str_replace(bibtex,'_To appear_','_toappear_')) %>%
     # MAKE LINKS CLICKABLE
     mutate(apa= str_replace(apa,'(https://.*)','[\\1](\\1)')) %>% 
     # SORT THE DATA FRAME AND ORDER YEARS
-    arrange(type,desc(year),apa) %>% mutate(year=factor(year,levels=(unique(year)))) |> 
+    arrange(type,desc(year),apa) %>% mutate(year=factor(year,levels=(unique(year)))) %>% 
     filter(str_detect(project,subproject))
 }
 

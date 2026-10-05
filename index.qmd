@@ -158,6 +158,7 @@ load_publications(path='sfb_output/publication_list.csv') %>%
 
 
 
+
 <!-- ::: {.homepage-scroll-layout} -->
 
 <!-- ::: {.homepage-left} -->

@@ -1530,6 +1530,14 @@ footer.footer {
 }
 .accordion-bio {
   text-align: justify;
+  
+}
+
+@media (min-width: 991.98px) {
+  .accordion-bio {
+  margin-top: -10pt;
+}
+
 }
 
 @media (max-width: 991.98px) {
@@ -1589,7 +1597,7 @@ footer.footer {
       align-self: flex-start;
       font-size: .95em;
       margin-top: 0px;
-      margin-bottom: 0px;
+      
       display: grid;
     	grid-template-rows: repeat(2, 1fr);
     	grid-template-columns: 1fr;
@@ -1603,7 +1611,7 @@ footer.footer {
       margin-right: 0px;
     }
     }
-    #associated-members {
+    .other-members {
   display: block !important;
   li::marker {
     content: "\2B9E     ";
@@ -1614,7 +1622,7 @@ footer.footer {
 }
 }
 
-#associated-members {
+.other-members {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
