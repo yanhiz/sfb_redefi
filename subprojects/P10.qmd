@@ -8,7 +8,6 @@ format:
       text: <script type="text/javascript" src="../show_bibtex.js"/>
 ---
 
-
 ```{=html}
 <div class="column-margin subproject-navigation">
 <a href="P01.qmd" class="navigation-next">Go to next subproject</a>
