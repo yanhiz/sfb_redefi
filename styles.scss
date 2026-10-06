@@ -1613,6 +1613,7 @@ footer.footer {
     }
     .other-members {
   display: block !important;
+  height: auto !important;
   li::marker {
     content: "\2B9E     ";
     color: $main-gray;
@@ -1620,7 +1621,22 @@ footer.footer {
     font-size: 15px;
   }
 }
+  #group-picture-screen {
+    display: none !important;
+  }
+  #group-picture-phone {
+    display: block !important;
+  }
 }
+
+#group-picture-screen {
+  display: block;
+}
+#group-picture-phone {
+  display: none;
+}
+
+  
 
 .other-members {
   display: flex;
@@ -1788,7 +1804,7 @@ footer.footer {
   to {
     --num1: 3;
     --num2: 8;
-    --num3: 29;
+    --num3: 27;
   }
 }
 #count1 {

@@ -11,3 +11,4 @@
 **/*.quarto_ipynb
 mailing/sender.txt
 mailing/subscribers.xlsx
+/shiny_rom-comp-exp
