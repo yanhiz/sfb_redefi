@@ -97,7 +97,6 @@ for (i in 1:nrow(events)) {
 ## Past events
 
 
-
 ```{r}
 #| output: asis
 library(tidyverse)
@@ -105,7 +104,8 @@ library(readxl)
 
 events <- read_excel('event_list.xlsx')  %>% 
     arrange(date) %>%
-    filter(date<today())
+    filter(date<today()) %>%
+    split_date(date)
 
 years <- events$year %>% unique() %>% sort(decreasing = T)
 

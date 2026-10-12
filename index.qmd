@@ -4,7 +4,7 @@ toc: false
 format:
   html:
     page-layout: full
-    include-in-header: 
+    include-before-body: 
       text: <link rel="preload" as="image" href="img/website-banner-pictogram.svg"/>
     include-after-body: 
       text: <script type="text/javascript" src="show_bibtex.js"/>
