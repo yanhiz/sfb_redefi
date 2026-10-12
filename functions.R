@@ -18,11 +18,14 @@ load_publications <- function(subproject='P',path='../sfb_output/publication_lis
              str_remove_all('\\$|,|:|–|\\?|\\(|\\)|’|¿|‘|φ|-') %>% 
              str_remove_all('^(the|of|a|is|in|what|one|to)\\s') %>% 
              str_extract('^\\w+( \\w+)?') %>% 
-             str_replace(' ','_') %>% 
+             str_replace_all(' ','_') %>% 
              stringi::stri_trans_general("Latin-ASCII")) %>% 
     mutate(bibtex=str_replace(bibtex,'\\$[^\\$]+\\$',title)) %>% 
     select(-title) %>%
     mutate(bibtex=str_replace(bibtex,'_To appear_','_toappear_')) %>%
+    mutate(key=str_extract(bibtex,'@[^,]+,') %>% str_replace_all(' ','_')) %>%
+    mutate(bibtex=str_replace(bibtex,'@[^,]+,',key)) %>%
+    select(-key) %>%
     # MAKE LINKS CLICKABLE
     mutate(apa= str_replace(apa,'(https://.*)','[\\1](\\1)')) %>% 
     # SORT THE DATA FRAME AND ORDER YEARS
