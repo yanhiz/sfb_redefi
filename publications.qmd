@@ -15,6 +15,7 @@ toc: false
 
 ### All projects
 
+
 ```{r}
 #| output: asis
 source("functions.R", local = knitr::knit_global())

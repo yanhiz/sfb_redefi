@@ -355,8 +355,9 @@ footer.footer {
 .nav-footer {
   position: relative;
   display: flex !important;
+  flex-direction: row;  
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 110px;
   width: 100%;
   max-width: none !important;
@@ -366,25 +367,19 @@ footer.footer {
 /* Copyright: left edge */
 
 .nav-footer-left {
-  margin-right: 4rem;
+  margin-left: 8rem;
   text-align: left;
 }
 
 /* University logos: exact centre of footer */
 
-.nav-footer-center {
+.nav-footer-right {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
 
-.nav-footer-center p {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  margin: 0;
-}
 
 /* FWF logo: right edge */
 
@@ -408,7 +403,7 @@ footer.footer {
 @media (max-width: 900px) {
   .nav-footer {
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1rem;
     padding: 1.5rem;
   }
 
@@ -424,7 +419,7 @@ footer.footer {
   .nav-footer-center p {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 1rem;
   }
 }
 
@@ -1199,14 +1194,15 @@ footer.footer {
   transition:
     color 0.15s ease,
     background-color 0.15s ease;
-  & :hover {
-    color: #ffffff !important;
+/*  & :hover {
+    /*color: #ffffff !important;
     background-color: $sfb-color !important;
     }
   & :focus-within {
     color: #ffffff !important;
     background-color: $sfb-color !important;
     }
+    */
   a.active {
     color: #ffffff !important;
     background-color: $sfb-color !important;
@@ -1452,8 +1448,6 @@ footer.footer {
     width: 100%;
 } 
 
-
-
 /* Contents */
 
 .accordion-box {
@@ -1540,6 +1534,7 @@ footer.footer {
 
 }
 
+
 @media (max-width: 991.98px) {
     .accordion-box {
         flex-direction: column;
@@ -1556,11 +1551,10 @@ footer.footer {
     } 
 
     .accordion-content {
-    height: 955px;
-    margin-bottom: -955px;
+    height: 650px;
+    margin-bottom: -650px;
     padding: 5px;
-    
-} 
+    } 
     
     .accordion-leftcontent {
       width: 100%;
@@ -1629,6 +1623,18 @@ footer.footer {
   }
 }
 
+@media (max-width: 450px) {
+      .accordion-content {
+    height: 970px;
+    margin-bottom: -970px;
+    padding: 5px;
+      }
+}
+
+
+
+
+
 #group-picture-screen {
   display: block;
 }
@@ -1650,6 +1656,8 @@ footer.footer {
     font-size: 15px;
   }
 }
+
+
 
 
 /* Home page Version 2 */

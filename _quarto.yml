@@ -24,12 +24,15 @@ website:
       - text: "Science Communication"
         href: communication.qmd
 
-  page-footer: |
-    © 2026 SFB Language between Redundancy and Deficiency
-    ![](/img/logos/Logo_Graz.jpg){height=45px}
-    ![](/img/logos/Salzburg_Logo.png){height=40px}
-    ![](/img/logos/Uni_Wien_Logo.jpg){height=70px}
-    ![](/img/logos/FWF_Logo.png){height=23px}
+  page-footer:
+    left: |
+      Contact email: contact@sfb-redefi.at   
+      © 2026 SFB Language between Redundancy and Deficiency
+    right: |
+      ![](/img/logos/Logo_Graz.jpg){height=45px}
+      ![](/img/logos/Salzburg_Logo.png){height=40px}
+      ![](/img/logos/Uni_Wien_Logo.jpg){height=70px}
+      ![](/img/logos/FWF_Logo.png){height=23px}
    
 format:
   html:

@@ -30,7 +30,9 @@ load_publications <- function(subproject='P',path='../sfb_output/publication_lis
     mutate(apa= str_replace(apa,'(https://.*)','[\\1](\\1)')) %>% 
     # SORT THE DATA FRAME AND ORDER YEARS
     arrange(type,desc(year),apa) %>% mutate(year=factor(year,levels=(unique(year)))) %>% 
-    filter(str_detect(project,subproject))
+    filter(str_detect(project,subproject)) %>%
+    # REMOVE TO APPEAR
+    filter(year!="To appear")
 }
 
 
