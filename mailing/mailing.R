@@ -11,6 +11,8 @@ split_date <- function(data,date) {
     mutate(year=format(date, "20%y"))
 }
 
+send_newsletter <- function(send=T){
+  if (send) {
 events <- read_excel('event_list.xlsx') %>% filter(date>today()) %>% split_date(date)
 sent <- read_csv('mailing/sent_events.csv') %>% filter(date>today()) %>% split_date(date)
 upcoming <- setdiff(events,sent)
@@ -56,4 +58,6 @@ if (nrow(upcoming) > 0) {
             send = TRUE)
 
   write_csv(rbind(upcoming,sent),file='./mailing/sent_events.csv')
+}
+}
 }
