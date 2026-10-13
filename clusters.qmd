@@ -112,7 +112,7 @@ graph clusters {
     URL = "subprojects/P06.html",
     tooltip = "Open project P06",
     pos = "-1.56,-1.56!",
-    class = "cluster-project c-romance c-clitic c-syntax"
+    class = "cluster-project c-romance c-clitic c-syntax c-semantics"
   ]
 
   p07 [
@@ -159,7 +159,7 @@ graph clusters {
   // Romance + Clitic pronouns
 
   p06 -- p07 [
-    class = "cluster-edge c-romance c-clitic"
+    class = "cluster-edge c-romance c-clitic c-semantics"
   ]
   
   p06 -- p09 [
@@ -201,7 +201,7 @@ graph clusters {
   ]
 
   p05 -- p07 [
-    class = "cluster-edge c-experimental c-semantics"
+    class = "cluster-edge c-experimental"
   ]
 
 
@@ -239,7 +239,7 @@ p03 -- p09 [
   ]
 
   p05 -- p06 [
-    class = "cluster-edge c-syntax"
+    class = "cluster-edge c-syntax c-semantics"
   ]
 
   p06 -- p10 [

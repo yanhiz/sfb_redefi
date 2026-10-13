@@ -25,10 +25,9 @@ website:
         href: communication.qmd
 
   page-footer:
-    left: |
-      Contact email: contact@sfb-redefi.at   
-      © 2026 SFB Language between Redundancy and Deficiency
-    right: |
+    center: |
+      <p id="footer-text">Contact email: contact@sfb-redefi.at<br>
+      © 2026 SFB Language between Redundancy and Deficiency</p>
       ![](/img/logos/Logo_Graz.jpg){height=45px}
       ![](/img/logos/Salzburg_Logo.png){height=40px}
       ![](/img/logos/Uni_Wien_Logo.jpg){height=70px}

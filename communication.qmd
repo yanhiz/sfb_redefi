@@ -5,6 +5,8 @@ format:
     body-classes: communication-page
 ---
 
+Our SFB also strives to promote science communication by contributing articles to general-interest journals and blogs or presenting certain findings in an accessible manner. In this section, you will find some of our contributions to science communication. If you would like to collaborate with us on a science communication project, please email us at: [contact\@sfb-redefi.at](mailto:contact@sfb-redefi.at) 
+
 ```{=html}
 <div class="communication-cards">
   <a class="communication-card" href="https://cognitivesciencesociety.org/symbolic-linguistics-in-the-age-of-generative-ai/">

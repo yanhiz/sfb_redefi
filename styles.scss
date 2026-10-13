@@ -362,35 +362,28 @@ footer.footer {
   width: 100%;
   max-width: none !important;
   padding: 1.25rem 4rem;
-}
-
-/* Copyright: left edge */
-
-.nav-footer-left {
-  margin-left: 8rem;
-  text-align: left;
+  margin: 0 2rem;
 }
 
 /* University logos: exact centre of footer */
 
-.nav-footer-right {
+#footer-text {
+  text-align: left;
+}
+
+.nav-footer-center {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 
 
 /* FWF logo: right edge */
-
-.nav-footer-right {
-  margin-left: 1rem;
-  text-align: right;
-}
-
-.nav-footer-right p {
-  margin: 0;
-}
 
 .nav-footer img {
   display: inline-block;
@@ -401,10 +394,10 @@ footer.footer {
 /* Mobile layout */
 
 @media (max-width: 900px) {
-  .nav-footer {
+  .nav-footer-center {
     flex-direction: column;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .nav-footer-left,
