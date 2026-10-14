@@ -23,7 +23,7 @@ if (nrow(upcoming) > 0 | test == T) {
   if (test) {subscribers <- sender[1]} 
   else {subscribers <- read_excel('mailing/subscribers.xlsx')$email}
 
-  mail <- '<html><p>Dear subscribers,</p><p> Welcome to the newsletter of our SFB Language between Redundancy and Deficiency. Discover the upcoming events of our group. You can also find all the events and details <a href="https://yanhiz.github.io/sfb_redefi/news.html">here</a>.</p>'
+  mail <- '<html><p>Dear subscribers,</p><p> Welcome to the newsletter of our SFB Language between Redundancy and Deficiency. Discover the upcoming events of our group. You can also find all the events and details <a href="https://yanhiz.github.io/sfb_redefi/events.html">here</a>.</p>'
   mail <- add('<h3>New upcoming events</h2>')
   for (i in 1:nrow(upcoming)) {
     e <- upcoming[i,]
