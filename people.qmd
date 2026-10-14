@@ -8,8 +8,8 @@ format:
       text: <link rel="preload" as="image" href="img/group_picture.jpg"/>
 ---
 
-![](/img/group_picture.jpg){#group-picture-screen .column-page}
-![](/img/group_picture.jpg){#group-picture-phone .column-screen}
+![](img/group_picture.jpg){#group-picture-screen .column-page}
+![](img/group_picture.jpg){#group-picture-phone .column-screen}
 
 ::: {.column-page}
 
