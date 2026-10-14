@@ -55,7 +55,7 @@ The Network brings together the particularly strong linguistic research at the <
 <a href="subprojects.qmd"><div class="explore-card">**Subprojects**</div></a>
 <a href="clusters.qmd"><div class="explore-card">**Research Clusters**</div></a>
 <a href="publications.qmd"><div class="explore-card">**Publications**</div></a>
-<a href="communication.qmd"><div class="explore-card">**Science Communication**</div></a>
+<!-- <a href="communication.qmd"><div class="explore-card">**Science Communication**</div></a> -->
 
 </div>
 

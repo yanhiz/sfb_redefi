@@ -21,12 +21,13 @@ website:
         href: events.qmd
       - text: "Publications & Talks"
         href: publications.qmd
-      - text: "Science Communication"
-        href: communication.qmd
+      # - text: "Science Communication"
+      #   href: communication.qmd
 
   page-footer:
     center: |
-      <p id="footer-text">Contact email: contact@sfb-redefi.at<br>
+      <p id="footer-text">Universität Graz, Universitätsplatz 3, 8010 Graz<br>
+      Contact email: contact@sfb-redefi.at<br>
       © 2026 SFB Language between Redundancy and Deficiency</p>
       ![](/img/logos/Logo_Graz.jpg){height=45px}
       ![](/img/logos/Salzburg_Logo.png){height=40px}
