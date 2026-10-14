@@ -1,13 +1,5 @@
 library(tidyverse)
 
-months <- c("01"="JAN","02"="FEB", "03"="MAR", "04"="AVR", "05"="MAY", "06"="JUN", "07"="JUL", "08"="AUG", "09"="SEP", "10"="OCT", "11"="NOV", "12"="DEC" )
-
-split_date <- function(data,date) {
-  data %>%
-    mutate(day=format(date, "%d")) %>%
-    mutate(month=months[format(date, "%m")]) %>%
-    mutate(year=format(date, "20%y"))
-}
 
 load_publications <- function(subproject='P',path='../sfb_output/publication_list.csv') {
   read_csv(path,
@@ -106,3 +98,24 @@ print_card_members <- function(project) {
   # Close the team grid
   cat("::::\n")
 }
+
+months <- c("01"="JAN","02"="FEB", "03"="MAR", "04"="AVR", "05"="MAY", "06"="JUN", "07"="JUL", "08"="AUG", "09"="SEP", "10"="OCT", "11"="NOV", "12"="DEC" )
+
+split_date <- function(data,date) {
+  data %>%
+    mutate(day=format(date, "%d")) %>%
+    mutate(month=months[format(date, "%m")]) %>%
+    mutate(year=format(date, "20%y"))
+}
+  
+  
+load_events <- function(path='event_list.xlsx') {
+    {if (str_detect(path,'xlsx')) {read_excel(path)} else {read_csv(path)}} %>%
+    mutate(across(c(type,title,people,location,details),as.character)) %>%
+    arrange(date) %>%
+    split_date(date) %>%
+    replace_na(list(type='',title='',people='',location='')) |> 
+    mutate(details=str_replace_all(details,'\\n','<br>'))
+}
+
+

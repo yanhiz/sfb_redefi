@@ -16,14 +16,10 @@ library(tidyverse)
 library(readxl)
 
 source("./mailing/mailing.R", local = knitr::knit_global())
+send_newsletter()
 
-send_newsletter(F)
-
-
-events <- read_excel('event_list.xlsx')  %>% 
-  filter(date>=today()) %>%
-  arrange(date) %>%
-  split_date(date) 
+source("functions.R", local = knitr::knit_global())
+events <- load_events() %>% filter(date>=today())
 
 for (i in 1:nrow(events)) {
   e <- events[i,]
@@ -50,8 +46,8 @@ for (i in 1:nrow(events)) {
   cat('<p class="event-people">')
   cat(e$people)
   cat('</p>')
-  cat('<p class="event-affiliation">')
-  cat(e$affiliation)
+  cat('<p class="event-location">')
+  cat(e$location)
   cat('</p>')
   cat('</div>')
   cat('</summary>')
@@ -77,7 +73,7 @@ for (i in 1:nrow(events)) {
 <!--   <span class="event-type">Workshop</span> -->
 <!--   <h3>What even is redundancy and deficiency?</h3> -->
 <!--   <p class="event-people"> Name, Name</p> -->
-<!--   <p class="event-affiliation">University of Vienna · University of Graz</p> -->
+<!--   <p class="event-location">University of Vienna · University of Graz</p> -->
 <!-- </div> -->
 <!-- </summary> -->
 
@@ -104,10 +100,8 @@ for (i in 1:nrow(events)) {
 library(tidyverse)
 library(readxl)
 
-events <- read_excel('event_list.xlsx')  %>% 
-    arrange(date) %>%
-    filter(date<today()) %>%
-    split_date(date)
+events <- load_events() %>% filter(date<today())
+
 
 years <- events$year %>% unique() %>% sort(decreasing = T)
 
@@ -140,8 +134,8 @@ for (y in years) {
     cat('<p class="event-people">')
     cat(e$people)
     cat('</p>')
-    cat('<p class="event-affiliation">')
-    cat(e$affiliation)
+    cat('<p class="event-location">')
+    cat(e$location)
     cat('</p>')
     cat('</div>')
     cat('</summary>')

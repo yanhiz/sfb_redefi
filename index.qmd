@@ -68,11 +68,8 @@ library(readxl)
 
 source("functions.R", local = knitr::knit_global())
 
-events <- read_excel('event_list.xlsx')  %>% 
-  filter(date>=today()) %>%
-  arrange(date) %>%
-  split_date(date) %>%
-  head(2)
+events <- load_events() %>% filter(date>=today()) %>% head(2)
+
 
 if (nrow(events) > 0) {
 
@@ -107,8 +104,8 @@ for (i in 1:nrow(events)) {
   cat('<p class="event-people">')
   cat(e$people)
   cat('</p>')
-  cat('<p class="event-affiliation">')
-  cat(e$affiliation)
+  cat('<p class="event-location">')
+  cat(e$location)
   cat('</p>')
   cat('</div>')
   cat('</summary>')
