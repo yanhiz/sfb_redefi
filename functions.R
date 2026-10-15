@@ -45,7 +45,8 @@ print_card_members <- function(project) {
   library(tidyverse)
   
   members <- readxl::read_excel("../member_list.xlsx") %>%
-    filter(subproject == project)
+    filter(subproject == project) %>%
+    replace_na(list(description='',website=''))
   
   n_members <- nrow(members)
   
@@ -79,13 +80,13 @@ print_card_members <- function(project) {
       "**University of ", member$university, "**\n\n",
       sep = ""
     )
-    cat(
+    if(member$description!='') {cat(
       member$description,
       " [Read more](/people.qmd#",
       member$short_name %>% str_replace_all(" ", "_"),
       "){.read-more}\n\n",
       sep = ""
-    )
+    )}
     cat(
       "[Institutional profile](",
       member$website,
