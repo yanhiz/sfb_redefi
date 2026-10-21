@@ -16,7 +16,7 @@ library(tidyverse)
 library(readxl)
 
 source("./mailing/mailing.R", local = knitr::knit_global())
-send_newsletter()
+send_newsletter(T)
 
 source("functions.R", local = knitr::knit_global())
 events <- load_events() %>% filter(date>=today())
