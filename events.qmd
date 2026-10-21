@@ -15,8 +15,8 @@ toc: false
 library(tidyverse)
 library(readxl)
 
-source("./mailing/mailing.R", local = knitr::knit_global())
-send_newsletter(T)
+# source("./mailing/mailing.R", local = knitr::knit_global())
+# send_newsletter()
 
 source("functions.R", local = knitr::knit_global())
 events <- load_events() %>% filter(date>=today())
@@ -56,6 +56,7 @@ for (i in 1:nrow(events)) {
   cat('</div>')
   cat('</details>')
 }
+
 
 ```
 
