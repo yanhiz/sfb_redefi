@@ -19,7 +19,7 @@ load_publications <- function(subproject='P',path='../sfb_output/publication_lis
     mutate(bibtex=str_replace(bibtex,'@[^,]+,',key)) %>%
     select(-key) %>%
     # MAKE LINKS CLICKABLE
-    mutate(apa= str_replace(apa,'(https://.*)','[\\1](\\1)')) %>% 
+    mutate(apa= str_replace(apa,'(https://.*)','[\\1](\\1){target="_blank"}')) %>% 
     # SORT THE DATA FRAME AND ORDER YEARS
     arrange(type,desc(year),apa) %>% mutate(year=factor(year,levels=(unique(year)))) %>% 
     filter(str_detect(project,subproject)) %>%
@@ -90,7 +90,7 @@ print_card_members <- function(project) {
     cat(
       "[Institutional profile](",
       member$website,
-      ")\n\n",
+      '){target="_blank"}\n\n',
       sep = ""
     )
     cat(":::\n\n")

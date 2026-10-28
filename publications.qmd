@@ -48,7 +48,6 @@ for (p in names(projects)) {
     print_publications(level=4)
 }
 
-
 ```
 
 :::

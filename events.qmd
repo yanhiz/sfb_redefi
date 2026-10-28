@@ -6,6 +6,7 @@ format:
 toc: false
 ---
 
+
 ## Upcoming events
 
 ::: {.event-list}
@@ -14,6 +15,7 @@ toc: false
 #| output: asis
 library(tidyverse)
 library(readxl)
+
 
 # source("./mailing/mailing.R", local = knitr::knit_global())
 # send_newsletter()
@@ -56,7 +58,6 @@ for (i in 1:nrow(events)) {
   cat('</div>')
   cat('</details>')
 }
-
 
 ```
 
@@ -151,4 +152,9 @@ for (y in years) {
 
 ```
 
-
+<script>
+var links = document.querySelectorAll(".event-details a")
+for (var i = 0; i < links.length; i++) {
+     links[i].target = "_blank";
+}
+</script>

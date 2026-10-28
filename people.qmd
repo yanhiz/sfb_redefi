@@ -11,6 +11,7 @@ format:
 ![](img/group_picture.jpg){#group-picture-screen .column-page}
 ![](img/group_picture.jpg){#group-picture-phone .column-screen}
 
+
 ::: {.column-page}
 
 ```{r}
@@ -67,7 +68,7 @@ for (p in names(projects)) {
     cat('</b></a>')
     cat('<a href="')
     cat(member$website)
-    cat('"><i class="bi bi-link-45deg"></i> <b>  Institutional profile</b></a>')
+    cat('" target="_blank"><i class="bi bi-link-45deg"></i> <b>  Institutional profile</b></a>')
     cat('</p>')
     cat('<div class="accordion-bio">')
     cat(member$bio %>% str_replace_all('\\n','<br>'))
