@@ -26,12 +26,14 @@ format:
 ::: {.project-hero-text}
 ### Project description
 
-Subproject P02 is interested in an analysis of the discourse structural interpretation of gender features. The main focus of the subproject is the study of gender mismatches, which describe cases where grammatical gender does not agree with semantic gender (e.g., in German “das Mädchen”, where a neuter determiner is used in an expression referring to a semantically feminine girl).
 
-The goal is to construct a detailed theory for the syntax-semantics interface of gender, enabling the explanation of gender mismatch phenomena. One central hypothesis is that gender might be described analogously to an analysis of so-called referential loci in sign languages. 
+Subproject 2 is interested in an analysis of gender features and their discourse structural interpretation. Empirical focus lies on mismatches and interactions arising from the presence of multiple (referential or semantic) gender features. The goal is to construct a detailed theory for the syntax-semantics interface of gender.  
+
+On the theoretical side, the project pursues two main distinct avenues. First, a new framework of compositional dynamic semantics, Locus Semantics, is developed. Locus Semantics disentangles features from individual variables by introducing the new semantic type of loci (replacing the standard domain of individuals), which allows for a more transparent analysis of mismatches. Second, the project explores the relation between features of spoken and signed languages by comparing German grammatical gender to referential loci (R-loci) of signed languages (and in particular of German Sign Language, DGS). The project proposes that both kinds of features can be accounted for in a unified, cross-modal DRT framework.  
+
+Empirically, the project is interested in a range of phenomena related to gender feature interactions; examples include gender shift cases (i.e., cases where the grammatical gender of a predicate NP of a copular clause becomes available for future agreement) or cases including mismatches between grammatical and semantic gender (e.g., with hybrid nouns such as German neuter “das Mädchen” (the girl) referring to semantically feminine girls). Empirical data is gathered both via experiments as well as corpus studies. Languages of interest include German and Czech, while DGS data is additionally taken into account to compare spoken referential features to R-loci of signed languages.
 
 
-Methodologically, the subproject will conduct several empirical studies to gain a solid understanding of underlying phenomena. For theory building, frameworks of dynamical semantics and DRT will be the basis.
 :::
 
 :::
