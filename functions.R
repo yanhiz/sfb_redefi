@@ -88,7 +88,7 @@ print_card_members <- function(project) {
       sep = ""
     )}
     cat(
-      "[Personal website](",
+      "[Academic website](",
       member$website,
       '){target="_blank"}\n\n',
       sep = ""

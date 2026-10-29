@@ -68,7 +68,7 @@ for (p in names(projects)) {
     cat('</b></a>')
     cat('<a href="')
     cat(member$website)
-    cat('" target="_blank"><i class="bi bi-link-45deg"></i> <b>  Personal website</b></a>')
+    cat('" target="_blank"><i class="bi bi-link-45deg"></i> <b>  Academic website</b></a>')
     cat('</p>')
     cat('<div class="accordion-bio">')
     cat(member$bio %>% str_replace_all('\\n','<br>'))
