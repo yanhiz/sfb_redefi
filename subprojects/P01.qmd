@@ -15,7 +15,6 @@ format:
 </div>
 ```
 
-
 ::: {.project-hero}
 
 ::: {.project-hero-logo}
@@ -25,7 +24,21 @@ format:
 ::: {.project-hero-text}
 ### Project description
 
-This subproject coordinates the activities of the Special Research Area Language between Redundancy and Deficiency and hosts two affiliated PhD projects funded by the University of Graz.
+This subproject coordinates the activities of the SFB and hosts two affiliated PhD projects funded by the University of Graz.
+
+The coordination of the project carried out the following tasks since March 2025:
+
+- Organized an SFB-related conference “Referential Expressions in Discourse: Mismatches in Anaphoric Relations” (29-30 May 2025) in cooperation with Klaus von Heusinger and members of the RED network with invited speakers Hans Kamp, Viola Schmitt (MIT), and Daniel Altshuler (Oxford). All subprojects submitted their work to the conference. Proceedings are currently in the process of being edited (under a series launched through the University of Graz Library Publishing).
+- Secured funding for an affiliated project (“Philosophical implications of binding effects”) from Land Steiermark to fund one postdoctoral researcher to work with Edgar Onea and Katharina Felka. The recruited researcher is Jeannique Darby (employment start date 1 November 2025).
+- Organized a careers workshop for female early-stage researchers in the SFB  (13 February 2026), led by guest speaker Professor Dr. Esther Rinke (Frankfurt).
+
+Further general tasks of the coordination unit are:
+
+- Support for dissemination (website, contact point) and open access
+- Data management and ethics
+- Event organization (retreats, guest speakers, project meetings)
+
+
 :::
 
 :::
