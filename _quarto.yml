@@ -5,6 +5,7 @@ project:
     - "*.qmd"
     - "subprojects/*.qmd"
     - "clusters/*.qmd"
+    - "workshops/nocrodev2027/*.qmd"
 
 
 website:

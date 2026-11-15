@@ -1,0 +1,27 @@
+---
+pagetitle: "Programme | NoCroDev2027"
+---
+
+::: {.workshop-page}
+
+{{< include _header.qmd >}}
+
+::: {.workshop-page-title}
+21–22 October 2027 · University of Vienna
+
+# Programme
+:::
+
+::: {.workshop-notice}
+## Programme to be announced
+
+The conference programme is under preparation and will be published here.
+:::
+
+The conference will include invited talks and contributed oral and poster presentations. Contributed talks are planned for **20 minutes, followed by 10 minutes of discussion**.
+
+[Read the call for papers →](call-for-papers.qmd){.workshop-text-link}
+
+{{< include _contact.qmd >}}
+
+:::

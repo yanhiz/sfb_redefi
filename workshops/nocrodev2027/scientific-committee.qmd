@@ -1,0 +1,25 @@
+---
+pagetitle: "Scientific committee | NoCroDev2027"
+---
+
+::: {.workshop-page}
+
+{{< include _header.qmd >}}
+
+::: {.workshop-page-title}
+NoCroDev2027
+
+# Scientific committee
+:::
+
+::: {.workshop-notice}
+## Members to be announced
+
+The scientific committee will be listed here once confirmed.
+:::
+
+The [organizing committee](index.qmd#organizing-committee) is listed on the conference overview page.
+
+{{< include _contact.qmd >}}
+
+:::

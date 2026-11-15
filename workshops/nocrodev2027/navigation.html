@@ -1,0 +1,10 @@
+<script>
+(() => {
+  const page = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.workshop-nav a').forEach(link => {
+    if (link.getAttribute('href').split('/').pop() === page) {
+      link.setAttribute('aria-current', 'page');
+    }
+  });
+})();
+</script>

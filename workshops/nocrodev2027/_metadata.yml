@@ -1,0 +1,10 @@
+format:
+  html:
+    page-layout: full
+    css: conference.css
+    anchor-sections: false
+    body-classes: workshop-site
+    include-after-body: navigation.html
+toc: false
+title-block-banner: false
+lang: en

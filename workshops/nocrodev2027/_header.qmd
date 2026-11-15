@@ -1,0 +1,13 @@
+```{=html}
+<div class="workshop-heading">
+  <a class="workshop-back" href="../../events.html">← Activities &amp; Events</a>
+  <div class="workshop-identity"><a href="index.html">NoCroDev<span>2027</span></a><span>21–22 October · University of Vienna</span></div>
+</div>
+<nav class="workshop-nav" aria-label="Workshop pages">
+  <a href="index.html">Overview</a>
+  <a href="call-for-papers.html">Call for papers</a>
+  <a href="programme.html">Programme</a>
+  <a href="scientific-committee.html">Scientific committee</a>
+  <a href="further-information.html">Further information</a>
+</nav>
+```

@@ -1,0 +1,27 @@
+---
+pagetitle: "Further information | NoCroDev2027"
+---
+
+::: {.workshop-page}
+
+{{< include _header.qmd >}}
+
+::: {.workshop-page-title}
+Planning your visit
+
+# Further information
+:::
+
+## Location and dates
+
+The conference will be hosted by the **University of Vienna, Austria**, on **21–22 October 2027**.
+
+::: {.workshop-notice}
+## Practical information forthcoming
+
+Details about the venue, registration, travel, and accommodation will be added here as they become available.
+:::
+
+{{< include _contact.qmd >}}
+
+:::

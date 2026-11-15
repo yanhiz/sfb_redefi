@@ -1,0 +1,67 @@
+---
+pagetitle: "Call for papers | NoCroDev2027"
+description: "Submit an abstract for NoCroDev2027. Submission period: 15 November 2026 to 31 March 2027."
+---
+
+::: {.workshop-page}
+
+{{< include _header.qmd >}}
+
+::: {.workshop-page-title}
+Conference submissions
+
+# Call for papers
+
+Null Objects from a Crosslinguistic and Developmental Perspective 2027
+:::
+
+::: {.workshop-reading}
+
+Null Objects from a Crosslinguistic and Developmental Perspective 2027 will be hosted by the University of Vienna on **21–22 October 2027**. It is the fourth edition, following conferences at University of Minho (2021), Goethe University, Frankfurt (2023), and Palma de Mallorca (2025).
+
+The conference serves as a platform for discussing current issues and insights into the study of null objects from a cross-linguistic and developmental perspective, irrespective of the underlying theoretical framework. Over the past several decades, null objects have emerged as a significant domain of inquiry in cross-linguistic research and language acquisition, providing important insights into the interplay between syntactic, semantic, and discourse-pragmatic factors in the licensing, interpretation, and developmental emergence of argument omission. Nevertheless, several fundamental questions remain unresolved, and we invite submissions that focus on (but are not limited to) one or more of the following questions:
+
+- Which syntactic, semantic, and discourse-pragmatic factors license and constrain null objects across languages?
+- Under what conditions is object realization optional or obligatory?
+- Do null objects involve empty pronominal categories (*pro*)?
+- Is a unified cross-linguistic analysis of null objects possible?
+- Are null subjects and null objects typologically correlated?
+- How are null objects acquired, and what do developmental patterns reveal about cross-linguistic variation?
+- What insights can diachronic change provide into the emergence and distribution of null objects?
+
+## Invited speakers
+
+- **Marta Ruda** (Jagiellonian University)
+- **Pedro Guijarro-Fuentes** (Universitat de les Illes Balears)
+- **Vladimir Buskin** (KU Eichstätt)
+
+## Submission instructions
+
+We invite abstract submissions for **20-minute talks (+10 minutes discussion) or posters** of original, unpublished work. Prospective authors are invited to submit abstracts for an oral or poster presentation.
+
+- **Language and anonymity:** Abstracts should be in English and anonymous.
+- **Length:** Abstracts should not exceed one page, with one additional page for examples, tables, figures, and references.
+- **Format:** A4 or letter size paper, 2.5 cm or 1-inch margins on all sides, and 12-point font.
+- **File and platform:** Upload the abstract as a PDF attachment through OpenReview.
+- **Submission limit:** One individual and one joint abstract per author, or two joint abstracts per author.
+- **Presentation preference:** Upon submission, indicate whether your work should be considered for an oral presentation, a poster, or both.
+
+::: {.workshop-notice}
+**OpenReview submission link forthcoming**
+
+The link to the conference submission page will be added here. For submission enquiries, contact [albert.wall@univie.ac.at](mailto:albert.wall@univie.ac.at).
+:::
+
+## Important dates
+
+| | |
+|:---|:---|
+| **Submissions** | 15 November 2026–31 March 2027 |
+| **Abstract review period** | 1 April–1 May 2027 |
+| **Conference** | 21–22 October 2027 |
+
+:::
+
+{{< include _contact.qmd >}}
+
+:::
