@@ -17,7 +17,7 @@ Null Objects from a Crosslinguistic and Developmental Perspective 2027
 
 ::: {.workshop-reading}
 
-Null Objects from a Crosslinguistic and Developmental Perspective 2027 will be hosted by the University of Vienna on **21–22 October 2027**. It is the fourth edition, following conferences at University of Minho (2021), Goethe University, Frankfurt (2023), and Palma de Mallorca (2025).
+Null Objects from a Crosslinguistic and Developmental Perspective 2027 will be hosted by the University of Vienna on **21–22 October 2027**. It is the fourth edition, following conferences at University of Minho (2021), Goethe University, Frankfurt (2023), and [University of the Balearic Islands, Palma](https://basla.uib.eu/activities/nocrodep2025/).
 
 The conference serves as a platform for discussing current issues and insights into the study of null objects from a cross-linguistic and developmental perspective, irrespective of the underlying theoretical framework. Over the past several decades, null objects have emerged as a significant domain of inquiry in cross-linguistic research and language acquisition, providing important insights into the interplay between syntactic, semantic, and discourse-pragmatic factors in the licensing, interpretation, and developmental emergence of argument omission. Nevertheless, several fundamental questions remain unresolved, and we invite submissions that focus on (but are not limited to) one or more of the following questions:
 
@@ -47,9 +47,10 @@ We invite abstract submissions for **20-minute talks (+10 minutes discussion) or
 - **Presentation preference:** Upon submission, indicate whether your work should be considered for an oral presentation, a poster, or both.
 
 ::: {.workshop-notice}
-**OpenReview submission link forthcoming**
 
-The link to the conference submission page will be added here. For submission enquiries, contact [albert.wall@univie.ac.at](mailto:albert.wall@univie.ac.at).
+[**Go to easyabs for submission**](https://easyabs.linguistlist.org/conference/nocrodev2027/)
+
+For submission enquiries, contact [nullobjectsvienna2027.ifr@univie.ac.at](mailto:nullobjectsvienna2027.ifr@univie.ac.at).
 :::
 
 ## Important dates
